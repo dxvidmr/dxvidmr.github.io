@@ -65,6 +65,8 @@
             {% endunless %}
           {% endif %}
         {% endfor %}
+        <div class="school">{{entry.school}}</div>
+        <div class="note">{{entry.note}}</div>
       </div>
 
       <div class="periodical">
@@ -88,6 +90,9 @@
     {% endif %}
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+    {% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">URL</a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}

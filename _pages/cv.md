@@ -52,6 +52,6 @@ Universidad de Málaga, 9-10 noviembre 2020
 #### Organización
 
 `2020` **#NoviembreHD**   
-Participación en la comisión organizadora como apoyo técnico de las sesiones online   
+Participación en la comisión organizadora como apoyo técnico   
 Asociación Argentina de Humanidades Digitales (AAHD)     
 [https://www.aacademica.org/noviembrehd](https://www.aacademica.org/noviembrehd)           

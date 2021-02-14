@@ -2,7 +2,7 @@
 layout: page
 title: cv
 permalink: /cv/
-description: Última actualización 15/12/2020
+description: Última actualización 14/02/2021
 nav: true
 ---
 

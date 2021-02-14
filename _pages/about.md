@@ -17,4 +17,4 @@ social: true  # includes social icons at the bottom of the page
 
 ¡Hola! Mi nombres es David y soy estudiante del Máster en Formación e Investigación Literaria y Teatral en la UNED. Además, tengo un Máster en Humanidades Digitales por el [LiNHD](https://linhd.uned.es/) y un Grado en Arte Dramático por la Escuela Superior de Arte Dramático de Asturias.
 
-Investigo sobre las relaciones entre los **estudios teatrales** y las **Humanidades Digitales**. Me interesa la aplicación de metodologías cuantitativas, como la estilometría, al teatro breve del Siglo de Oro, pero también el análisis de redes y la edición digital con TEI.
+Investigo sobre las relaciones entre los **estudios teatrales** y las **Humanidades Digitales**. Me interesa la aplicación de metodologías cuantitativas como la estilometría al teatro breve del Siglo de Oro, y también el análisis de redes y la edición digital con TEI.

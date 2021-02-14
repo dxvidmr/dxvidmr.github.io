@@ -17,4 +17,4 @@ social: true  # includes social icons at the bottom of the page
 
 Hi! My name is David and I am studying a M.A. in Literary and Theatre Research at the UNED. I have a M.A. in Digital Humanities and a B.A. in Dramatic Art.
 
-I'm interested in the relations between **Theatre Studies** and **Digital Humanities**, focused on the application of quantitative methods such as stylometry to Spanish Golden Age "minor" theater. But I'm also interested in network analysis and scholarly digital editing with TEI.
+I'm interested in the relations between **Theatre Studies** and **Digital Humanities**, focused on the application of quantitative methods such as stylometry to Spanish Golden Age "minor" theater. And I'm also interested in network analysis and scholarly digital editing with TEI.

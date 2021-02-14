@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 years: [2020]
-nav: true
+nav: false
 ---
 
 <div class="publications">

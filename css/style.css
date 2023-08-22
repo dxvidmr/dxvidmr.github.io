@@ -485,7 +485,7 @@ section {
 }
 
 #header nav ul {
-    text-transform: uppercase;
+    text-transform: lowercase;
 
 }
 

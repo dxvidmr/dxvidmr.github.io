@@ -23,6 +23,9 @@
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <!--Icon Fonts - Academic Icons-->
+    <link rel="stylesheet" href="css\academicons.min.css">
+
     <!-- Animate CSS-->
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 
@@ -59,12 +62,14 @@
                     <div id="logo">
                         
                         <!--Logo that is shown on the banner-->
-                        <!--<img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--<img src="images/logo.png" id="banner-logo" alt="Landing Page"/>-->
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logod.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--<img src="images/logod.png" id="navigation-logo" alt="Landing Page"/>-->
                         <!--End of Navigation Logo-->
+
+                        <h2><b>David Merino Recalde</b></h2>
                         
 
                     </div>
@@ -75,8 +80,23 @@
                         <!--Social Icons in Header-->
                         <ul class="social-icons">
                             <li>
-                                <a target="_blank" title="email" href="mailto:merinorecaldedavid@gmail.com">
+                                <a target="_blank" title="email" href="mailto:david.merino@uab.cat">
                                     <i class="fa fa-envelope fa-2x"></i><span>email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="ORCiD" href="https://orcid.org/0000-0003-2740-7831">
+                                    <i class="ai ai-orcid ai-2x"></i><span>ORCiD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Google Scholar" href="https://scholar.google.es/citations?user=HS7G8eYAAAAJ&hl=es">
+                                    <i class="ai ai-google-scholar ai-2x"></i><span>Google Scholar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Zotero" href="https://www.zotero.org/dxvidmr/">
+                                    <i class="ai ai-zotero ai-2x"></i><span>Zotero</span>
                                 </a>
                             </li>
                             <li>
@@ -108,16 +128,16 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#banner">Home</a>
+                                <a href="#banner">home</a>
                             </li>
                             <li>
                                 <a href="#bio">bio</a>
                             </li>
                             <li>
-                                <a href="#gallery">Gallery</a>
+                                <a href="#cv">CV</a>
                             </li>
                             <li>
-                                <a href="#cv">CV</a>
+                                <a href="#proyectos">proyectos</a>
                             </li>
                         </ul>
                     </nav>
@@ -136,7 +156,7 @@
             <div class="col-38">
 
                 <div class="section-heading">
-                    <h1>DAVID<br> MERINO<br> RECALDE</h1>
+                    <h1>DAVID<br>MERINO<br>RECALDE</h1>
                     <h2>Teatro del Siglo de Oro. Humanidades Digitales</h2>
                 </div>
 
@@ -153,18 +173,18 @@
     <main id="content">
 
         <!--Introduction-->
-        <section id="bio" class="introduction scrollto">
+        <section id="bio" class="bio scrollto">
 
             <div class="row clearfix">
 
                 <div class="col-2">
                     <div class="section-heading">
-                        <h3>bio</h3>
-                        <h2 class="section-title">David Merino Recalde</h2>
+                        <h3>sobre mí</h3>
+                        <h2 class="section-title">bio</h2>
+                        <!--<p class="section-subtitle"></p>-->
                     </div>
                     <div>
-                        <p class="section-subtitle">Personal Investigador en Formación en la Universitat Autònoma de Barcelona</p>
-                        <p>¡Hola! Soy doctorando en filología española en el grupo de investigación <a href="https://prolope.uab.cat/">PROLOPE</a>, como contratado predoctoral FI-Joan Oró (AGAUR) en el Departament de Filologia Espanyola de la Universitat Autònoma de Barcelona.</p>   
+                        <p>¡Hola! Soy doctorando en filología española en el grupo de investigación <a href="https://prolope.uab.cat/">PROLOPE</a>, como contratado predoctoral FI-Joan Oró (AGAUR) en el Departamento de Filología Española de la Universitat Autònoma de Barcelona.</p>   
                         <p>En 2022 finalicé un Máster en Formación e Investigación Literaria y Teatral y en 2020 un Máster en Humanidades Digitales, ambos en la Universidad Nacional de Educación a Distancia. Además, soy Titulado Superior en Arte Dramático por la Escuela Superior de Arte Dramático de Asturias desde 2019.</p>   
                         <p>Me interesan el teatro del Siglo de Oro y las Humanidades Digitales, especialmente la edición digital y la aplicación de métodos computacionales como el análisis de redes.</p>   
                         <p>También formo parte del grupo de investigación <a href="http://gruposinvestigacion.unir.net/hdaunir/">Humanidades Digitales Aplicadas</a> de UNIR (HDAUNIR), en donde desarrollamos la <a href="https://github.com/GHEDI/BETTE">Biblioteca Electrónica Textual del Teatro en Español 1868-1939</a> (BETTE).</p>    
@@ -172,8 +192,17 @@
                     </div>
 
                 </div>
-                <div class="col-4" style="text-align: center;">
-                    <img src="images\banner-images\banner-image-2.jpg" alt="me"/>
+
+                <div class="col-2" style="text-align: center;">
+                    <img src="images\banner-images\me-round.png" alt="me" style="width:350px;height:350px"/>
+                    
+                    <p class="section-subtitle">
+                        <br>
+                        Personal Investigador en Formación<br>
+                        Universitat Autònoma de Barcelona<br>
+                        PROLOPE, Departamento de Filología Española<br>
+                        <a href="mailto:david.merino@uab.cat">david.merino@uab.cat</a>
+                    </p>
                 </div>
 
             </div>
@@ -182,8 +211,40 @@
         </section>
         <!--End of Introduction-->
 
+        <!--CV-->
+        <section id="cv" class="cv scrollto">
 
-        <!--Gallery-->
+            <div class="row clearfix">
+
+                <div class="col-1">
+                    <div class="section-heading">
+                        <h3></h3>
+                        <h2 class="section-title">CV</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--End of CV-->
+
+        <section id="proyectos" class="proyectos scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-1">
+                    <div class="section-heading">
+                        <h3>proyectos</h3>
+                        <h2 class="section-title">Proyectos</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--Gallery
         <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
                  data-featherlight-filter="a">
 
@@ -201,64 +262,7 @@
                    data-wow-delay="0.7s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
 
         </aside>
-        <!--End of Gallery-->
-
-
-        <!--Content Section-->
-        <div id="services" class="scrollto clearfix">
-
-            <div class="row no-padding-bottom clearfix">
-
-
-                <!--Content Left Side-->
-                <div class="col-3">
-                    <!--User Testimonial-->
-                    <blockquote class="testimonial text-right bigtest">
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua</q>
-                        <footer>— John Doe, Happy Customer</footer>
-                    </blockquote>
-                    <!-- End of Testimonial-->
-
-                </div>
-                <!--End Content Left Side-->
-
-                <!--Content of the Right Side-->
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>BELIEVING</h3>
-                        <h2 class="section-title">Focusing On What Matters Most</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-                    </div>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                    </p>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
-                    </p>
-                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                    <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-                        WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <!--End Content Right Side-->
-
-                <div class="col-3">
-                    <img src="images/dancer.jpg" alt="Dancer"/>
-                </div>
-
-            </div>
-
-
-        </div>
-        <!--End of Content Section-->
-
-
+        End of Gallery-->
 
 
     </main>
@@ -269,13 +273,28 @@
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
 
-            <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
+            <p id="copyright" class="col-2">Made by <a href="https://www.dxvidmr.github.io">David Merino Recalde</a>. Built based on Namari by <a href="https://www.shapingrain.com">ShapingRain</a></p>
 
             <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
                 <li>
-                    <a target="_blank" title="email" href="mailto:merinorecaldedavid@gmail.com">
+                    <a target="_blank" title="email" href="mailto:david.merino@uab.cat">
                         <i class="fa fa-envelope fa-2x"></i><span>email</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="ORCiD" href="https://orcid.org/0000-0003-2740-7831">
+                        <i class="ai ai-orcid ai-2x"></i><span>ORCiD</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Google Scholar" href="https://scholar.google.es/citations?user=HS7G8eYAAAAJ&hl=es">
+                        <i class="ai ai-google-scholar ai-2x"></i><span>Google Scholar</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Zotero" href="https://www.zotero.org/dxvidmr/">
+                        <i class="ai ai-zotero ai-2x"></i><span>Zotero</span>
                     </a>
                 </li>
                 <li>

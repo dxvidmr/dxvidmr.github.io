@@ -534,6 +534,7 @@ section {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     opacity: 0.5;
+    margin-top: 20px;
 }
 
 #header.nav-solid .social-icons a:hover {
@@ -684,7 +685,7 @@ nav#nav-mobile a:hover {
 }
 
 #header .social-icons {
-    margin-top: 27px;
+    margin-top: 50px;
 }
 
 /* --------- 2.6 Images ---------- */
@@ -2334,10 +2335,10 @@ blockquote {
 	padding: 0;
 }
 
-body {
+/*body {
 	background-color: #1d2123;
 	font-family: "Inter", sans-serif;
-}
+}*/
 
 ul {
 	list-style: none;
@@ -2366,11 +2367,11 @@ h6 {
 	color: #111;
 	margin: 0;
 }
-p {
+/* p {
 	font-size: 13px;
 	line-height: 25px;
 	margin: 0;
-}
+} */ 
 .container {
 	width: 100%;
 	max-width: 1140px;
@@ -2429,7 +2430,7 @@ p {
 	color: #111;
 	font-weight: 900;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 .timeline-text span {
 	color: #111;
@@ -2496,3 +2497,5 @@ p {
 		top: 32px;
 	}
 }
+
+/* End of Timeline CSS */

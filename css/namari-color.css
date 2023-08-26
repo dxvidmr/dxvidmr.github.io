@@ -316,11 +316,16 @@ h6 {
 /* 7. Footer */
 /*------------------------------------------------------------------------------------------*/
 
-#landing-footer, #landing-footer p, #landing-footer a {
+#landing-footer, #landing-footer p {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:12px;
     font-weight:normal;
     color:#999;
+}
+
+#landing-footer a {
+    color:#d2b356;
+
 }
 
 /* Footer Icon Color */

@@ -18,8 +18,8 @@
 - 5.3 Divider
 6. Landing Page Sections
 - 6.1 Features
-- 6.2 Testimonials
-- 6.3 Gallery
+- 6.2 Testimonials (ELIMINADO)
+- 6.3 Gallery (ELIMINADO)
 - 6.4 Video
 - 6.5 Clients
 - 6.6 Pricing Table
@@ -925,102 +925,8 @@ h6 {
     clear: both;
 }
 
-/* --------- 6.3 Testimonials ---------- */
 
-.testimonial {
-    padding: 15px;
-}
 
-blockquote {
-    position: relative;
-}
-
-.testimonial img {
-    max-height: 120px;
-    border-radius: 250em;
-}
-
-.testimonial footer {
-    padding-top: 12px;
-}
-
-/* Style Classic - Avatar above Testimonial */
-
-.testimonial.classic img {
-    display: inline-block;
-    margin-bottom: 25px;
-}
-
-.testimonial.classic q {
-    display: block;
-}
-
-.testimonial.classic footer:before {
-    display: block;
-    content: "";
-    width: 30px;
-    height: 4px;
-    margin: 10px auto 15px auto;
-}
-
-/* Style Big */
-
-.testimonial.bigtest {
-    padding-top: 0;
-}
-
-.testimonial.bigtest q {
-    font-size: 22px;
-}
-
-/* --------- 6.4 Gallery ---------- */
-
-#gallery img {
-    max-height: 300px;
-}
-
-#gallery [class*='col-'] {
-    padding: 0;
-}
-
-#gallery a {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-#gallery a:hover img {
-    opacity: 0.15;
-    -moz-backface-visibility: hidden;
-}
-
-#gallery a:before {
-    font-size: 2.2em;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    content: "+";
-    width: 70px;
-    height: 70px;
-    border-radius: 100em;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    line-height: 72px;
-    margin: -35px 0 0 -35px;
-    opacity: 0;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    transition: all .2s linear;
-    vertical-align: middle;
-}
-
-#gallery a:hover:before {
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-}
 
 /**
  * Featherlight – ultra slim jQuery lightbox
@@ -2499,3 +2405,68 @@ h6 {
 }
 
 /* End of Timeline CSS */
+
+
+
+/* Gallery */
+div.gallery {
+    border: 3px solid #111;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  
+  div.gallery:hover {
+    border: 3px solid #d2b356;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.title {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* End of Gallery */

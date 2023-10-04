@@ -2409,18 +2409,18 @@ h6 {
 
 
 /* Gallery */
-div.gallery {
-    border: 3px solid #111;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    transition: all .3s linear;
+    div.gallery {
+    border: 0px solid #d2b356;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
   }
   
   div.gallery:hover {
-    border: 3px solid #d2b356;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    transition: all .3s linear;
+    border: 1px solid #d2b356;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
   }
   
   div.gallery img {

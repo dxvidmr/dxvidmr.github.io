@@ -58,14 +58,58 @@ p {
     max-width: 100%;
 }
 
-a {
+/*a {
     text-decoration: none;
     line-height: inherit;
     -webkit-transition: opacity 0.3s ease-out;
     -moz-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
+}*/
+
+/* Agregar icono externo a todos los enlaces que comiencen con http o https */
+a[href^="http://"]:not(.no-icon)::after,
+a[href^="https://"]:not(.no-icon)::after {
+  font-family: 'FontAwesome';
+  content: '\f08e'; /* Código de Unicode para el icono "external-link-alt" en FontAwesome 4.7.0 */
+  margin-left: 5px; /* Espacio entre el enlace y el icono */
+  display: inline-block;
 }
+
+    /* Cambiar el estilo del icono */
+    a[href^="http://"]::after,
+    a[href^="https://"]::after {
+    color: #d2b356; /* Cambiar el color del icono */
+    font-size: 15px; /* Cambiar el tamaño del icono */
+    }
+    
+/* Línea por debajo de los enlaces externos (con icono) */
+a {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+  }
+  
+  a[href^="http://"]:not(.no-icon)::before,
+    a[href^="https://"]:not(.no-icon)::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px; /* Altura de la línea */
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, transparent, #d2b356);
+    transition: width 0.3s ease; /* Transición para la expansión de la línea */
+  }
+  
+  /* Cuando el cursor pasa sobre el enlace */
+  a:not(.no-icon):hover::before {
+    width: 100%; /* La línea se expande completamente */
+  }
+  
+
+
+
 
 iframe {
     border: 0 !important;

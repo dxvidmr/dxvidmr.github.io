@@ -126,6 +126,7 @@ a:hover, #header.nav-solid nav a:hover {
 #banner {
     background: url("../images/banner-images/fondo.jpg") no-repeat center top;
     background-size:cover;
+    height: 100vh; /* 100% de la altura del viewport */
 }
 
 

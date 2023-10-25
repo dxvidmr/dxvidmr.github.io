@@ -402,8 +402,9 @@ section {
     margin-right: 15px;
 }
 
+
 #navigation-logo {
-    display: none;
+    display: none; /* Oculta el logo de navegación de forma predeterminada */
 }
 
 .nav-solid #logo #banner-logo {
@@ -529,7 +530,7 @@ section {
 }
 
 #header nav ul {
-    text-transform: lowercase;
+    text-transform: uppercase;
 
 }
 
@@ -730,6 +731,12 @@ nav#nav-mobile a:hover {
 
 #header .social-icons {
     margin-top: 50px;
+}
+
+/* Estilo para los iconos sociales en el banner */
+#banner #header .social-icons {
+    margin-top: 100px;
+    /* Ajusta el margen superior según sea necesario para alinear los iconos en el banner */
 }
 
 /* --------- 2.6 Images ---------- */

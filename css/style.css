@@ -433,6 +433,7 @@ section {
     display: inline-block;
     border-width: 3px;
     border-style: solid;
+    background-color: transparent;
 }
 
 /* Play Button */
@@ -825,6 +826,12 @@ h6 {
     letter-spacing: 2px;
     padding-bottom: 0;
 }
+
+ul.puntos {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
 
 /*------------------------------------------------------------------------------------------*/
 /* 4. Banner */

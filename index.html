@@ -30,7 +30,8 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 
     <!--Google Webfonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>    
+
 </head>
 <body>
 
@@ -295,6 +296,50 @@
                 </div>
                 <!--End of Timeline-->
 
+
+                <div class="col-4"></div>
+                <div class="col-2" style="text-align: center;">
+                    <script>
+                        function toggleTexto() {
+                            var textoOculto = document.getElementById("textoOculto");
+                            var mostrarBoton = document.getElementById("mostrar");
+
+                            if (textoOculto.style.display === "none" || textoOculto.style.display === "") {
+                                textoOculto.style.display = "block";
+                                mostrarBoton.innerText = "Cerrar";
+                            } else {
+                                textoOculto.style.display = "none";
+                                mostrarBoton.innerText = "Otras formaciones";
+                            }
+                        }
+                    </script>
+
+                    <button id="mostrar" onclick="toggleTexto()" class="button">Otras formaciones</button>
+
+                    <div id="textoOculto" style="display: none; text-align: left;">
+                        <p>
+                            <b>Filología Digital e Inteligencia Artificial: transcripción automática, estilometría y escansión computarizada</b> <br>
+                            Curso de verano, Universidad de Burgos, 4-6 sep 2023
+                        </p> <br>
+                        <p>
+                            <b>Del corpus a la interpretación: Estilometría con R</b> <br> 
+                            Curso de verano, Universidad de Burgos, 7-9 sep 2021
+                        </p> <br>
+                        <p>
+                            <b>Minimal Computing and Wax Course</b> at Dream Lab <br>
+                            University of Pennsylvania - Price Lab for Digital Humanities (USA), 14-17 jun 2021 <br>
+                            Ejercicios realizados durante el curso: <a href="https://icanogar.github.io/habitos/" target="_blank">Catálogo de hábitos de órdenes religiosas</a> y
+                           <a href="https://dxvidmr.github.io/escenografiastso/" target="_blank">Colección de escenografías teatrales del Siglo de Oro</a>
+                        </p> <br> 
+                        <p>
+                            <b>Digital Publishing with Minimal Computing: humanities at a global scale</b> <br>
+                            University of Maryland - MITH (USA) y Universidad del Salvador (ARG), sep-dic 2020 <br>
+                            Resultados del curso: <a href="https://dxvidmr.gitlab.io/the-voyagers-project/" target="_blank">Edición mínima digital bilingüe (es/en) de la “Descripción de Buenos Aires” de Acarete du Biscay</a>
+                        </p> <br>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+
             </div>
 
         </section>
@@ -374,8 +419,7 @@
                     <div class="col-4"></div>
                     <div class="col-2">
                         <h4>2023</h4>
-                            <p>Gonzalez-Perez, C., Rojas Castro, A., Fernández Travieso, C., <u>Merino Recalde, D.</u>, Díez-Platas, F., Alvite-Díez, M.-L., Díez-Platas, M. L., Luengo, P., & Pereira-Fariña, M. (2023, junio 30). <b>A Proposal for the Demarcation of Digital Humanities.</b> Digital Humanities 2023: Book of Abstracts, 84-86. <a href="https://doi.org/10.5281/ZENODO.8107876" target="_blank">https://doi.org/10.5281/ZENODO.8107876</a>
-                            </p><br>
+                            <p>Gonzalez-Perez, C., Rojas Castro, A., Fernández Travieso, C., <u>Merino Recalde, D.</u>, Díez-Platas, F., Alvite-Díez, M.-L., Díez-Platas, M. L., Luengo, P., & Pereira-Fariña, M. (2023, junio 30). <b>A Proposal for the Demarcation of Digital Humanities.</b> Digital Humanities 2023: Book of Abstracts, 84-86. <a href="https://doi.org/10.5281/ZENODO.8107876" target="_blank">https://doi.org/10.5281/ZENODO.8107876</a></p><br>
 
                         <h4>2022</h4>
                             <p><u>Merino Recalde, D.</u> (2022). <b>El sistema de personajes de las comedias urbanas de Lope de Vega. Propuesta metodológica y posibilidades del análisis de redes sociales para el estudio del teatro del Siglo de Oro</b> [Master's Thesis, Universidad Nacional de Educación a Distancia]. <a href="http://e-spacio.uned.es/fez/view/bibliuned:master-Filologia-FILTCE-Dmerino" target="_blank">http://e-spacio.uned.es/fez/view/bibliuned:master-Filologia-FILTCE-Dmerino</a></p><br>
@@ -387,22 +431,49 @@
                         <h4>2020</h4>
                             <p><u>Merino Recalde, D.</u> (2020). <b>Estudios teatrales y Humanidades Digitales: Un estado de la cuestión del cruce entre disciplinas en la investigación del teatro español</b> [Master's Thesis, Universidad Nacional de Educación a Distancia]. <a href="http://e-spacio.uned.es/fez/view/bibliuned:master-LINHD-HD-Dmerino" target="_blank">http://e-spacio.uned.es/fez/view/bibliuned:master-LINHD-HD-Dmerino</a></p><br>
                         
-                        <!--<h3>Revisón y edición de textos</h3>
-                            <h4>2023</h4>
-                               <p><i>Comedia de la carbonera</i>, Comedias de Lope de Vega. Parte XXII, PROLOPE-Gredos</p><br>
+                        <script>
+                            function toggleTexto2() {
+                                var revisionedicion = document.getElementById("revisionedicion");
+                                var mostrarBoton = document.getElementById("mostrar");
+    
+                                if (revisionedicion.style.display === "none" || revisionedicion.style.display === "") {
+                                    revisionedicion.style.display = "block";
+                                    mostrarBoton.innerText = "Cerrar";
+                                } else {
+                                    revisionedicion.style.display = "none";
+                                    mostrarBoton.innerText = "Revisión y edición";
+                                }
+                            }
+                        </script>
+    
+                        <button id="mostrar" onclick="toggleTexto2()" class="button">Revisión y edición</button>
+    
+                        <div id="revisionedicion" style="display: none; text-align: left;">
+                            <h4>Revisión de ediciones críticas</h4>
+                            <ul class="puntos">
+                                <li>2023. <i>No son todo ruiseñores</i>, Comedias de Lope de Vega. Parte XXII, PROLOPE-Gredos</li>
+                                <li>2023. <i>La carbonera</i>, Comedias de Lope de Vega. Parte XXII, PROLOPE-Gredos</li>
+                            <br></ul>
 
-                            <h4>2022</h4>
-                                <p>Digital Humanities 2023, Alliance of Digital Humanities Organizations (ADHO), Graz, 10 -14 jul 2023</p><br>
-                                <p>Publicaciones de la Asociación Argentina de Humanidades Digitales vol. 3</p><br>
-                                <p>Digital Humanities 2022, Alliance of Digital Humanities Organizations (ADHO), Tokyo, 25-29 jul 2022</p><br>
+                            <h4>Evaluación contribuciones congresos</h4>
+                            <ul class="puntos">
+                                <li>2022. Digital Humanities 2023, Alliance of Digital Humanities Organizations (ADHO), Graz, 10 -14 jul 2023</li>
+                                <li>2022. Digital Humanities 2022, Alliance of Digital Humanities Organizations (ADHO), Tokyo, 25-29 jul 2022</li>
+                            <br></ul>
                             
-                            <h4>2021</h4>
-                                <p>Programming Historian. Nicolás Vaughan, "Introducción a la codificación de textos en TEI (parte 2)", Programming Historian en español 5 (2021), <a href="https://doi.org/10.46430/phes0055">https://doi.org/10.46430/phes0055</a></p><br>
-                                <p>Publicaciones de la Asociación Argentina de Humanidades Digitales vol. 1 y vol. 2</p><br>
-                                <p>Revista de Humanidades Digitales, vol. 6</p><br>
-                      
-                            <h4>2018-2019</h4>
-                                <p>Editor en Editorial Cambalache. G. Abiétar, D. (2019). <i>¿Sólo dos? La medicina ante la ficción política del binarismo sexo-género</i>. Editorial Cambalache. 978-84-94457-28-9</p><br>-->
+                            <h4>Revisión de artículos por pares</h4>
+                            <ul class="puntos">
+                                <li>2022. Publicaciones de la Asociación Argentina de Humanidades Digitales vol. 3</>
+                                <li>2021 (pares abiertos). Programming Historian. Nicolás Vaughan, "Introducción a la codificación de textos en TEI (parte 2)", Programming Historian en español 5 (2021), <a href="https://doi.org/10.46430/phes0055">https://doi.org/10.46430/phes0055</a></li>
+                                <li>2021. Publicaciones de la Asociación Argentina de Humanidades Digitales vol. 1 y vol. 2</>
+                                <li>2021. Revista de Humanidades Digitales, vol. 6</li>
+                            <br></ul>
+                            
+                            <h4>Coordinación/edición de libros</h4>
+                            <ul class="puntos">
+                                <li>Editor en Editorial Cambalache. G. Abiétar, D. (2019). <i>¿Sólo dos? La medicina ante la ficción política del binarismo sexo-género</i>. Editorial Cambalache. 978-84-94457-28-9</li>
+                            <br></ul>    
+                        </div>
                     </div>
                     <div class="col-4"></div>
                 </div>
@@ -445,7 +516,7 @@
                         <h4>2020</h4>
                             <p><b>Noviembre HD</b>. Asociación Argentina de Humanidades Digitales (AAHD), Buenos Aires, 1-30 noviembre 2020. <a href="https://www.aacademica.org/noviembrehd" target="_blank">https://www.aacademica.org/noviembrehd</a></p><br>
 
-                   
+                                               
                    
                     </div>
                    <div class="col-4"></div>    

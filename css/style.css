@@ -1475,7 +1475,7 @@ ul.puntos {
 
 #landing-footer ul {
     list-style: none;
-    text-align: right;
+    text-align: center;
 }
 
 #landing-footer li {
@@ -2131,14 +2131,14 @@ ul.puntos {
         height: 270px !important;
     }
 
-    /* Footer */
+    /* Footer*/ 
     #landing-footer #copyright {
-        float: left;
+        float: center;
         width: 50%;
     }
 
     #landing-footer .social-icons {
-        float: right;
+        float: center;
         width: 50%;
     }
 
@@ -2228,13 +2228,13 @@ ul.puntos {
 
     /* Footer */
     #landing-footer #copyright {
-        float: left;
-        width: 50%;
+        float: center;
+        width: 100%;
     }
 
     #landing-footer .social-icons {
-        float: right;
-        width: 50%;
+        float: center;
+        width: 100%;
     }
 
 }

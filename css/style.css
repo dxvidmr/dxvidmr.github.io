@@ -2065,9 +2065,9 @@ ul.puntos {
     }
 }
 
-/* Landscape mobile & down
+/* Landscape mobile (antes 480px) & down
 ===============================*/
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     #wrapper {
         margin:0;
@@ -2134,12 +2134,12 @@ ul.puntos {
     /* Footer*/ 
     #landing-footer #copyright {
         float: center;
-        width: 50%;
+        width: 100%;
     }
 
     #landing-footer .social-icons {
         float: center;
-        width: 50%;
+        width: 100%;
     }
 
     /*-----------------Typography-----------------*/
@@ -2158,9 +2158,9 @@ ul.puntos {
 
 }
 
-/* Mobile to Tablet Portrait
+/* Mobile to Tablet Portrait antes 480px y max 767
 ===============================*/
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     #wrapper {
         margin:0;
@@ -2183,6 +2183,8 @@ ul.puntos {
     .col-3, .col-4, .col-6, .col-8, .col-10, .col-12 {
         width: 50%;
     }
+
+    
 
     /*-----------------Header Elements-----------------*/
     #header .row {

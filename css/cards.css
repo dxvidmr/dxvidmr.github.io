@@ -152,7 +152,7 @@
     transform: translate(-50%, -50%);
     width: 800px; /* Ancho deseado */
     height: auto; /* Alto deseado */
-    max-height: 80vh; /* Altura máxima para evitar que se haga muy alta */
+    /*max-height: 60vh;  Altura máxima para evitar que se haga muy alta */
     background-color: rgba(255, 255, 255, 255); /* Fondo blanco translúcido */
     border-radius: 15px;
     padding: 20px;
@@ -212,7 +212,15 @@
   }
   
 
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
+    .popup {
+      width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+      max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+      max-height: 90%; /* Ajusta la altura máxima para pantallas más pequeñas */
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
     .popup {
       width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
       max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */

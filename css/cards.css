@@ -152,11 +152,10 @@
     transform: translate(-50%, -50%);
     width: 800px; /* Ancho deseado */
     height: auto; /* Alto deseado */
+    overflow: auto;
     max-height: 80vh;  /*Altura máxima para evitar que se haga muy alta */
-    overflow: auto; /* Agregar scroll si el contenido excede la altura */
     background-color: rgba(255, 255, 255, 255); /* Fondo blanco translúcido */
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 30px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
     z-index: 10000;
   }
@@ -165,11 +164,16 @@
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     position: relative;
     color: #111;
-    padding: 20px;
+    padding: 30px;
   }
 
   .popup p {
     margin: 15px;
+  }
+
+  .popup ul {
+    list-style-type: disc;
+    padding-left: 50px;
   }
 
   .popup-title{
@@ -194,6 +198,11 @@
     right: 10px;
     cursor: pointer;
     font-size: 30px;
+    color: #111;
+  }
+
+  .close-btn:hover {
+    color: #d2b356; /* Color al pasar el cursor sobre la "x" */
   }
   
   .overlay {

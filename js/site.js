@@ -79,5 +79,18 @@ function openPopup(event, popupId) {
 	document.querySelector(".overlay").classList.remove("active");
   }
   
+  function closeAnyPopup() {
+	const popups = document.querySelectorAll('.popup');
+	const overlay = document.getElementById('overlay');
+  
+	popups.forEach(function(popup) {
+	  if (popup.classList.contains('active')) {
+		popup.classList.remove('active');
+	  }
+	});
+  
+	overlay.classList.remove('active');
+  }
+  
   
   

@@ -367,7 +367,7 @@
                                     <h3 class="card__heading">Todos a una</h3>
                                     <p class="card__subheading">Edición y archivo digital de <i>Fuenteovejuna</i></p>                           
                                 </div>
-                                <p class="card__more" style="text-transform: none;">Pronto más información</p>
+                                <p class="card__more" style="text-transform: none;">(Pronto más información)</p>
                             </a>
                             <a class="card no-icon" href="https://github.com/dxvidmr/enredos" target="_blank">
                                 <div class="card__background" style="background-image: url(images/proyectos/enredos.png)"></div>
@@ -384,7 +384,7 @@
                                     <p class="card__category">Bibliografía</p>
                                     <h3 class="card__heading">Teatro y Humanidades Digitales</h3>
                                 </div>
-                                <p class="card__more">Saber más &#8594;</p>
+                                <p class="card__more">Accede &#8594;</p>
                             </a>
                         <div>
                     </section>
@@ -402,7 +402,7 @@
                                 </div>
                                 <p class="card__more">Saber más &#8594;</p>
                               </a>
-                            <a class="card no-icon" href="https://github.com/HDAUNIR/BETTE" target="_blank">
+                            <a class="card no-icon" href="#" onclick="openPopup(event, 'popup_hdaunir')">
                                 <div class="card__background" style="background-image: url(images/proyectos/hdaunir.png)"></div>
                                 <div class="card__content">
                                   <p class="card__category">Grupo de investigación</p>
@@ -418,12 +418,14 @@
                                   <h3 class="card__heading">ETSO</h3>
                                   <p class="card__subheading">Preparación de archivos para el entrenamiento del un modelo de transcripción automática en Trankscribus</p>
                                 </div>
-                                <p class="card__more">Saber más &#8594;</p>
+                                <p class="card__more">Visita el proyecto &#8594;</p>
                               </a>
     
                         </div>
                     </section>   
                     
+                    <!--Pop up-->
+                    <div class="overlay" id="overlay" onclick="closeAnyPopup()"></div>
                     <div class="popup" id="popup_prolope">
                         <div class="popup-content">
                             <p class="popup-title">Grupo de investigación PROLOPE</p>
@@ -435,12 +437,39 @@
                                 Ministerio de Ciencia e Innovación, para llevar a cabo mi tesis doctoral.</p>
                             <p>También colaboro activamente en los distintos proyectos y actividades que realiza el grupo. Por ejemplo, he tenido la oportunidad de revisar algunas de las ediciones de Lope de Vega 
                                 que publicamos en las <i>Partes de comedias</i></p>
-                            <p>Visita el sitio web de PROLOPE: <a href="https://prolope.uab.cat/" target="_blank">www.prolope.uab.cat/</a></p>
-                          <span class="close-btn" onclick="closePopup('popup_prolope')">&times;</span>
+                            <p>Visita el sitio web de PROLOPE: <a href="https://prolope.uab.cat/" target="_blank">www.prolope.uab.cat</a></p>
+                            <span class="close-btn" onclick="closePopup('popup_prolope')">&times;</span>
                         </div>
                     </div>
-                    <div class="overlay" onclick="closePopup('popup_prolope')"></div>
-                    
+                    <div class="popup" id="popup_hdaunir">
+                        <div class="popup-content">
+                            <p class="popup-title">Grupo de investigación HDAUNIR</p>
+                            <p class="popup-subtitle">Universidad Internacional de La Rioja</p>
+                            <p>El Grupo de Humanidades Digitales Aplicadas de la UNIR (HDAUNIR) se propone como objetivo investigar con aplicaciones, recursos, y herramientas digitales en diferentes campos de las humanidades (literatura, historia, edición, historia del libro, medios escritos y visuales de comunicación).</p>
+                            <p>Desde 2021 soy miembro del grupo, vinculado al proyecto HDATEATROUNIR dedicado al desarrollo de la <a href="https://github.com/GHEDI/BETTE" target="_blank">Biblioteca Electrónica Textual del Teatro en Español 1868-1939</a> (BETTE), incluida en la infraestructura europea <a href="https://dracor.org/" target="_blank">DraCor</a>,
+                                y la investigación de este periodo literario a través del Análisis de Redes Sociales.</p>
+                            <p>Hasta el momento he participado en tres convocatorias competitivas del proyecto financiadas por UNIR:
+                                <ul>
+                                    <li><b>HDATEATROUNIR (Continuación)</b>: referencia PP-2022-12, periodo 2023-2024</li>
+                                    <li><b>Proyecto HDATEATROUNIR</b>, periodo 2022-2023</li>
+                                    <li><b>Proyecto HDATEATROUNIR</b>, periodo 2021-2022</li>
+                                </ul>
+                            </p>
+                            <p>En este tiempo he realizado el etiquetado XML-TEI de cinco obras, aún no disponibles en BETTE o en DraCor:
+                                <ul>
+                                    <li><i>Lazos rotos</i>, de Emilia Calé</li>
+                                    <li><i>Los pícaros intereses</i>, de M.ª del Pilar Contreras</li>
+                                    <li><i>El público</i>, de Federico García Lorca</li>
+                                    <li><i>Los títeres de la cachiporra</i>, de Federico García Lorca</li>
+                                    <li><i>Rienzi el tribuno</i>, de Rosario de Acuña</li>
+                                </ul>
+                            </p>
+                            <p>Además, me encargo de la gestión de los archivos y materiales del grupo en los distintos repositorios, así como del asesoramiento técnico sobre las tareas de edición digital con XML-TEI.</p>
+                            <p>Visita el sitio web de HDAUNIR: <a href="https://gruposinvestigacion.unir.net/hdaunir/" target="_blank">www.gruposinvestigacion.unir.net/hdaunir</a>
+                            <br>Visita el GITHUB de HDAUNIR: <a href="https://github.com/HDAUNIR" target="_blank">www.github.com/HDAUNIR</a></p>
+                          <span class="close-btn" onclick="closePopup('popup_hdaunir')">&times;</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

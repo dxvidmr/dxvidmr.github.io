@@ -212,7 +212,7 @@
   }
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     .popup {
       width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
       max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */

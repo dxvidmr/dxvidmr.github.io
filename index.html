@@ -215,7 +215,7 @@
                 </div>
 
                 <div class="col-2" style="text-align: center;">
-                    <img src="images\perfil\me.jpg" alt="me" style="width:350px;height:350px; border-radius: 50%;"/>
+                    <img src="images\perfil\me.jpg" alt="me" style="width:350px; height:350px; border-radius: 50%;"/>
                     
                     <p class="section-subtitle">
                         <br>
@@ -299,7 +299,7 @@
                 </div>
                 <!--End of Timeline-->
 
-
+                <!--OTRAS FORMACIONES-->
                 <div class="col-8"></div>
                 <div class="col-3-4" style="text-align: center;">
                     <script>
@@ -342,7 +342,7 @@
                     </div>
                 </div>
                 <div class="col-8"></div>
-
+                <!--End of OTRAS FORMACIONES-->
             </div>
 
         </section>
@@ -369,7 +369,7 @@
                                 </div>
                                 <p class="card__more" style="text-transform: none;">(Pronto más información)</p>
                             </a>
-                            <a class="card no-icon" href="https://github.com/dxvidmr/enredos" target="_blank">
+                            <a class="card no-icon" href="#" onclick="openPopup(event, 'popup_enredos')">
                                 <div class="card__background" style="background-image: url(images/proyectos/enredos.png)"></div>
                                 <div class="card__content">
                                     <p class="card__category">Master's thesis</p>
@@ -414,9 +414,9 @@
                               <a class="card no-icon" href="https://www.etso.es" target="_blank">
                                 <div class="card__background" style="background-image: url(images/proyectos/etso.png)"></div>
                                 <div class="card__content">
-                                  <p class="card__category">Colaboración en 2022</p>
+                                  <p class="card__category">Colaboración puntual</p>
                                   <h3 class="card__heading">ETSO</h3>
-                                  <p class="card__subheading">Preparación de archivos para el entrenamiento del un modelo de transcripción automática en Trankscribus</p>
+                                  <p class="card__subheading">Preparación de archivos para el entrenamiento del un modelo de transcripción automática en Trankscribus en 2022</p>
                                 </div>
                                 <p class="card__more">Visita el proyecto &#8594;</p>
                               </a>
@@ -426,6 +426,38 @@
                     
                     <!--Pop up-->
                     <div class="overlay" id="overlay" onclick="closeAnyPopup()"></div>
+                    <div class="popup" id="popup_enredos">
+                        <div class="popup-content">
+                            <p class="popup-title">enREDos</p>
+                            <p class="popup-subtitle">Trabajo de Fin de Máster (Master's Thesis) en Formación e Investigación Literaria y Teatral</p>
+                            <p>En julio de 2022 defendí en la Universidad Nacional de Educación a Distancia (España) el trabajo <i>El sistema de personajes de las comedias urbanas de Lope de Vega. Propuesta metodológica y posibilidades del análisis de redes sociales para el estudio del teatro del Siglo de Oro</i>,
+                                dirigido por la Dra. Ana Suárez Miramón. Este TFM tuvo por objetivo presentar las posibilidades del Análisis de Redes Sociales para el estudio de la comedia nueva, a partir del desarrollo de un procedimiento metodológico y su aplicación a un corpus de ocho comedias urbanas de Lope de Vega.</p>
+                            <p>El trabajo está publicado en el repositorio abierto de la UNED: <a href="http://e-spacio.uned.es/fez/view/bibliuned:master-Filologia-FILTCE-Dmerino" target="_blank">http://e-spacio.uned.es/fez/view/bibliuned:master-Filologia-FILTCE-Dmerino</a></p>
+                            <p>Los datos de las comedias utilizados para llevar a cabo el análisis están disponibles en un repositorio GitHub para su libre uso: <a href="https://github.com/dxvidmr/enredos" target="_blank">https://github.com/dxvidmr/enredos</a></p>
+                            <p class="popup-heading">Corpus</p>
+                            <p>Actualmente está forma por las ocho comedias analizadas en el trabajo, pero no se descarta aumentarlo en el futuro, abriéndose a otros subgéneros de la comedia nueva y/o a otros autores:
+                                <ul>
+                                    <li>Acero de Madrid, El (Lope de Vega)</li>
+                                    <li>Amar sin saber a quién (Lope de Vega)</li>
+                                    <li>Bizarrías de Belisa, Las (Lope de Vega)</li>
+                                    <li>Discreta enamorada, La (Lope de Vega)</li>
+                                    <li>Ferias de Madrid, Las (Lope de Vega)</li>
+                                    <li>Francesilla, La (Lope de Vega)</li>
+                                    <li>Noche de San Juan, La (Lope de Vega)</li>
+                                    <li>Santiago el verde (Lope de Vega)</li>
+                                </ul>
+                            </p>
+                            <p class="popup-heading">Resultados de la investigación</p>
+                            <p>Además del propio trabajo publicado y el <i>dataset</i>, la investigación ha tenido los siguientes resultados:
+                                <ul>
+                                    <li><b>Comunicación</b> en el <i>XII Congreso Internacional Jóvenes Investigadores Siglo de Oro</i> (JISO 2022), Universidad de Navarra, 1-2 diciembre 2022, con su respectivo <a href="https://hdl.handle.net/10171/67725" target="_blank">capítulo en libro de actas</a></li>
+                                    <li><b>Póster</b> (premiado) en el <i>VI Congreso Humanidades Digitales Hispánicas</i> (HDH 2023), Universidad Internacional de La Rioja, 18-20 octubre 2023</li>
+                                    <li>Dos <b>lecciones</b> (tutoriales) a punto de publicarse en la revista <a href="https://programminghistorian.org/es/" target="_blank">Programming Historian</a></li>
+                                </ul>
+                            </p>
+                            <span class="close-btn" onclick="closePopup('popup_enredos')">&times;</span>
+                        </div>
+                    </div>
                     <div class="popup" id="popup_prolope">
                         <div class="popup-content">
                             <p class="popup-title">Grupo de investigación PROLOPE</p>

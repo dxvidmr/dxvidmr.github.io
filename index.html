@@ -358,10 +358,9 @@
                         <h2 class="section-title">Proyectos</h2>
                     </div>
 
-                    <h3 align="center">Mi investigación</h3>
                     <section class="hero-section">
                         <div class="card-grid">
-                            <a class="card no-icon" href="#">
+                            <a class="card no-icon">
                                 <div class="card__background" style="background-image: url(images/proyectos/fos.png)"></div>
                                 <div class="card__content">
                                     <p class="card__category">PhD Thesis</p>
@@ -390,15 +389,25 @@
                         <div>
                     </section>
 
-                    <h3 align="center">Grupos de investigación</h3>
+                    
+
                     <section class="hero-section">
                         <div class="card-grid">
-                            <a class="card no-icon" href="https://github.com/HDAUNIR/BETTE" target="_blank">
-                                <div class="card__background" style="background-image: url(images/proyectos/bette.png)"></div>
+                            <a class="card no-icon" href="#" onclick="openPopup(event, 'card_prolope')">
+                                <div class="card__background" style="background-image: url(images/proyectos/prolope.png)"></div>
                                 <div class="card__content">
-                                  <p class="card__category">Edición digital</p>
-                                  <h3 class="card__heading">BETTE</h3>          
-                                  <p class="card__subheading">Biblioteca Electrónica Textual del Teatro en Español de 1868-1936</p>                 
+                                  <p class="card__category">Grupo de investigación</p>
+                                  <h3 class="card__heading">PROLOPE</h3>          
+                                  <p class="card__subheading"></p>                 
+                                </div>
+                                <p class="card__more">Saber más &#8594;</p>
+                              </a>
+                            <a class="card no-icon" href="https://github.com/HDAUNIR/BETTE" target="_blank">
+                                <div class="card__background" style="background-image: url(images/proyectos/hdaunir.png)"></div>
+                                <div class="card__content">
+                                  <p class="card__category">Grupo de investigación</p>
+                                  <h3 class="card__heading">HDAUNIR</h3>          
+                                  <p class="card__subheading">Humanidades Digitales Aplicadas</p>                 
                                 </div>
                                 <p class="card__more">Saber más &#8594;</p>
                               </a>
@@ -413,7 +422,25 @@
                               </a>
     
                         </div>
-                    </section>                    
+                    </section>   
+                    
+                    <div class="popup" id="card_prolope">
+                        <div class="popup-content">
+                            <p class="popup-title">Grupo de investigación PROLOPE</p>
+                            <p class="popup-subtitle">Departamento de Filología Española, Universitat Autònoma de Barcelona</p>
+                            <p>PROLOPE, fundado en 1989 por Alberto Blecua y dirigido actualmente por Gonzalo Pontón, tiene por principal objetivo llevar a cabo la edición crítica de todo el teatro de Lope de Vega.
+                                Para ello, se publican desde 1997 las <i>Partes de Comedias</i>, siguiendo las recopilaciones de doce comedias impresas en el siglo XVII, la mayoría en vida de Lope. Además, PROLOPE
+                                publica ediciones sueltas de comedias y una revista científica: (el <a href="http://revistes.uab.cat/anuariolopedevega" target="_blank"><i>Anuario de Lope de Vega</i></a>).</p>
+                            <p>Desde 2023 soy miembro del grupo, vinculado al proyecto <i>La integral dramática de Lope de Vega: textos, métodos, problemas, proyección</i> (PID2021-124737NB-I00), financiado por el 
+                                Ministerio de Ciencia e Innovación, para llevar a cabo mi tesis doctoral.</p>
+                            <p>También colaboro activamente en los distintos proyectos y actividades que realiza el grupo. Por ejemplo, he tenido la oportunidad de revisar algunas de las ediciones de Lope de Vega 
+                                que publicamos en las <i>Partes de comedias</i></p>
+                            <p>Visita el sitio web de PROLOPE: <a href="https://prolope.uab.cat/" target="_blank">www.prolope.uab.cat/</a></p>
+                          <span class="close-btn" onclick="closePopup('card_prolope')">&times;</span>
+                        </div>
+                    </div>
+                    <div class="overlay" onclick="closePopup('card_prolope')"></div>
+                    
                 </div>
             </div>
         </section>

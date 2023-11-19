@@ -65,3 +65,19 @@ $(window).load(function () { // makes sure the whole site is loaded
 	}
 
 });
+
+
+/* POP UP CARDS */
+function openPopup(event, popupId) {
+	event.preventDefault();
+	document.getElementById(popupId).classList.add("active");
+	document.querySelector(".overlay").classList.add("active");
+  }
+  
+  function closePopup(popupId) {
+	document.getElementById(popupId).classList.remove("active");
+	document.querySelector(".overlay").classList.remove("active");
+  }
+  
+  
+  

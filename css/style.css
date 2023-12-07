@@ -740,6 +740,27 @@ nav#nav-mobile a:hover {
     /* Ajusta el margen superior según sea necesario para alinear los iconos en el banner */
 }
 
+/* RRSS icons */
+.rrss {
+    display: inline-block;
+}
+
+.rrss a {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    color: #111;
+}
+
+.rrss a:hover {
+    opacity: 0.7;
+    color: #111;
+}
+
+.rrss span {
+    display: none;
+}
+
 /* --------- 2.6 Images ---------- */
 
 /*Alignment*/

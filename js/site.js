@@ -32,6 +32,7 @@ $(document).ready(function () {
 	});
 
 	/* Sticky Navigation */
+
 	if (!!$.prototype.stickyNavbar) {
 		$('#header').stickyNavbar();
 	}
@@ -46,6 +47,8 @@ $(document).ready(function () {
 	});
 
 });
+
+
 
 
 /* Preloader and animations */

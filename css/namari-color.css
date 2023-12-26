@@ -132,7 +132,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 #banner {
 background: url("../images/banner-images/fondo.jpg") no-repeat center top;
-background-size:contain;
+background-size:cover;
 height: 100vh;
 }   
 

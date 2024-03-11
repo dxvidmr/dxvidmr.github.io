@@ -58,14 +58,6 @@ p {
     max-width: 100%;
 }
 
-/*a {
-    text-decoration: none;
-    line-height: inherit;
-    -webkit-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
-}*/
 
 /* Agregar icono externo a todos los enlaces que comiencen con http o https */
 a[href^="http://"]:not(.no-icon)::after,
@@ -90,8 +82,8 @@ a {
     transition: all 0.3s ease; /* Transición suave para el efecto */
   }
   
-  a[href^="http://"]:not(.no-icon)::before,
-    a[href^="https://"]:not(.no-icon)::before {
+a[href^="http://"]:not(.no-icon)::before,
+a[href^="https://"]:not(.no-icon)::before {
     content: "";
     position: absolute;
     width: 0%;
@@ -102,8 +94,8 @@ a {
     transition: width 0.3s ease; /* Transición para la expansión de la línea */
   }
   
-  /* Cuando el cursor pasa sobre el enlace */
-  a:not(.no-icon):hover::before {
+/* Cuando el cursor pasa sobre el enlace */
+a:not(.no-icon):hover::before {
     width: 100%; /* La línea se expande completamente */
   }
   

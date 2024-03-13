@@ -221,26 +221,46 @@
                         <h3>sobre mí</h3>
                         <h2 class="section-title">bio</h2>
                         <!--<p class="section-subtitle"></p>-->
+                        <button id="toggleLangBtn" class="button">English</button>
                     </div>
-                    <div>
+                    <div id="bioEsp">
                         <p>Soy doctorando en Filología Española en el grupo de investigación <a href="https://prolope.uab.cat/" target="_blank">PROLOPE</a>,
-                            en el Departamento de Filología Española de la Universitat Autònoma de Barcelona. Cuento con un contrato predoctoral FI-Joan Oró 
+                            en el Departamento de Filología Española de la Universitat Autònoma de Barcelona, gracias a un contrato predoctoral FI-Joan Oró 
                             del Departament de Recerca i Universitats de la Generalitat de Catalunya.</p><br>   
-                        <p>Para mi investigación doctoral estoy desarrollando un proyecto digital de edición y archivo 
-                            de <i>Fuenteovejuna</i>, la conocida comedia de Lope de Vega. Para ello estoy implementando 
-                            metodologías de participación ciudadana, lo que aporta un elemento innovador y colaborativo a mi investigación.</p><br>
-                        <p>Mis dos grandes pasiones, el teatro y la tecnología, motivan mis intereses académicos. 
-                            Trabajo en la intersección entre las Humanidades Digitales y los Estudios Teatrales, 
-                            con un enfoque particular en el teatro del Siglo de Oro y en la obra dramática de Lope de Vega, 
-                            especializándome en edición digital y metodologías de análisis de tipo cuantitativo-computacional, como el análisis de redes.</p><br>   
-                        <p>Además, soy miembro del grupo de investigación 
+                        <p>un proyecto participativo digital que tiene por objetivo crear una edición colaborativa y un archivo social de <i>Fuente Ovejuna</i>. 
+                            Así, estoy investigando distintas formas de incluir la participación ciudadana en el estudio y la divulgación del teatro del Siglo de Oro.</p><br>
+                        <p>Mi formación interdisciplinar, que abarca desde la teoría y la práctica del teatro hasta la investigación filológica 
+                            con metodologías computacionales, me confieren un enfoque singular en el campo de los estudios teatrales. 
+                            Mis intereses incluyen el teatro del Siglo de Oro y la obra de Lope de Vega, la edición crítica digital, 
+                            los estudios teatrales computacionales y la ciencia abierta y ciudadana.</p><br>   
+                        <p>colaboro en el desarrollo de la Biblioteca Electrónica Textual del Teatro Español 1868-1939 junto al grupo de investigación 
                             <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Humanidades Digitales Aplicadas</a> 
-                            de la Universidad Internacional de La Rioja (HDAUNIR), en donde desarrollamos 
-                            <a href="https://github.com/GHEDI/BETTE" target="_blank">BETTE</a>, la Biblioteca Electrónica Textual del 
-                            Teatro en Español 1868-1939, y exploramos el teatro de la Edad de Plata a través de las redes sociales de sus personajes.</p><br>    
-                        <p>Desde 2021 participo en la Junta Directiva de la Sociedad Internacional 
+                            de la Universidad Internacional de La Rioja (HDAUNIR), biblioteca integrada en la infraestructura <a href="https://dracor.org/" target="_blank">DraCor</a> 
+                            para la investigación del teatro europeo. También participo en un proyecto con el que buscamos difundir 
+                            el uso de herramientas digitales para el estudio del teatro entre estudiantes de secundaria y bachillerato, financiado por la UNIR.</p><br>    
+                        <p>Desde 2021 soy vocal en la Junta Directiva de la Sociedad Internacional 
                             <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Humanidades Digitales Hispánicas</a> 
-                            como vocal, contribuyendo al crecimiento y desarrollo de esta disciplina en España.</p>
+                            , apoyando el crecimiento y desarrollo de esta disciplina en España.</p>
+                    </div>
+                    <div id="bioEng" style="display: none;">
+                        <p>I am a Ph.D. student affiliated with the <a href="https://prolope.uab.cat/" target="_blank">Centre of Lope de Vega Studies</a> (PROLOPE) 
+                            at the Universitat Autònoma de Barcelona, Spain. I am the recipient of a FI-Joan Oró fellowship from AGAUR 
+                            (Departament de Recerca i Universitats, Generalitat de Catalunya).</p><br>
+                        <p>For my doctoral thesis, I am developing a participatory digital project to create a collaborative edition and social archive of 
+                            <i>Fuente Ovejuna</i>, Lope de Vega's renowned play. I am researching ways to engage the public in the study and dissemination of the 
+                            Spanish Golden Age theater.</p><br>
+                        <p>I have an M.A. in Literary and Theatre Research, which I completed in 2022, and an M.A. in Digital Humanities, obtained in 2020, 
+                            both from the Universidad Nacional de Educación a Distancia in Spain. Before that, I earned my B.A. in Theater and Performing Arts 
+                            in 2019 at the Escuela Superior de Arte Dramático de Asturias, Spain.</p><br>
+                        <p>My interdisciplinary background, ranging from theater theory and practice to traditional and computational philological research, 
+                            gives me a unique approach to the field of theater studies. My research interests include Spanish Golden Age Theatre, 
+                            digital scholarly editing, computational drama analysis, and open and citizen science.</p><br>
+                        <p>I am also a member of the <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Digital Humanities research group</a> at Universidad Internacional de La Rioja, known as HDAUNIR. 
+                            We are developing the Biblioteca Electrónica Textual del Teatro en Español 1868-1939, which is integrated into the 
+                            <a href="https://dracor.org/" target="_blank">DraCor</a> European theatre research infrastructure. Additionally, we are working on a project to promote the use of 
+                            digital tools for the study of theater among secondary school students.</p><br>
+                        <p>Since 2021, I have served as a board member for the 
+                            Sociedad Internacional <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Humanidades Digitales Hispánicas</a>.</p>
                     </div>
 
                 </div>
@@ -747,6 +767,21 @@
 <script src="js/images-loaded.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
+<script>
+    document.getElementById("toggleLangBtn").addEventListener("click", function() {
+    var bioEsp = document.getElementById("bioEsp");
+    var bioEng = document.getElementById("bioEng");
+    if (bioEsp.style.display === "none") {
+        bioEsp.style.display = "block";
+        bioEng.style.display = "none";
+        this.textContent = "English"; // Cambia el texto del botón a "English"
+    } else {
+        bioEsp.style.display = "none";
+        bioEng.style.display = "block";
+        this.textContent = "Español"; // Cambia el texto del botón a "Español"
+    }
+    });
+</script>
 
 
 </body>

@@ -277,7 +277,7 @@
                         <i class="fa fa-envelope fa-1x">&nbsp;&nbsp;</i><a href="mailto:merinorecaldedavid@gmail.com" target="_blank">merinorecaldedavid@gmail.com</a><br>
                         <i class="fa fa-envelope fa-1x">&nbsp;&nbsp;</i><a href="mailto:david.merino@uab.cat" target="_blank">david.merino@uab.cat</a>
                     </p>
-                    <a href="pdf\es-cv_davidmr.pdf" class="button" target="_blank">CV</a> <a href="pdf\cvn_DavidMerinoRecalde.pdf" class="button no-icon" target="_blank">CVN fecyt</a>
+                    <a href="pdf\es-cv_davidmr.pdf" class="button" target="_blank">CV</a> <a href="https://cvn.fecyt.es/0000-0003-2740-7831" class="button no-icon" target="_blank">CVN fecyt</a>
                 </div>
 
                 <!--Timeline-->
@@ -426,16 +426,25 @@
                                     <h3 class="card__heading">Todos a una</h3>
                                     <p class="card__subheading">Edición y archivo digital de <i>Fuenteovejuna</i></p>                           
                                 </div>
-                                <p class="card__more" style="text-transform: none;">(Pronto más información)</p>
+                                <p class="card__more">(Pronto más información)</p>
+                            </a>
+                            <a class="card no-icon" href="#" onclick="openPopup(event, 'popup_frayandres')">
+                                <div class="card__background" style="background-image: url(images/proyectos/frayandres.png)"></div>
+                                <div class="card__content">
+                                    <p class="card__category_black">Colaboración</p>
+                                    <h3 class="card__heading_black">Edición digital</h3>
+                                    <p class="card__subheading_black">Sección de carpintería del manuscrito de Fray Andrés de San Miguel</p>                           
+                                </div>
+                                <p class="card__more_black">Saber más &#8594;</p>
                             </a>
                             <a class="card no-icon" href="#" onclick="openPopup(event, 'popup_enredos')">
                                 <div class="card__background" style="background-image: url(images/proyectos/enredos.png)"></div>
                                 <div class="card__content">
-                                    <p class="card__category">Master's thesis</p>
-                                    <h3 class="card__heading">enREDos</h3>
-                                    <p class="card__subheading">Análisis de Redes Sociales de comedias urbanas de Lope de Vega</p>
+                                    <p class="card__category_black">Master's thesis</p>
+                                    <h3 class="card__heading_black">enREDos</h3>
+                                    <p class="card__subheading_black">Análisis de Redes Sociales de comedias urbanas de Lope de Vega</p>
                                 </div>
-                                <p class="card__more">Saber más &#8594;</p>
+                                <p class="card__more_black">Saber más &#8594;</p>
                             </a>
                             <a class="card no-icon" href="https://www.zotero.org/groups/2662498/teatro_y_humanidades_digitales" target="_blank">
                                 <div class="card__background" style="background-image: url(images/proyectos/zotero.png)"></div>
@@ -483,6 +492,15 @@
                     
                     <!--Pop up-->
                     <div class="overlay" id="overlay" onclick="closeAnyPopup()"></div>
+                    <div class="popup" id="popup_frayandres">
+                        <div class="popup-content">
+                            <p class="popup-title">Edición digital de la sección de carpintería del manuscrito de Fray Andrés de San Miguel</p>
+                            <p class="popup-subtitle"></p>
+                            <p>Colaboración en la creación de la edición digital y el sitio web del proyecto.</p>
+                            <p>Más información en <a href="https://github.com/fmamanif/Fray-Andres-de-San-Miguel">https://github.com/fmamanif/Fray-Andres-de-San-Miguel</a></p>
+                            <span class="close-btn" onclick="closePopup('popup_frayandres')">&times;</span>
+                        </div>
+                    </div>
                     <div class="popup" id="popup_enredos">
                         <div class="popup-content">
                             <p class="popup-title">enREDos</p>
@@ -537,11 +555,10 @@
                             <p>El Grupo de Humanidades Digitales Aplicadas de la UNIR (HDAUNIR) se propone como objetivo investigar con aplicaciones, recursos, y herramientas digitales en diferentes campos de las humanidades (literatura, historia, edición, historia del libro, medios escritos y visuales de comunicación).</p>
                             <p>Desde 2021 soy miembro del grupo, vinculado al proyecto HDATEATROUNIR dedicado al desarrollo de la <a href="https://github.com/GHEDI/BETTE" target="_blank">Biblioteca Electrónica Textual del Teatro en Español 1868-1939</a> (BETTE), incluida en la infraestructura europea <a href="https://dracor.org/" target="_blank">DraCor</a>,
                                 y la investigación de este periodo literario a través del Análisis de Redes Sociales.</p>
-                            <p>Hasta el momento he participado en tres convocatorias competitivas del proyecto financiadas por UNIR:
+                            <p>He participado en los siguientes proyectos, financiados por convocatorias competitivas de UNIR:
                                 <ul>
-                                    <li><b>HDATEATROUNIR (Continuación)</b>: referencia PP-2022-12, periodo 2023-2024</li>
-                                    <li><b>Proyecto HDATEATROUNIR</b>, periodo 2022-2023</li>
-                                    <li><b>Proyecto HDATEATROUNIR</b>, periodo 2021-2022</li>
+                                    <li><b>HDATEATROUNIR (Continuación)</b>: referencia PP-2022-12, periodo 2022-2024</li>
+                                    <li><b>Proyecto HDATEATROUNIR</b>, periodo 2020-2022</li>
                                 </ul>
                             </p>
                             <p>En este tiempo he realizado el etiquetado XML-TEI de cinco obras, aún no disponibles en BETTE o en DraCor:

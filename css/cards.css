@@ -1,7 +1,8 @@
 :root{
     --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.9);
-    --text-lighter: rgba(255,255,255,0.9);
+    --text-light: rgba(255,255,255,255);
+    --text-lighter: rgba(255,255,255,255);
+    --text-black: #333;
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
@@ -137,11 +138,46 @@
     bottom: var(--spacing-s); /* Ajusta el espacio desde abajo según tus preferencias */
     left: var(--spacing-l); /* Ajusta el espacio desde la izquierda según tus preferencias */
   }
+
+  .card__category_black{
+    color: var(--text-black);
+    font-size: 1rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
   
-  .card:hover .card__more {
+  .card__heading_black{
+    color: var(--text-black);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: normal;
+  }
+
+  .card__subheading_black{
+    color: var(--text-black);
+    font-size: 1rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    margin-bottom: var(--spacing-s);
+
+  }
+
+  .card__more_black {
+    display: none;
+    color: var(--text-black);
+    font-size: 1rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: var(--spacing-s); /* Ajusta el espacio desde abajo según tus preferencias */
+    left: var(--spacing-l); /* Ajusta el espacio desde la izquierda según tus preferencias */
+  }
+  
+  .card:hover .card__more, .card:hover .card__more_black {
     display: block;
     position: absolute;
-  }
+}
   
   
   /* POP UP */
@@ -180,6 +216,7 @@
   .popup-title{
     font-size: 30px;
     font-weight: 700;
+    line-height: normal;
   }
 
   .popup-subtitle{

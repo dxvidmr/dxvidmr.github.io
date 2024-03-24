@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 :root{
     --background-dark: #2d3548;
     --text-light: rgba(255,255,255,255);
@@ -200,7 +202,7 @@
   .popup-content {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     position: relative;
-    color: #111;
+    color: var(--black);
     padding: 30px;
   }
 
@@ -236,11 +238,11 @@
     right: 10px;
     cursor: pointer;
     font-size: 30px;
-    color: #111;
+    color: var(--black);
   }
 
   .close-btn:hover {
-    color: #d2b356; /* Color al pasar el cursor sobre la "x" */
+    color: var(--light-blue); /* Color al pasar el cursor sobre la "x" */
   }
   
   .overlay {

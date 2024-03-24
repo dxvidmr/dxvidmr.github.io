@@ -13,42 +13,34 @@
 /* 1. Website Default Styling */
 /*------------------------------------------------------------------------------------------*/
 
-/* ORIGINALES
- fondo: #ffff o #f3ebdc
- amarillo resalte: #b98900
- gris: #999
-
-*/
+@import url('variables.css');
 
 body {
-    background:#f7f5f2;
+    background: var(--background);
 }
 
 
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#b98900;
+    color: var(--light-blue);
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#b98900;
+    color: var(--light-blue);
 }
 
 /* Default Icon Color */
 
 .icon i {
-    color:#b98900;
+    color: var(--light-blue);
 }
 
 /* Border Color */
 
-#banner .section-heading:before, .testimonial.classic footer:before {
-    background: #b98900;
-}
-
-.pricing-block-content:hover {
-    border-color:#b98900;
+#banner .section-heading:before {
+    background:  var(--gold);
+    display: none;
 }
 
 
@@ -60,7 +52,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Transparent Navigation Color on a Banner */
 
 #header nav a, #header i {
-    color:#111;
+    color: var(--white);
 }
 
 
@@ -74,8 +66,8 @@ a:hover, #header.nav-solid nav a:hover {
 /* Navigation Active State */
 
 #header.nav-solid .active {
-    color: #b98900;
-    border-color: #b98900;
+    color:  var(--light-blue);
+    border-color:  var(--light-blue);
 }    
 
 
@@ -87,22 +79,20 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Primary Background and Text Colors */
 
-.primary-color, .featured .pricing {
-    background-color:#b98900;
-}
-
-.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
-    color:#fff;    
-}
 
 .section-heading h2:after {
-    background:#b98900;
+    background: var(--gold);
     content:"";
     display:block;
     width:30px;
     height:5px;
     margin-top:30px;
 }
+
+.section-heading#sinlinea h2:after {
+    display: none;
+}
+
 
 .text-center .section-heading h2:after {
     margin:30px auto 25px auto;
@@ -146,7 +136,7 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:15px;
     font-weight:normal;
-    color:#111;
+    color: var(--black);
 }
 
 /*Logo, if you are using Fonts as Logo and not image*/
@@ -156,14 +146,23 @@ body {
     font-family:'Open Sans', sans-serif, Arial, Helvetica;;
     font-size:62px; 
     font-weight:800;
-    color:#111;
+    color: var(--light-blue);
 }
 
 #logo h2 {
     font-family:'Open Sans', sans-serif, Arial, Helvetica;;
     font-size: 18px; 
     font-weight:300;
-    color:#111;
+    color:  var(--light-blue);
+}
+
+#navigation-logo {
+    font-family:'Open Sans', sans-serif, Arial, Helvetica;;
+    font-size: 18px; 
+    font-weight:300;
+    color:  var(--light-blue);
+    display: inline-block;
+    padding: 0;
 }
 
 
@@ -176,14 +175,14 @@ body {
     font-size:62px;
     line-height:60px;
     font-weight:800;
-    color:#111;
+    color: var(--white);
 }
 
 #banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:18px;
     font-weight:300;
-    color:#111;
+    color: var(--white);
 }
 
 
@@ -193,26 +192,14 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 34px; 
     font-weight:700;
-    color:#111;
+    color: var(--light-blue);
 }
 
 .section-subtitle {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 16px;
     font-weight:300;
-    color:#7a7a7a;
-}
-
-/* Testimonial */
-
-.testimonial q {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 17px; 
-    font-weight:300;
-}
-
-.testimonial.classic q, .testimonial.classic footer {
-    color:#111;
+    color: var(--light-blue);
 }
 
 
@@ -222,42 +209,42 @@ h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 40px; 
     font-weight:300;
-    color:#111;
+    color: var(--light-blue);
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 34px; 
     font-weight:300;
-    color:#111;
+    color: var(--light-blue);
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 30px; 
     font-weight:700;
-    color:#111;
+    color: var(--light-blue);
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 18px; 
     font-weight:400;
-    color:#111;
+    color: var(--black);
 }
 
 h5 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 16px; 
     font-weight:400;
-    color:#111;
+    color: var(--black);
 }
 
 h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 14px; 
     font-weight:400;
-    color:#111;
+    color: var(--black);
 }
 
 
@@ -274,22 +261,23 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:14px;
     font-weight:bold;
-    color:#111;
+    color: var(--light-blue);
 }
 
 
 /* Button Color */
 
 .button, input[type="submit"] {
-    border-color:#111;
+    border-color: var(--light-blue);
 }
 
 
 /* Button Hover Color */
 
 .button:hover,  input[type="submit"]:hover {
-    border-color:#b98900;
-    color:#b98900;
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+    opacity: .75;
 }
 
 
@@ -301,22 +289,22 @@ h6 {
 #banner .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
-    color:#111;
+    color: var(--black);
 }
 
 
 /* Button Color */
 
 #banner .button {
-    border-color:#111;
+    border-color: var(--black);
 }
 
 
 /* Button Hover Color */
 
 #banner .button:hover {
-    color:#b98900;
-    border-color:#b98900;
+    color: var(--light-blue);
+    border-color: var(--light-blue);
 }
 
 
@@ -328,15 +316,15 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:12px;
     font-weight:normal;
-    color:#7a7a7a;
+    color: var(--dark-gray);
 }
 
 #landing-footer a {
-    color:#b98900;
+    color: var(--light-blue);
 }
 
 /* Footer Icon Color */
 
 #landing-footer i {
-    color:#7a7a7a;
+    color: var(--light-blue);
 }

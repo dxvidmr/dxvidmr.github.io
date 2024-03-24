@@ -566,7 +566,7 @@ section {
 }
 
 #nav-trigger span.open, #nav-trigger span.open:hover {
-    color: var(--black);
+    color: var(--gold);
 }
 
 .nav-solid #nav-trigger span.open:hover {

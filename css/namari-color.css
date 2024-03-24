@@ -278,6 +278,7 @@ h6 {
     border-color: var(--light-blue);
     color: var(--light-blue);
     opacity: .75;
+    cursor: pointer;
 }
 
 

@@ -1,0 +1,75 @@
+@import url('variables.css');
+
+/* Contenedor del carrusel */
+.carrusel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative; /* Establece el contexto para los botones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imágenes del carrusel */
+.carrusel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* Imágenes del carrusel */
+.carrusel-images img {
+  width: auto; /* Permite imágenes verticales */
+  max-width: 100%; /* Ajusta imágenes horizontales */
+  height: 100%; /* Se adapta a la altura del contenedor */
+  object-fit: contain; /* Mantiene las proporciones de la imagen */
+  flex-shrink: 0;
+}
+
+/* Botones de navegación */
+.carrusel-btn {
+  position: absolute; /* Se posicionan respecto al contenedor */
+  top: 50%;
+  transform: translateY(-50%) scale(1); /* Centrado vertical y escala inicial */
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
+  color: rgba(255, 255, 255, 0.5); /* Color del ícono semitransparente */
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera para destacarlos */
+}
+
+/* Hover destacado */
+.carrusel-btn:hover {
+  background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro */
+  color: var(--gold); /* Color del ícono que resalta */
+  transform: translateY(-50%) scale(1.2); /* Escala sin mover la posición */
+}
+
+/* Botón anterior (izquierda) */
+.prev-btn {
+  left: 15px; /* Separación del borde izquierdo */
+}
+
+/* Botón siguiente (derecha) */
+.next-btn {
+  right: 15px; /* Separación del borde derecho */
+}
+
+/* Botones deshabilitados */
+.carrusel-btn:disabled {
+  background: rgba(0, 0, 0, 0.1); /* Fondo aún más translúcido */
+  color: rgba(255, 255, 255, 0.2); /* Ícono muy apagado */
+  cursor: not-allowed;
+  transform: translateY(-50%); /* Sin movimiento ni escala */
+}

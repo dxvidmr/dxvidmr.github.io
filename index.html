@@ -17,6 +17,7 @@
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/carrusel.css">
 
     <!-- Namari Color CSS -->
     <link rel="stylesheet" href="css/namari-color.css">
@@ -84,6 +85,9 @@
                             </li>
                             <li>
                                 <a href="#investigacion">investigación</a>
+                            </li>
+                            <li>
+                                <a href="#teatro">práctica escénica</a>
                             </li>
                             <li>
                                 <a href="#publicaciones">publicaciones</a>
@@ -555,6 +559,55 @@
         </section>
         <!--End of Investigación-->
 
+        <!--Práctica escénica-->
+        <section id="teatro" class="teatro scrollto"  style="background-color: rgb(255, 255, 255);">
+
+            <div class="row clearfix">
+                <div class="col-1">
+                    <div class="section-heading">
+                        <h3></h3>
+                        <h2 class="section-title">Práctica escénica</h2>
+                    </div>
+                    <div class="col-8"></div>
+                    <div class="col-3-4">
+                        <div id="LaCuevaDeSalamanca" style="margin-bottom: 40px;">               
+                            <h3><i>La cueva de Salamanca</i>, METADRAMA, 2024</h3>
+                            <p>El 20 de diciembre de 2025, el laboratorio escénico METADRAMA de la Universitat de Barcelona, dirigido por Gaston Gilabert, estrenamos <i>La cueva de Salamanca</i>, una comedia del dramaturgo áureo Juan Ruiz de Alarcón.</p>
+                            <br>
+                            <div id="carrusel" class="carrusel-container">
+                                <button class="carrusel-btn prev-btn">&lt;</button>
+                                <div class="carrusel-images">
+                                    <img src="images/carrusel/LaCuevaDeSalamanca/cueva1.jpeg">
+                                    <img src="images/carrusel/LaCuevaDeSalamanca/cueva2.jpeg">
+                                    <img src="images/carrusel/LaCuevaDeSalamanca/cueva3.jpeg">
+                                </div>
+                                <button class="carrusel-btn next-btn">&gt;</button>
+                            </div>
+                        </div>
+                        <!--<div id="Fuenteovejuna">               
+                            <h3><i>Fuenteovejuna</i>, ESAD de Asturias, 2018</h3>
+                            <p></p>
+                            <br>
+                            <div id="carrusel" class="carrusel-container">
+                                <button class="carrusel-btn prev-btn">&lt;</button>
+                                <div class="carrusel-images">
+                                    <img src="images/carrusel/Fuenteovejuna/01.jpg">
+                                    <img src="images/carrusel/Fuenteovejuna/02.JPG">
+                                    <img src="images/carrusel/Fuenteovejuna/03.JPG">
+                                </div>
+                                <button class="carrusel-btn next-btn">&gt;</button>
+                            </div>
+                        </div>-->
+                        
+                          
+                    </div>
+                    <div class="col-8"></div>
+                </div>
+            </div>
+        </section>
+        <!--End of Práctica escénica-->
+
+
         <!--Publicaciones-->
         <section id="publicaciones" class="publicaciones scrollto">
 
@@ -787,6 +840,7 @@
 <script src="js/images-loaded.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
+<script src="js/carrusel.js" defer></script>
 <script>
     document.getElementById("toggleLangBtn").addEventListener("click", function() {
     var bioEsp = document.getElementById("bioEsp");

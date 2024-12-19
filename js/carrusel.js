@@ -70,3 +70,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+function toggleAccordion(element) {
+    const parent = element.parentElement;
+    const content = parent.querySelector(".accordion-content");
+    const isOpen = parent.classList.contains("open");
+  
+    // Cerrar todos los acordeones
+    document.querySelectorAll(".accordion-item").forEach(item => {
+      item.classList.remove("open");
+      item.querySelector(".accordion-content").style.display = "none";
+    });
+  
+    // Abrir el acordeón actual si estaba cerrado
+    if (!isOpen) {
+      parent.classList.add("open");
+      content.style.display = "block";
+    }
+  }
+   

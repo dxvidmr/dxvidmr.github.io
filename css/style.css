@@ -358,7 +358,7 @@ section {
 
 .button {
     font-size: 16px;
-    margin: 35px 0;
+    margin: 10px 0;
     padding: 11px 16px;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -2153,7 +2153,7 @@ h6 {
 	align-items: center;
 }
 .timeline-area {
-	padding: 80px 0;
+	padding: 0;
 }
 .all-timelines {
 	position: relative;

@@ -30,8 +30,6 @@
 /* 1. Defaults & Reset of specific styles across browsers */
 /*------------------------------------------------------------------------------------------*/
 
-@import url('variables.css');
-
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -609,6 +607,14 @@ nav#nav-mobile a:hover {
 
 .rrss span {
     display: none;
+}
+
+.rrss a svg {
+  display: inline-block;   
+  width: 2em;              
+  height: 2em;
+  vertical-align: middle;  
+  margin-top: -15px;
 }
 
 /* --------- 2.6 Images ---------- */

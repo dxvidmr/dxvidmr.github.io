@@ -1,0 +1,225 @@
+/* ================================
+   1. Variables y colores globales
+   ================================ */
+
+    /* Definidos en varibales.css */
+
+
+/* ================================
+   2. Estilos base y tipografía
+   ================================ */
+
+body {
+    background: var(--background);
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight: 300;
+    color: var(--light-blue);
+}
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight: 300;
+    color: var(--light-blue);
+}
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight: 700;
+    color: var(--light-blue);
+}
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight: 400;
+    color: var(--black);
+}
+h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight: 400;
+    color: var(--black);
+}
+h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight: 400;
+    color: var(--black);
+}
+
+.section-title {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight: 700;
+    color: var(--light-blue);
+}
+.section-subtitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--light-blue);
+}
+
+/* ================================
+   3. Enlaces e iconos
+   ================================ */
+
+a, .la-ball-triangle-path {
+    color: var(--light-blue);
+}
+a:hover, #header.nav-solid nav a:hover {
+    color: var(--light-blue);
+}
+.icon i {
+    color: var(--light-blue);
+}
+
+/* ================================
+   4. Navegación y header
+   ================================ */
+
+/* Colores de navegación */
+#header nav a, #header i {
+    color: var(--white);
+}
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+    color: #333;
+}
+#header.nav-solid .active {
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+}
+
+/* Logo */
+#logo h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 62px; 
+    font-weight: 800;
+    color: var(--light-blue);
+}
+#logo h2,
+#navigation-logo {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight: 300;
+    color: var(--light-blue);
+}
+#navigation-logo {
+    display: inline-block;
+    padding: 0;
+}
+
+/* ================================
+   5. Banner
+   ================================ */
+
+#banner {
+    background-color: #051d26;
+    background-image: linear-gradient(121deg, #051d26 0%, #375d66 66%, #ddbf14 100%);
+    /* background: url("../images/banner-images/fondo.jpg") no-repeat center top; */
+    background-size: cover;
+    height: 100vh;
+}
+#banner .section-heading:before {
+    background: var(--gold);
+    display: none;
+}
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 62px;
+    line-height: 60px;
+    font-weight: 800;
+    color: var(--white);
+}
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+/* Banner Buttons */
+#banner .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    color: var(--black);
+    border-color: var(--black);
+}
+#banner .button:hover {
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+}
+
+/* ================================
+   6. Secciones
+   ================================ */
+
+.section-heading h2:after {
+    background: var(--gold);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+}
+.section-heading#sinlinea h2:after {
+    display: none;
+}
+
+/* ================================
+   7. Botones
+   ================================ */
+
+.button {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 11px 16px;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+    background-color: transparent;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.button:hover {
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+    opacity: .75;
+    cursor: pointer;
+}
+
+/* ================================
+   8. Footer
+   ================================ */
+
+#landing-footer, #landing-footer p {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--dark-gray);
+}
+#landing-footer a {
+    color: var(--light-blue);
+}
+#landing-footer i {
+    color: var(--light-blue);
+}
+#landing-footer .social-icons a svg {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    margin-top: -10px;
+}

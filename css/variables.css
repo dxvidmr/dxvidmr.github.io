@@ -1,11 +1,29 @@
-/* variables.css */
+/* ================================
+   VARIABLES CSS GLOBALES
+   ================================ */
 :root {
-    --dark-blue: #051D26;
-    --medium-blue: #012840;
-    --light-blue: #375D66;
-    --gold: #DDBF14;
-    --dark-gray: #7a7a7a;
-    --black: #111;
-    --white: #F5F5F5;
-    --background: #EBEBEB;
+  /* ----- Colores principales ----- */
+  --dark-blue:      #051D26;
+  --medium-blue:    #012840;
+  --light-blue:     #375D66;
+  --gold:           #DDBF14;
+  --dark-gray:      #7a7a7a;
+  --black:          #111;
+  --white:          #F5F5F5;
+  --background:     #EBEBEB;
+
+  /* ----- Colores secundarios y textos ----- */
+  --background-dark:  #2d3548;
+  --text-light:       #fff;
+  --text-black:       #333;
+
+  /* ----- Espaciados ----- */
+  --spacing-s:    8px;
+  --spacing-m:    16px;
+  --spacing-l:    24px;
+  --spacing-xl:   32px;
+  --spacing-xxl:  64px;
+
+  /* ----- Layout ----- */
+  --width-container: 1200px;
 }

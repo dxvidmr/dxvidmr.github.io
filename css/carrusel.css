@@ -2,30 +2,25 @@
 
 /* Contenedor del carrusel */
 .carrusel-container {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 900px; 
+  aspect-ratio: 4/3;      
   overflow: hidden;
-  border-radius: 20px;
-  position: relative; /* Establece el contexto para los botones */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  margin: 0 auto;
 }
 
-/* Imágenes del carrusel */
 .carrusel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  will-change: transform;
+  height: 100%;
 }
 
-/* Imágenes del carrusel */
 .carrusel-images img {
-  width: auto; /* Permite imágenes verticales */
-  max-width: 100%; /* Ajusta imágenes horizontales */
-  height: 100%; /* Se adapta a la altura del contenedor */
-  object-fit: contain; /* Mantiene las proporciones de la imagen */
-  flex-shrink: 0;
+  flex-shrink: 0;         
+  width: 100%;          
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Botones de navegación */
@@ -40,12 +35,9 @@
   border: none;
   border-radius: 50%;
   font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  z-index: 2;
+  z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera para destacarlos */
 }
 
@@ -74,6 +66,34 @@
   transform: translateY(-50%); /* Sin movimiento ni escala */
 }
 
+/* Puntos de navegación */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  .dots {
+    gap: 4px;
+  }
+}
+
+.dot {
+  width: clamp(6px, 1.5vw, 12px);
+  height: clamp(6px, 1.5vw, 12px);
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.dot.active {
+  background: var(--gold);
+}
 
 /* ACORDEÓN */ 
 
@@ -148,3 +168,4 @@
 .accordion-item.open .accordion-icon {
   transform: rotate(45deg); /* Rotación del ícono cuando está abierto */
 }
+

@@ -16,13 +16,27 @@
   --background-dark:  #2d3548;
   --text-light:       #fff;
   --text-black:       #333;
+  --text-gray:        #7a7a7a;
 
   /* ----- Espaciados ----- */
+  --spacing-xs:   0px;
   --spacing-s:    8px;
   --spacing-m:    16px;
   --spacing-l:    24px;
   --spacing-xl:   32px;
   --spacing-xxl:  64px;
+  --spacing-xxxl: 128px;
+
+  --letter-spacing-sm: 0.05em;
+
+  /* Bordes y sombras */
+  --border-radius: 8px;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+
+  /* Tamaños de texto */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-md: 1rem;        /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
 
   /* ----- Layout ----- */
   --width-container: 1200px;

@@ -1,0 +1,234 @@
+@import url('variables.css');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--white);
+  color: var(--text-black);
+  line-height: 1.5;
+}
+
+/* Botón de regreso */
+.back-button {
+  padding: var(--spacing-m);
+  padding-inline-start: 0!important;
+}
+.back-button .button {
+  text-decoration: none;
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  padding: var(--spacing-s) var(--spacing-m);
+  display: inline-block;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+.back-button .button:hover {
+  opacity: 0.75;
+}
+
+/* Menú lateral sticky */
+.side-menu {
+  position: fixed;
+  top: var(--spacing-xl);
+  left: var(--spacing-l);
+  width: 200px;
+}
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-menu li {
+  margin-bottom: var(--spacing-s);
+}
+.side-menu a {
+  font-size: 0.8rem;
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: font-size 0.5s ease;
+}
+.side-menu a:hover {
+  text-decoration: none !important;
+  color: var(--gold);
+  font-size: 1em;
+  transition: font-size 0.5s ease;
+}
+.side-menu a.active {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Contenido principal */
+.cv-content {
+  margin-left: 240px;
+  padding: var(--spacing-xl);
+  max-width: var(--width-container);
+}
+
+/* Secciones */
+.cv-section {
+  margin-bottom: var(--spacing-xxl);
+}
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--light-blue);
+  padding-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-l);
+}
+.subsection-title {
+  font-size: 1.25rem;
+  margin-top: var(--spacing-xl);
+  color: var(--light-blue);
+}
+h4.subsection-title{
+  font-size: 1rem;
+  margin-top: var(--spacing-xl);
+  margin-bottom: 0;
+  color: var(--light-blue);
+}
+.cv-header {
+  margin-bottom: var(--spacing-xxl);
+}
+.header-title {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--light-blue);
+}
+.header-subtitle {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin: 0!important;
+}
+
+/* Listas */
+.cv-list {
+  list-style-type: disc;
+  margin-top: var(--spacing-s);
+  padding-left: var(--spacing-l);
+}
+.cv-list li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Indicador de desplazamiento */
+.scroll-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    background-color: var(--accent-color);
+    transition: height 0.3s ease;
+}
+
+/* Estilos para items */
+.item-title {
+    font-size: 1.2rem;
+    color: var(--text-black);
+    margin-top: 0!important;
+    margin-bottom: var(--spacing-xs);
+}
+
+.item-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--light-blue);
+    margin-top: 0!important;
+    margin-bottom: var(--spacing-xs);
+}
+
+.item-metadata {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: var(--spacing-xs);
+}
+
+.item-description {
+    font-size: 0.9rem;
+    color: var(--text-black);
+    line-height: 1.5;
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-xs);
+}
+
+.publication-author {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.publication-title {
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--text-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.item-container {
+    padding-inline: var(--spacing-l);
+    margin-bottom: var(--spacing-l);
+}
+
+.item-container:last-child {
+    border-bottom: none;
+}
+
+.item-container.highlight {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: var(--spacing-xs);
+    padding: var(--spacing-l);
+}
+
+/* Skills section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-m);
+}
+
+.skill-group h4 {
+  margin: 0 0 var(--spacing-s);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--text-sm);
+}
+
+.language-level {
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.language-cert {
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

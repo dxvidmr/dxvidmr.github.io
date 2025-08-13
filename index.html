@@ -171,21 +171,30 @@
                         <h3>sobre mí</h3>
                         <h2 class="section-title">bio</h2>
                         <!--<p class="section-subtitle"></p>-->
-                        <button id="toggleLangBtn" class="button">English</button>
                     </div>
-                    <div id="bioEsp">
-                        <p>Como investigador predoctoral me especializo en el teatro del Siglo de Oro español, con un interés particular por el estudio de la transmisión, recepción e impacto cultural de las obras dramáticas. Mi tesis aborda el caso de Fuenteovejuna mediante una edición digital académica, un archivo documental y testimonial abierto a la participación ciudadana, y un modelo de datos para analizar su historia y proyección.</p><br>
+                    
+                    <!-- Language Tabs -->
+                    <div class="language-tabs">
+                        <button class="language-tab active" id="tabEsp" onclick="switchLanguage('esp')">Español</button>
+                        <button class="language-tab" id="tabEng" onclick="switchLanguage('eng')">English</button>
+                    </div>
+                    
+                    <!-- Bio Content Container -->
+                    <div class="bio-content">
+                        <div id="bioEsp">
+                            <p>Como investigador predoctoral me especializo en el teatro del Siglo de Oro español, con un interés particular por el estudio de la transmisión, recepción e impacto cultural de las obras dramáticas. Mi tesis aborda el caso de Fuenteovejuna mediante una edición digital académica, un archivo documental y testimonial abierto a la participación ciudadana, y un modelo de datos para analizar su historia y proyección.</p><br>
 
-                        <p>Mi formación interdisciplinar, que va desde la práctica teatral hasta la filología y las humanidades digitales, me permite aplicar metodologías computacionales al estudio del teatro tanto en su dimensión literaria como performativa. Trabajo con edición digital, desarrollo web, análisis de redes y diseño de modelos ontológicos e infraestructuras de datos para el patrimonio cultural.</p><br>
+                            <p>Mi formación interdisciplinar, que va desde la práctica teatral hasta la filología y las humanidades digitales, me permite aplicar metodologías computacionales al estudio del teatro tanto en su dimensión literaria como performativa. Trabajo con edición digital, desarrollo web, análisis de redes y diseño de modelos ontológicos e infraestructuras de datos para el patrimonio cultural.</p><br>
 
-                        <p>Pertenezco al grupo de investigación <a href="https://prolope.uab.cat/" target="_blank">PROLOPE</a> (Universitat Autònoma de Barcelona), al laboratorio escénico <a href="https://www.ub.edu/metadrama/" target="_blank">METADRAMA</a> (Universitat de Barcelona) y al grupo <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Humanidades Digitales Aplicadas</a> (HDAUNIR, Universidad Internacional de La Rioja). Desde 2021 formo parte de la Junta Directiva de la Sociedad Internacional <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Humanidades Digitales Hispánicas</a> como vocal, colaborando en el impulso y desarrollo de esta disciplina en España.</p><br>
+                            <p>Pertenezco al grupo de investigación <a href="https://prolope.uab.cat/" target="_blank">PROLOPE</a> (Universitat Autònoma de Barcelona), al laboratorio escénico <a href="https://www.ub.edu/metadrama/" target="_blank">METADRAMA</a> (Universitat de Barcelona) y al grupo <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Humanidades Digitales Aplicadas</a> (HDAUNIR, Universidad Internacional de La Rioja). Desde 2021 formo parte de la Junta Directiva de la Sociedad Internacional <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Humanidades Digitales Hispánicas</a> como vocal, colaborando en el impulso y desarrollo de esta disciplina en España.</p><br>
                         </div>
-                    <div id="bioEng" style="display: none;">
-                        <p>As a doctoral researcher, I specialize in Spanish Golden Age theatre, focusing on the study of the transmission, reception, and cultural impact of dramatic works. My thesis centers on the case of <i>Fuenteovejuna</i> through a scholarly digital edition, a documentary and testimonial archive open to public participation, and a data model to analyse its history and cultiral projection.</p><br>
+                        <div id="bioEng" style="display: none;">
+                            <p>As a doctoral researcher, I specialize in Spanish Golden Age theatre, focusing on the study of the transmission, reception, and cultural impact of dramatic works. My thesis centers on the case of <i>Fuenteovejuna</i> through a scholarly digital edition, a documentary and testimonial archive open to public participation, and a data model to analyse its history and cultiral projection.</p><br>
 
-                        <p>My interdisciplinary background —ranging from theatre practice to philology and digital humanities— enables me to apply computational methods to the study of theatre in both its literary and performative dimensions. I work with digital editing, web development, network analysis, and the design of ontological models and data infrastructures for cultural heritage.</p><br>
+                            <p>My interdisciplinary background —ranging from theatre practice to philology and digital humanities— enables me to apply computational methods to the study of theatre in both its literary and performative dimensions. I work with digital editing, web development, network analysis, and the design of ontological models and data infrastructures for cultural heritage.</p><br>
 
-                        <p>I am a member of the <a href="https://prolope.uab.cat/" target="_blank">Centre of Studies of Lope de Vega</a> (PROLOPE, Universitat Autònoma de Barcelona), the <a href="https://www.ub.edu/metadrama/" target="_blank">METADRAMA</a> theatre laboratory (University of Barcelona), and the <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Humanidades Digitales Aplicadas</a> research group (HDAUNIR, Universidad Internacional de La Rioja). Since 2021, I have served on the Board of Directors of the <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Sociedad Internacional Humanidades Digitales Hispánicas</a>, contributing to the promotion and development of this discipline in Spain.</p><br>
+                            <p>I am a member of the <a href="https://prolope.uab.cat/" target="_blank">Centre of Studies of Lope de Vega</a> (PROLOPE, Universitat Autònoma de Barcelona), the <a href="https://www.ub.edu/metadrama/" target="_blank">METADRAMA</a> theatre laboratory (University of Barcelona), and the <a href="http://gruposinvestigacion.unir.net/hdaunir/" target="_blank">Humanidades Digitales Aplicadas</a> research group (HDAUNIR, Universidad Internacional de La Rioja). Since 2021, I have served on the Board of Directors of the <a href="https://humanidadesdigitaleshispanicas.es/" target="_blank">Sociedad Internacional Humanidades Digitales Hispánicas</a>, contributing to the promotion and development of this discipline in Spain.</p><br>
+                        </div>
                     </div>
                 
                 </div>
@@ -203,7 +212,7 @@
                         <i class="fa fa-envelope fa-1x">&nbsp;&nbsp;</i><a href="mailto:david.merino@uab.cat" target="_blank">david.merino@uab.cat</a>
                     </p>
                     <br>
-                    <a href="pdf/es-cv_davidmr.pdf" class="button" target="_blank">CV completo</a>
+                    <a href="/cv/index.html" class="button"">CV completo</a>
                 </div>
 
                 <!--Timeline-->
@@ -443,7 +452,7 @@
             <div class="row clearfix">
                 <div class="col-1">
                     <div class="section-heading">
-                        <h3>Selección</h3>
+                        <h3>Selección de</h3>
                         <h2 class="section-title">Publicaciones</h2>
                     </div>
                     <div class="col-8"></div>
@@ -451,7 +460,7 @@
                         <div class="publication-grid">
                             <!-- Ejemplo de una publicación -->
                             <div class="publication-card">
-                                <h5 class="publication-type">Book Chapter (forthcoming)</h5>
+                                <h5 class="category-label">Book Chapter (forthcoming)</h5>
                                 <div class="publication-title">
                                     Documentos en acción: fundamentos para la investigación escénica de la técnica actoral del Siglo de Oro
                                 </div>
@@ -462,7 +471,7 @@
                             </div>
 
                             <div class="publication-card">
-                                <h5 class="publication-type">Book Chapter</h5>
+                                <h5 class="category-label">Book Chapter</h5>
                                 <div class="publication-title">
                                     De la escena al grafo: visualización de personajes teatrales como herramienta pedagógica en las obras de la Edad de Plata
                                 </div>
@@ -474,7 +483,7 @@
                             </div>
 
                             <div class="publication-card">
-                                <h5 class="publication-type">Peer-reviewed Tutorial</h5>
+                                <h5 class="category-label">Peer-reviewed Tutorial</h5>
                                 <div class="publication-title">
                                     Análisis de redes sociales de personajes teatrales
                                 </div>
@@ -486,7 +495,7 @@
                             </div>
 
                             <div class="publication-card">
-                                <h5 class="publication-type">Book Chapter</h5>
+                                <h5 class="category-label">Book Chapter</h5>
                                 <div class="publication-title">
                                     Estructuras de personajes en ocho comedias urbanas de Lope de Vega a través del análisis de redes sociales
                                 </div>
@@ -499,7 +508,7 @@
                         </div>
                         <div class="more-cv">
                 <a href="cv/index.html#publications" class="link-button">
-                    ver todas las publicaciones →
+                    Ver todas las publicaciones →
                 </a>
             </div>
                     </div>
@@ -519,55 +528,82 @@
             <div class="row clearfix">
                 <div class="col-1">
                     <div class="section-heading">
-                        <h3>Selección</h3>
+                        <h3>Selección de</h3>
                         <h2 class="section-title">Ponencias y conferencias</h2>
                     </div>
                     <div class="col-8"></div>
                     <div class="col-3-4">
                         <!-- Charlas invitadas -->
                         <div class="event-category">
-                            <h3>Charlas invitadas destacadas</h3>
+                            <h3>Charlas invitadas</h3>
                             <div class="event-grid">
                                 <div class="event-card">
-                                    <div class="event-date">Mayo 2025</div>
+                                    <div class="category-label">Mayo 2025</div>
                                     <h4>Entre lo clásico y lo digital: modelar la transmisión y recepción del teatro áureo</h4>
-                                    <p>Universidad de León</p>
+                                    <div class="event-card-content">
+                                        <div class="event-name">XI Seminario Internacional "Humanidades Digitales y Literatura del Siglo de Oro"</div>
+                                        <div class="event-institution">Universidad de León</div>
+                                    </div>
                                 </div>
 
                                 <div class="event-card">
-                                    <div class="event-date">Febrero 2025</div>
+                                    <div class="category-label">Febrero 2025</div>
                                     <h4><i>Fuenteovejuna</i> en la era digital. Edición y archivo para una memoria compartida</h4>
-                                    <p>Universidad de los Andes (Colombia)</p>
+                                    <div class="event-card-content">
+                                        <div class="event-name">Departamento de Humanidades y Literatura, Maestría en Humanidades Digitales, Semillero Es de Lope</div>
+                                        <div class="event-institution">Universidad de los Andes, Colombia</div>
+                                    </div>
                                 </div>
 
                                 <div class="event-card">
-                                    <div class="event-date">Octubre 2024</div>
+                                    <div class="category-label">Octubre 2024</div>
                                     <h4>'Todos a una': Towards a Social <i>Fuenteovejuna</i></h4>
-                                    <p>University of Miami</p>
+                                    <div class="event-card-content">
+                                        <div class="event-name">Seminario para el curso de doctorado "Topics in Digital Humanities and Media Studies"</div>
+                                        <div class="event-institution">University of Miami, US</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Ponencias -->
                         <div class="event-category">
-                            <h3>Ponencias destacadas (peer-reviewed)</h3>
+                            <h3>Ponencias en congresos</h3>
                             <div class="event-grid">
+
                                 <div class="event-card">
-                                    <div class="event-date">Noviembre 2024</div>
+                                    <div class="category-label">Noviembre 2024</div>
                                     <h4>Lope de Vega ante las políticas científicas: desafíos epistemológicos para una <i>Fuenteovejuna</i> social</h4>
-                                    <p>XI Congreso Lope de Vega<br>Universitat Autònoma de Barcelona</p>
+                                    <div class="event-card-content">
+                                        <div class="event-name">XI Congreso Lope de Vega</div>
+                                        <div class="event-institution">Universitat Autònoma de Barcelona</div>
+                                    </div>
+                                </div>
+                                                                                              <div class="event-card">
+                                    <div class="category-label">Noviembre 2024</div>
+                                    <h4>La técnica del actor barroco: del documento al laboratorio escénico</h4>
+                                    <div class="event-card-content">
+                                        <div class="event-name">I Simposio METADRAMA: filología y puesta en escena del teatro del Siglo de Oro</div>
+                                        <div class="event-institution">Universitat de Barcelona</div>
+                                    </div>
                                 </div>
 
                                 <div class="event-card">
-                                    <div class="event-date">Septiembre 2024</div>
+                                    <div class="category-label">Septiembre 2024</div>
                                     <h4>Social and Collaborative Scholarly Editing in the Landscape of Open Science</h4>
-                                    <p>11th ESHS Conference<br>Universitat Pompeu Fabra</p>
+                                    <div class="event-card-content">
+                                        <div class="event-name">11th ESHS Conference</div>
+                                        <div class="event-institution">Universitat Pompeu Fabra</div>
+                                    </div>
                                 </div>
 
                                 <div class="event-card">
-                                    <div class="event-date">Julio 2023</div>
-                                    <h4>A Proposal for the Demarcation of Digital Humanities</h4>
-                                    <p>DH2023 (ADHO)<br>University of Graz, Austria</p>
+                                    <div class="category-label">Julio 2023</div>
+                                    <h4>A Proposal for the Demarcation of Digital Humanities <span style=" color: var(--text-gray);">(con Gonzalez-Perez et al.)</span></h4>
+                                    <div class="event-card-content">
+                                        <div class="event-name">DH2023 (ADHO)</div>
+                                        <div class="event-institution">University of Graz, Austria</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="more-cv">
@@ -674,20 +710,25 @@
 <script src="js/site.js"></script>
 <script src="js/productions.js" defer></script>
 <script>
-    // Language toggle functionality
-    document.getElementById("toggleLangBtn").addEventListener("click", function() {
+    // Language tabs functionality
+    function switchLanguage(lang) {
         var bioEsp = document.getElementById("bioEsp");
         var bioEng = document.getElementById("bioEng");
-        if (bioEsp.style.display === "none") {
+        var tabEsp = document.getElementById("tabEsp");
+        var tabEng = document.getElementById("tabEng");
+        
+        if (lang === 'esp') {
             bioEsp.style.display = "block";
             bioEng.style.display = "none";
-            this.textContent = "English";
-        } else {
+            tabEsp.classList.add("active");
+            tabEng.classList.remove("active");
+        } else if (lang === 'eng') {
             bioEsp.style.display = "none";
             bioEng.style.display = "block";
-            this.textContent = "Español";
+            tabEsp.classList.remove("active");
+            tabEng.classList.add("active");
         }
-    });
+    }
 </script>
 
 

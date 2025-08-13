@@ -180,7 +180,7 @@ h4.subsection-title{
 
 .item-container.highlight {
     background-color: rgba(0, 0, 0, 0.02);
-    border-radius: var(--spacing-xs);
+    border-radius: var(--border-radius);
     padding: var(--spacing-l);
 }
 

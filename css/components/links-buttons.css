@@ -105,8 +105,33 @@ a:not(.no-icon):hover::before {
 /* Menu Button Style */
 .menu-button {
     font-weight: var(--font-bold);
+    padding-left: var(--spacing-l) !important;
+}
+
+.menu-button span {
+    border: 2px solid var(--gold);
     color: var(--gold);
-    padding-inline: var(--spacing-xl)!important;
+    background-color: transparent;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-s) var(--spacing-m);
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover span {
+    background-color: var(--gold);
+    color: var(--light-blue);
+}
+
+/* Menu Button in nav-solid state */
+#header.nav-solid .menu-button span {
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+    background-color: transparent;
+}
+
+#header.nav-solid .menu-button:hover span {
+    background-color: var(--light-blue);
+    color: var(--white);
 }
 
 /* ·········································

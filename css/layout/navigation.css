@@ -39,9 +39,18 @@
    Colores de navegación por estado
    ········································· */
 
+#header {
+    transition: all 0.4s ease;
+}
+
 #header nav a, 
 #header i {
     color: var(--white) !important;
+    transition: color 0.8s ease;
+}
+
+#header #navigation-logo {
+    color: var(--light-blue) !important;
 }
 
 #header nav a:hover {
@@ -51,7 +60,12 @@
 #header.nav-solid a, 
 #header.nav-solid i, 
 #nav-mobile ul li a {
-    color: #333 !important;
+    color: var(--text-black) !important;
+    transition: color 0.8s ease;
+}
+
+#header.nav-solid #navigation-logo {
+    color: var(--light-blue) !important;
 }
 
 #header.nav-solid .active {
@@ -59,8 +73,9 @@
     border-color: var(--light-blue);
 }
 
+
 #header.nav-solid nav a:hover {
-    color: var(--gold) !important;
+    color: var(--light-blue) !important;
     opacity: 0.8;
 }
 

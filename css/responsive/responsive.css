@@ -65,41 +65,6 @@
         min-height: 250px;
     }
     
-    /* Popup */
-    .popup {
-        width: 90%;
-        max-width: 90%;
-        max-height: 80vh;
-    }
-    
-    /* Timeline mobile */
-    .all-timelines::before {
-        right: unset;
-        top: 0;
-    }
-    
-    .single-timeline:nth-child(2n) .timeline-text {
-        padding-left: 30px;
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .single-timeline:nth-child(2n) .t-square {
-        left: -6px;
-        right: unset;
-    }
-    
-    .timeline-blank {
-        display: none;
-    }
-    
-    .timeline-text {
-        width: 100%;
-    }
-    
-    .single-timeline:nth-child(even) .timeline-text span {
-        text-align: left !important;
-    }
 
     /* Language tabs en móvil */
     .language-tabs {
@@ -148,11 +113,6 @@
    ================================================================= */
 
 @media (min-width: 768px) and (max-width: 900px) {
-    .popup {
-        width: 90%;
-        max-width: 90%;
-        max-height: 90%;
-    }
 
     .projects-row:nth-child(2) {
         grid-template-columns: 1fr 1fr;
@@ -183,17 +143,6 @@
    ================================================================= */
 
 @media (max-width: 360px) {
-    .all-timelines::before {
-        top: 32px;
-    }
-
-    .popup {
-        border-radius: 15px;
-    }
-
-    .popup-content {
-        padding: 20px;
-    }
 
     .hero-project__content {
         padding: var(--spacing-m);

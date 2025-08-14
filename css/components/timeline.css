@@ -17,8 +17,8 @@
 .timeline-line {
     position: absolute;
     left: 50%;
-    top: 0;
-    bottom: 0;
+    top: -20px;
+    bottom: -20px;
     width: 2px;
     background-color: var(--light-blue);
     transform: translateX(-50%);
@@ -143,6 +143,10 @@
 
     .timeline-item:hover .timeline-point {
         transform: translateX(-50%) scale(1.2);
+    }
+
+    .timeline-content {
+        margin-left: var(--spacing-xl);
     }
 
     .timeline-content,

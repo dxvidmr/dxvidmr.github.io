@@ -257,6 +257,7 @@ nav#nav-mobile a:hover {
     width: 32px;
     text-align: center;
     color: var(--gold);
+    margin: 0 var(--spacing-s);
 }
 
 .rrss a:hover {

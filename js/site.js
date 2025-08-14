@@ -94,6 +94,48 @@ function openPopup(event, popupId) {
   
 	overlay.classList.remove('active');
   }
+
+  // Timeline scroll animation
+  function animateTimelineOnScroll() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    function checkTimelineVisibility() {
+      let activeIndex = -1;
+      
+      // Encontrar el item más cercano al centro de la pantalla
+      timelineItems.forEach(function(item, index) {
+        const rect = item.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const itemCenter = rect.top + (rect.height / 2);
+        const screenCenter = windowHeight / 2;
+        
+        // Si el item está en el centro de la pantalla (±200px)
+        if (Math.abs(itemCenter - screenCenter) < 200) {
+          activeIndex = index;
+        }
+      });
+
+      // Activar solo el item actual y desactivar los demás
+      timelineItems.forEach(function(item, index) {
+        if (index === activeIndex) {
+          item.classList.add('visible');
+        } else {
+          item.classList.remove('visible');
+        }
+      });
+    }
+
+    // Ejecutar al cargar la página
+    checkTimelineVisibility();
+    
+    // Ejecutar al hacer scroll
+    window.addEventListener('scroll', checkTimelineVisibility);
+  }
+
+  // Inicializar la animación de timeline
+  if (document.querySelector('.timeline-container')) {
+    animateTimelineOnScroll();
+  }
   
   
   

@@ -15,7 +15,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    background: var(--white);
+    background: var(--background-grey);
 }
 
 .hero-project__image {
@@ -89,7 +89,7 @@
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
-    background: var(--white);
+    background: var(--background-grey);
     cursor: pointer;
     transition: transform 0.5s ease;
     text-decoration: none;
@@ -275,7 +275,7 @@
 }
 
 .event-card {
-    background: var(--white);
+    background: var(--background-grey);
     padding: var(--spacing-m);
     border-radius: var(--border-radius);
     display: flex;
@@ -321,7 +321,7 @@
 }
 
 .publication-card {
-    background: var(--white);
+    background: var(--background-grey);
     padding: var(--spacing-l);
     border-radius: var(--border-radius);
 }

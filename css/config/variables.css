@@ -13,12 +13,14 @@
   --dark-gray:      #7a7a7a;
   --black:          #111;
   --white:          #F5F5F5;
-  --background:     #EBEBEB;
+  --background:     #F5F5F5;
+  --background-grey:#EBEBEB;
+  --background-dark:  #2d3548;
+
 
   /* ·········································
      Colores secundarios
      ········································· */
-  --background-dark:  #2d3548;
   --text-light:       #fff;
   --text-black:       #333;
   --text-gray:        #7a7a7a;

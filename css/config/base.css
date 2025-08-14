@@ -185,3 +185,18 @@ ul.puntos {
     list-style-type: disc;
     padding-left: 30px;
 }
+
+/* ·········································
+   Fondos de secciones principales
+   ········································· */
+
+.investigacion,
+.teatro,
+.publicaciones,
+.ponencias {
+    background-color: var(--background);
+}
+
+.bio {
+    background-color: var(--background-grey);
+}

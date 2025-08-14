@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------------------*/
+/* 8. FOOTER */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer, #landing-footer p {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--dark-gray);
+}
+
+#landing-footer i {
+    color: var(--light-blue);
+}
+
+
+#landing-footer {
+    clear: both;
+}
+
+#landing-footer .row {
+    padding: 0;
+}
+
+#landing-footer p {
+    margin: 0;
+}
+
+#landing-footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+#landing-footer li {
+    display: inline-block;
+}

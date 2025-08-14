@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------------------*/
-/* MAIN CSS - LAYOUT Y NAVEGACIÓN */
+/* HEADER CSS - NAVEGACIÓN, LOGO, SOCIAL ELEMENTS, BANNER */
 /*------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------------------*/
@@ -39,6 +39,7 @@
 
 #header nav ul {
     text-transform: uppercase;
+    margin: 0;
 }
 
 #header nav a {
@@ -333,79 +334,7 @@ nav#nav-mobile a:hover {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* 4. FOOTER */
-/*------------------------------------------------------------------------------------------*/
-
-#landing-footer {
-    clear: both;
-}
-
-#landing-footer .row {
-    padding: 0;
-}
-
-#landing-footer p {
-    margin: 0;
-}
-
-#landing-footer ul {
-    list-style: none;
-    text-align: center;
-}
-
-#landing-footer li {
-    display: inline-block;
-}
-
-/*------------------------------------------------------------------------------------------*/
-/* 5. SCROLL UP BUTTON */
-/*------------------------------------------------------------------------------------------*/
-
-#scrollUp {
-    bottom: 15px;
-    right: 30px;
-    width: 70px;
-    height: 80px;
-    margin-bottom: -10px;
-    padding: 0 5px 20px 5px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--dark-gray);
-    -webkit-transition: margin-bottom 150ms linear;
-    -moz-transition: margin-bottom 150ms linear;
-    -o-transition: margin-bottom 150ms linear;
-    transition: margin-bottom 150ms linear;
-}
-
-#scrollUp:hover {
-    margin-bottom: 0;
-}
-
-#scrollUp:before {
-    font-family: "fontawesome";
-    font-size: 2.4em;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    color: var(--dark-gray);
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    line-height: 45px;
-    content: "\f106";
-    opacity: 1;
-}
-
-/*------------------------------------------------------------------------------------------*/
-/* 6. FONT ICONS */
-/*------------------------------------------------------------------------------------------*/
-
-.fa-1x {
-    font-size: 15px !important;
-}
-
-/*------------------------------------------------------------------------------------------*/
-/* 7. RESPONSIVE DESIGN */
+/* 4. RESPONSIVE NAVIGATION */
 /*------------------------------------------------------------------------------------------*/
 
 @media all and (max-width: 1024px) {
@@ -431,14 +360,6 @@ nav#nav-mobile a:hover {
 }
 
 @media (max-width: 768px) {
-    #wrapper {
-        overflow-x: hidden;
-    }
-
-    .page-border, #scrollUp, #scrollUp:before {
-        display: none;
-    }
-
     #header .row {
         padding: 0 10px;
     }
@@ -448,61 +369,31 @@ nav#nav-mobile a:hover {
     }
 
     #logo h2 {
-        font-size: 16px;
-    }
-
-    #header aside {
         display: none;
-    }
-
-    #header ul.social-icons {
-        display: none;
-    }
-
-    #banner-content.row {
-        padding: 120px 20px 80px;
-        text-align: center;
     }
 
     #banner h1 {
-        font-size: 2.5em;
-        padding: 20px 0;
+        font-size: 48px;
+        line-height: 50px;
     }
 
-    #landing-footer #copyright {
-        text-align: center;
-        padding: 20px 0;
+    #banner h2 {
+        font-size: 14px;
     }
 
-    #landing-footer .social-icons {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    a#scrollUp {
-        display: none;
+    #banner-content.row {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #wrapper {
-        overflow-x: hidden;
+    #banner h1 {
+        font-size: 52px;
+        line-height: 54px;
     }
 
-    .page-border, #scrollUp, #scrollUp:before {
-        display: none;
-    }
-
-    .row {
-        padding: 60px 20px;
-    }
-
-    .col-1, .col-2, .col-5, .col-7, .col-9, .col-11, 
-    .col-2-3, .col-3-4, .col-61, .col-38, .row {
-        width: 100%;
-        float: none;
+    #banner h2 {
+        font-size: 16px;
     }
 }

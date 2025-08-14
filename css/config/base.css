@@ -1,5 +1,5 @@
 /* ================================
-   BASE CSS - FUNDAMENTOS DEL SITIO
+   BASE CSS - RESET, TIPOGRAFÍA Y ESTILOS FUNDAMENTALES
    ================================ */
 
 /* ---- IMPORTAR VARIABLES ---- */
@@ -24,11 +24,13 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    background: var(--background);
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--black);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    color: var(--text-black);
-    background-color: var(--white);
 }
 
 img {
@@ -37,50 +39,66 @@ img {
     vertical-align: top;
 }
 
-a {
-    text-decoration: none;
-    position: relative;
-    transition: all 0.3s ease;
-    color: inherit;
-}
-
 section {
     clear: both;
     overflow: hidden;
 }
 
+#wrapper {
+    position: relative;
+}
+
+
 /*------------------------------------------------------------------------------------------*/
-/* 2. TIPOGRAFÍA */
+/* 2. TIPOGRAFÍA Y HEADINGS */
 /*------------------------------------------------------------------------------------------*/
 
 h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight: 300;
+    color: var(--light-blue);
     padding: 20px 0;
-    color: var(--text-black);
 }
 
 h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight: 300;
+    color: var(--light-blue);
     padding: 14px 0;
-    color: var(--text-black);
 }
 
 h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 24px; 
+    font-weight: 700;
+    color: var(--light-blue);
     padding: 10px 0;
-    color: var(--text-black);
 }
 
 h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight: 400;
+    color: var(--black);
     padding: 7px 0;
-    color: var(--text-black);
 }
 
 h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight: 400;
+    color: var(--black);
     padding: 7px 0;
-    color: var(--text-black);
 }
 
 h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight: 400;
+    color: var(--black);
     padding: 7px 0;
-    color: var(--text-black);
 }
 
 p {
@@ -107,14 +125,18 @@ p {
 }
 
 .section-title {
-    color: var(--text-black);
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight: 700;
+    color: var(--light-blue);
 }
 
 .section-subtitle {
-    font-size: 18px;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--light-blue);
     padding-top: 0;
-    color: var(--text-gray);
 }
 
 .section-heading h3 {
@@ -123,7 +145,19 @@ p {
     color: var(--medium-blue);
     letter-spacing: 2px;
     padding-bottom: 0;
-    text-transform: uppercase;
+}
+
+.section-heading h2:after {
+    background: var(--gold);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+}
+
+.section-heading#sinlinea h2:after {
+    display: none;
 }
 
 /* Lists */
@@ -204,69 +238,9 @@ ul.puntos {
     clear: both;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 4. ENLACES EXTERNOS */
-/*------------------------------------------------------------------------------------------*/
 
-/* Agregar icono externo a enlaces http/https */
-a[href^="http://"]:not(.no-icon)::after,
-a[href^="https://"]:not(.no-icon)::after {
-    font-family: 'FontAwesome';
-    content: '\f08e';
-    margin-left: 5px;
-    display: inline-block;
-    color: var(--light-blue);
-    font-size: 15px;
-}
 
-/* Línea animada debajo de enlaces externos */
-a[href^="http://"]:not(.no-icon)::before,
-a[href^="https://"]:not(.no-icon)::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, transparent, var(--light-blue));
-    transition: width 0.3s ease;
-}
 
-a:not(.no-icon):hover::before {
-    width: 100%;
-}
 
-/*------------------------------------------------------------------------------------------*/
-/* 5. RESPONSIVE DESIGN */
-/*------------------------------------------------------------------------------------------*/
 
-/* Tablet y móvil */
-@media (max-width: 768px) {
-    .row {
-        padding: 40px 20px;
-    }
-    
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, 
-    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, 
-    .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38 {
-        width: 100%;
-        float: none;
-        padding: 10px;
-    }
-    
-    h1 { padding: 15px 0; }
-    h2 { padding: 12px 0; }
-    h3 { padding: 8px 0; }
-    h4, h5, h6 { padding: 5px 0; }
-}
 
-/* Móvil pequeño */
-@media (max-width: 480px) {
-    .row {
-        padding: 30px 15px;
-    }
-    
-    [class*='col-'] {
-        padding: 8px;
-    }
-}

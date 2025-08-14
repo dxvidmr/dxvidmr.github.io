@@ -304,8 +304,8 @@
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     text-transform: uppercase;
     position: absolute;
-    bottom: var(--spacing-s);
-    left: var(--spacing-l);
+    bottom: var(--spacing-s); /* Ajusta el espacio desde abajo según tus preferencias */
+    left: var(--spacing-l); /* Ajusta el espacio desde la izquierda según tus preferencias */
   }
 
   .card__category_black{
@@ -339,14 +339,15 @@
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     text-transform: uppercase;
     position: absolute;
-    bottom: var(--spacing-s);
-    left: var(--spacing-l);
+    bottom: var(--spacing-s); /* Ajusta el espacio desde abajo según tus preferencias */
+    left: var(--spacing-l); /* Ajusta el espacio desde la izquierda según tus preferencias */
   }
   
   .card:hover .card__more, .card:hover .card__more_black {
     display: block;
     position: absolute;
-  }
+}
+  
   
   /* POP UP */
   .popup {
@@ -355,13 +356,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: auto;
+    width: 800px; /* Ancho deseado */
+    height: auto; /* Alto deseado */
     overflow: auto;
-    max-height: 80vh;
-    background-color: rgba(255, 255, 255, 255);
+    max-height: 80vh;  /*Altura máxima para evitar que se haga muy alta */
+    background-color: rgba(255, 255, 255, 255); /* Fondo blanco translúcido */
     border-radius: 30px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
     z-index: 10000;
   }
 
@@ -430,17 +431,17 @@
 
   @media (max-width: 768px) {
     .popup {
-      width: 90%;
-      max-width: 90%;
-      max-height: 80vh;
+      width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+      max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+      max-height: 80vh; /* Limita la altura al 80% del alto de la ventana gráfica */
     }
   }
 
   @media (min-width: 768px) and (max-width: 900px) {
     .popup {
-      width: 90%;
-      max-width: 90%;
-      max-height: 90%;
+      width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+      max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+      max-height: 90%; /* Ajusta la altura máxima para pantallas más pequeñas */
     }
   }
 
@@ -779,25 +780,27 @@ h6 {
 
 /* End of Timeline CSS */
 
-/* Preloader */
+
+/*Preloader*/
+
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
-    z-index: 99999;
+    background-color: #fff; /* change if the mask should have another color then white */
+    z-index: 99999; /* makes sure it stays on top */
 }
 
 #status {
     width: 110px;
     height: 110px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
     background-position: center;
-    margin: -55px 0 0 -55px;
+    margin: -55px 0 0 -55px; /* is width and height divided by two */
     text-align: center;
 }
 
@@ -899,7 +902,98 @@ h6 {
 /*
  * Animations
  */
-/* Animación optimizada - solo versión estándar */
+@-webkit-keyframes ball-triangle-path-ball-one {
+    0% {
+        -webkit-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+    17% {
+        opacity: .25;
+    }
+    33% {
+        opacity: 1;
+        -webkit-transform: translate(110%, 0);
+        transform: translate(110%, 0);
+    }
+    50% {
+        opacity: .25;
+    }
+    66% {
+        opacity: 1;
+        -webkit-transform: translate(220%, 220%);
+        transform: translate(220%, 220%);
+    }
+    83% {
+        opacity: .25;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+}
+
+@-moz-keyframes ball-triangle-path-ball-one {
+    0% {
+        -moz-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+    17% {
+        opacity: .25;
+    }
+    33% {
+        opacity: 1;
+        -moz-transform: translate(110%, 0);
+        transform: translate(110%, 0);
+    }
+    50% {
+        opacity: .25;
+    }
+    66% {
+        opacity: 1;
+        -moz-transform: translate(220%, 220%);
+        transform: translate(220%, 220%);
+    }
+    83% {
+        opacity: .25;
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+}
+
+@-o-keyframes ball-triangle-path-ball-one {
+    0% {
+        -o-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+    17% {
+        opacity: .25;
+    }
+    33% {
+        opacity: 1;
+        -o-transform: translate(110%, 0);
+        transform: translate(110%, 0);
+    }
+    50% {
+        opacity: .25;
+    }
+    66% {
+        opacity: 1;
+        -o-transform: translate(220%, 220%);
+        transform: translate(220%, 220%);
+    }
+    83% {
+        opacity: .25;
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translate(0, 220%);
+        transform: translate(0, 220%);
+    }
+}
 
 @keyframes ball-triangle-path-ball-one {
     0% {

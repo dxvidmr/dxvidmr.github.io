@@ -1,4 +1,4 @@
-@import url('/css/config/variables.css');
+@import url('variables.css');
 
 body {
   margin: 0;
@@ -6,24 +6,6 @@ body {
   background-color: var(--white);
   color: var(--text-black);
   line-height: 1.5;
-}
-
-/* Botón de regreso */
-.back-button {
-  padding: var(--spacing-m);
-  padding-inline-start: 0!important;
-}
-.back-button .button {
-  text-decoration: none;
-  color: var(--light-blue);
-  border: 2px solid var(--light-blue);
-  padding: var(--spacing-s) var(--spacing-m);
-  display: inline-block;
-  font-weight: bold;
-  transition: opacity 0.2s ease;
-}
-.back-button .button:hover {
-  opacity: 0.75;
 }
 
 /* Menú lateral sticky */
@@ -40,24 +22,6 @@ body {
 }
 .side-menu li {
   margin-bottom: var(--spacing-s);
-}
-.side-menu a {
-  font-size: 0.8rem;
-  color: var(--light-blue);
-  text-decoration: none;
-  font-weight: 600;
-  transition: font-size 0.5s ease;
-}
-.side-menu a:hover {
-  text-decoration: none !important;
-  color: var(--gold);
-  font-size: 1em;
-  transition: font-size 0.5s ease;
-}
-.side-menu a.active {
-  color: var(--gold);
-  font-weight: bold;
-  font-size: 1em;
 }
 
 /* Contenido principal */

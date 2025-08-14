@@ -1,17 +1,51 @@
-/*------------------------------------------------------------------------------------------*/
-/* 5. NAVEGACIÓN Y HEADER - ESTILOS ESPECÍFICOS */
-/*------------------------------------------------------------------------------------------*/
+/* ═══════════════════════════════════════════════════════════
+   NAVIGATION - NAVEGACIÓN Y ELEMENTOS SOCIALES
+   ═══════════════════════════════════════════════════════════ */
 
-/* Colores de navegación */
-#header nav a, #header i {
+/* ·········································
+   Navegación principal
+   ········································· */
+
+#header ul {
+    text-align: right;
+    margin-right: 12.5%;
+}
+
+#header li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+
+#header nav ul {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#header nav a {
+    height: 71px;
+    line-height: 71px;
+    display: block;
+    padding: 0 10px;
+    color: var(--text-black);
+}
+
+#header nav a:hover {
+    color: var(--gold);
+}
+
+/* ·········································
+   Colores de navegación por estado
+   ········································· */
+
+#header nav a, 
+#header i {
     color: var(--white) !important;
 }
 
-#header.nav-solid {
-    color: #333;
-}
-
-#header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+#header.nav-solid a, 
+#header.nav-solid i, 
+#nav-mobile ul li a {
     color: #333 !important;
 }
 
@@ -20,32 +54,205 @@
     border-color: var(--light-blue);
 }
 
-/* Logo */
-#logo h1 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 62px; 
-    font-weight: 800;
-    color: var(--light-blue);
+#header.nav-solid nav a {
+    border-bottom: 3px solid;
+    border-color: var(--background);
+    transition: all 0.3s ease-out;
 }
 
-#logo h2,
-#navigation-logo {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 18px; 
-    font-weight: 300;
-    color: var(--light-blue);
+#header.nav-solid nav a:hover {
+    opacity: 1;
 }
 
-#navigation-logo {
+/* ·········································
+   Navegación móvil
+   ········································· */
+
+#nav-trigger {
+    display: none;
+    text-align: right;
+}
+
+#nav-trigger span {
     display: inline-block;
-    padding: 0;
+    width: 38px;
+    height: 71px;
+    color: var(--gold);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all 0.3s ease-out;
 }
 
+#nav-trigger span:after {
+    font-family: "fontAwesome";
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+    content: "\f0c9";
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
 
+#nav-trigger span.open:after {
+    content: "\f00d";
+}
 
-/*------------------------------------------------------------------------------------------*/
-/* 2. SCROLL UP BUTTON */
-/*------------------------------------------------------------------------------------------*/
+#nav-trigger span:hover, 
+.nav-solid #nav-trigger span.open:hover, 
+.nav-solid #nav-trigger span:hover {
+    opacity: 0.6;
+}
+
+#nav-trigger span.open, 
+#nav-trigger span.open:hover {
+    color: var(--gold);
+}
+
+.nav-solid #nav-trigger span.open:hover {
+    color: var(--dark-gray);
+}
+
+.nav-solid #nav-trigger span {
+    color: var(--dark-gray);
+    opacity: 1;
+}
+
+nav#nav-mobile {
+    position: relative;
+    display: none;
+}
+
+nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: var(--background);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav#nav-mobile ul:after {
+    display: none;
+}
+
+nav#nav-mobile li {
+    margin: 0 20px;
+    float: none;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+nav#nav-mobile li:last-child {
+    border-bottom: none;
+}
+
+.nav-solid nav#nav-mobile li {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: none;
+}
+
+nav#nav-mobile a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    border-bottom: none !important;
+    transition: all 0.3s ease-out;
+}
+
+nav#nav-mobile a:hover {
+    background: #fafafa;
+    opacity: 1;
+}
+
+/* ·········································
+   Elementos sociales
+   ········································· */
+
+.social-icons {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons span {
+    display: none;
+}
+
+#header .social-icons {
+    margin-top: 50px;
+}
+
+#banner #header .social-icons {
+    margin-top: 100px;
+}
+
+#header.nav-solid .social-icons a {
+    transition: all 0.3s ease-out;
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+#header.nav-solid .social-icons a:hover {
+    opacity: 1;
+    color: #e4473c;
+}
+
+/* Iconos RRSS personalizados */
+.rrss {
+    display: inline-block;
+}
+
+.rrss a {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    color: var(--gold);
+}
+
+.rrss a:hover {
+    opacity: 0.8;
+    color: var(--gold);
+}
+
+.rrss span {
+    display: none;
+}
+
+.rrss a svg {
+    display: inline-block;   
+    width: 2em;              
+    height: 2em;
+    vertical-align: middle;  
+    margin-top: -15px;
+}
+
+/* ·········································
+   Botón scroll up
+   ········································· */
 
 #scrollUp {
     bottom: 15px;
@@ -57,9 +264,6 @@
     text-align: center;
     text-decoration: none;
     color: var(--dark-gray);
-    -webkit-transition: margin-bottom 150ms linear;
-    -moz-transition: margin-bottom 150ms linear;
-    -o-transition: margin-bottom 150ms linear;
     transition: margin-bottom 150ms linear;
 }
 
@@ -80,5 +284,31 @@
     line-height: 45px;
     content: "\f106";
     opacity: 1;
+}
+
+/* ·········································
+   Responsive design
+   ········································· */
+
+@media all and (max-width: 1024px) {
+    #nav-trigger {
+        display: block;
+    }
+
+    nav#nav-main {
+        display: none;
+    }
+
+    nav#nav-mobile {
+        display: block;
+    }
+
+    nav#nav-mobile li {
+        float: none;
+    }
+
+    #header aside {
+        display: none;
+    }
 }
 

@@ -1,13 +1,10 @@
-/* ================================
+/* ═══════════════════════════════════════════════════════════
    BASE CSS - RESET, TIPOGRAFÍA Y ESTILOS FUNDAMENTALES
-   ================================ */
+   ═══════════════════════════════════════════════════════════ */
 
-/* ---- IMPORTAR VARIABLES ---- */
-@import url('variables.css');
-
-/*------------------------------------------------------------------------------------------*/
-/* 1. RESET & NORMALIZE */
-/*------------------------------------------------------------------------------------------*/
+/* ·········································
+   Reset & normalize
+   ········································· */
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -48,10 +45,9 @@ section {
     position: relative;
 }
 
-
-/*------------------------------------------------------------------------------------------*/
-/* 2. TIPOGRAFÍA Y HEADINGS */
-/*------------------------------------------------------------------------------------------*/
+/* ·········································
+   Tipografía base
+   ········································· */
 
 h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
@@ -106,7 +102,18 @@ p {
     color: var(--text-black);
 }
 
-/* Text Alignment Utilities */
+/* ·········································
+   Ajustes de iconos
+   ········································· */
+
+.fa-1x {
+    font-size: 15px !important;
+}
+
+/* ·········································
+   Utilidades de texto
+   ········································· */
+
 .text-left {
     text-align: left;
 }
@@ -119,7 +126,10 @@ p {
     text-align: right;
 }
 
-/* Section Headings */
+/* ·········································
+   Headings de sección
+   ········································· */
+
 .section-heading {
     padding: 0 0 15px 0;
 }
@@ -160,87 +170,11 @@ p {
     display: none;
 }
 
-/* Lists */
+/* ·········································
+   Listas
+   ········································· */
+
 ul.puntos {
     list-style-type: disc;
     padding-left: 30px;
 }
-
-/*------------------------------------------------------------------------------------------*/
-/* 3. GRID SYSTEM */
-/*------------------------------------------------------------------------------------------*/
-
-.row {
-    max-width: 1245px;
-    margin: 0 auto;
-    padding: 75px 0;
-    position: relative;
-}
-
-.row.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Padding utilities */
-.no-padding-bottom .row, 
-.no-padding-bottom div, 
-.no-padding-bottom.row {
-    padding-bottom: 0;
-}
-
-.no-padding-top.row, 
-.no-padding-top div {
-    padding-top: 0;
-}
-
-.big-padding-top {
-    padding-top: 75px !important;
-}
-
-.big-padding-bottom {
-    padding-bottom: 85px !important;
-}
-
-/* Columns */
-[class*='col-'] {
-    float: left;
-    padding: 20px;
-}
-
-.col-1 { width: 100%; }
-.col-2 { width: 50%; }
-.col-3 { width: 33.33%; }
-.col-4 { width: 25%; }
-.col-5 { width: 20%; }
-.col-6 { width: 16.6666666667%; }
-.col-7 { width: 14.2857142857%; }
-.col-8 { width: 12.5%; }
-.col-9 { width: 11.1111111111%; }
-.col-10 { width: 10%; }
-.col-11 { width: 9.09090909091%; }
-.col-12 { width: 8.33%; }
-
-/* Fraction columns */
-.col-2-3 { width: 66.66%; }
-.col-3-4 { width: 75%; }
-.col-9-10 { width: 90%; }
-
-/* Golden ratio columns */
-.col-61 { width: 61.8%; }
-.col-38 { width: 38.2%; }
-
-/* Clearfix helper */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-
-
-
-

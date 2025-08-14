@@ -1,6 +1,5 @@
 /* =================================================================
    ARCHIVO CSS PRINCIPAL - IMPORTA TODOS LOS ESTILOS
-   Solo necesitas llamar a este archivo desde el HTML
    ================================================================= */
 
 /* =================================================================
@@ -18,6 +17,7 @@
 /* =================================================================
    3. LAYOUT - Estructura principal de la página
    ================================================================= */
+@import url('layout/grid.css');
 @import url('layout/header.css');
 @import url('layout/navigation.css');
 @import url('layout/banner.css');
@@ -28,8 +28,7 @@
    ================================================================= */
 @import url('components/cards.css');
 @import url('components/links-buttons.css');
-@import url('components/modals.css');
-@import url('components/preloader.css');
+@import url('components/gallery.css');
 @import url('components/tabs.css');
 
 

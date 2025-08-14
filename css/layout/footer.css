@@ -1,18 +1,10 @@
-/*------------------------------------------------------------------------------------------*/
-/* 8. FOOTER */
-/*------------------------------------------------------------------------------------------*/
+/* ═══════════════════════════════════════════════════════════
+   FOOTER - PIE DE PÁGINA
+   ═══════════════════════════════════════════════════════════ */
 
-#landing-footer, #landing-footer p {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 12px;
-    font-weight: normal;
-    color: var(--dark-gray);
-}
-
-#landing-footer i {
-    color: var(--light-blue);
-}
-
+/* ·········································
+   Estructura base del footer
+   ········································· */
 
 #landing-footer {
     clear: both;
@@ -22,8 +14,28 @@
     padding: 0;
 }
 
+/* ·········································
+   Tipografía del footer
+   ········································· */
+
+#landing-footer, 
+#landing-footer p {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--dark-gray);
+}
+
 #landing-footer p {
     margin: 0;
+}
+
+/* ·········································
+   Elementos del footer
+   ········································· */
+
+#landing-footer i {
+    color: var(--light-blue);
 }
 
 #landing-footer ul {

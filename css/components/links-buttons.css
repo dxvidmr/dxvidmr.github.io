@@ -1,10 +1,10 @@
-/* =================================================================
-   LINKS & BUTTONS - Enlaces y botones centralizados
-   ================================================================= */
+/* ═══════════════════════════════════════════════════════════
+   LINKS & BUTTONS
+   ═══════════════════════════════════════════════════════════ */
 
-/* =================================================================
-   1. ENLACES BÁSICOS - Estilos base para enlaces
-   ================================================================= */
+/* ·········································
+   Enlaces básicos
+   ········································· */
 
 a {
     text-decoration: none;
@@ -17,9 +17,9 @@ a:hover {
     color: var(--light-blue);
 }
 
-/* =================================================================
-   2. ENLACES EXTERNOS - Enlaces con iconos y animaciones
-   ================================================================= */
+/* ·········································
+   Enlaces externos
+   ········································· */
 
 /* Agregar icono externo a enlaces http/https */
 a[href^="http://"]:not(.no-icon)::after,
@@ -49,9 +49,9 @@ a:not(.no-icon):hover::before {
     width: 100%;
 }
 
-/* =================================================================
-   3. BOTONES PRINCIPALES - Botones primarios del sitio
-   ================================================================= */
+/* ·········································
+   Botones principales
+   ········································· */
 
 .button {
     font-weight: bold;
@@ -65,8 +65,6 @@ a:not(.no-icon):hover::before {
     border-style: solid;
     background-color: transparent;
     transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
     text-decoration: none;
 }
 
@@ -77,9 +75,9 @@ a:not(.no-icon):hover::before {
     cursor: pointer;
 }
 
-/* =================================================================
-   4. BOTONES ESPECIALES - Variaciones de botones
-   ================================================================= */
+/* ·········································
+   Botones especiales
+   ········································· */
 
 /* Link Button Style */
 .link-button {
@@ -108,10 +106,9 @@ a:not(.no-icon):hover::before {
     padding-inline: var(--spacing-xl)!important;
 }
 
-
-/* =================================================================
-   5. BOTONES DE BANNER - Botones específicos del banner
-   ================================================================= */
+/* ·········································
+   Botones de banner
+   ········································· */
 
 #banner .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
@@ -125,9 +122,9 @@ a:not(.no-icon):hover::before {
     border-color: var(--light-blue);
 }
 
-/* =================================================================
-   6. BOTONES DE CV - Botones específicos para páginas de CV
-   ================================================================= */
+/* ·········································
+   Botones de CV
+   ········································· */
 
 /* Botón de regreso */
 .back-button {
@@ -149,9 +146,9 @@ a:not(.no-icon):hover::before {
     opacity: 0.75;
 }
 
-/* =================================================================
-   7. ENLACES EN COMPONENTES - Enlaces específicos de componentes
-   ================================================================= */
+/* ·········································
+   Enlaces en componentes
+   ········································· */
 
 /* Enlaces en proyectos */
 .hero-project__links {
@@ -186,9 +183,9 @@ a:not(.no-icon):hover::before {
     font-size: 0.9rem;
 }
 
-/* =================================================================
-   8. ENLACES DE FOOTER - Enlaces específicos del footer
-   ================================================================= */
+/* ·········································
+   Enlaces de footer
+   ········································· */
 
 #landing-footer a {
     color: var(--light-blue);

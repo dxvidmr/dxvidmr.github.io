@@ -28,10 +28,11 @@
     display: block;
     padding: 0 10px;
     color: var(--text-black);
+    transition: all 0.3s ease;
 }
 
 #header nav a:hover {
-    color: var(--gold);
+    color: var(--light-blue) !important;
 }
 
 /* ·········································
@@ -43,6 +44,10 @@
     color: var(--white) !important;
 }
 
+#header nav a:hover {
+    color: var(--gold) !important;
+}
+
 #header.nav-solid a, 
 #header.nav-solid i, 
 #nav-mobile ul li a {
@@ -52,6 +57,11 @@
 #header.nav-solid .active {
     color: var(--light-blue) !important;
     border-color: var(--light-blue);
+}
+
+#header.nav-solid nav a:hover {
+    color: var(--gold) !important;
+    opacity: 0.8;
 }
 
 #header.nav-solid nav a {
@@ -150,6 +160,7 @@ nav#nav-mobile ul:after {
 nav#nav-mobile li {
     margin: 0 20px;
     float: none;
+    display: block;
     text-align: left;
     border-bottom: 1px solid #e1e1e1;
 }
@@ -171,12 +182,12 @@ nav#nav-mobile a {
     height: auto;
     line-height: normal;
     border-bottom: none !important;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease;
 }
 
 nav#nav-mobile a:hover {
-    background: #fafafa;
-    opacity: 1;
+    color: var(--light-blue);
+    opacity: 0.8;
 }
 
 /* ·········································
@@ -305,6 +316,8 @@ nav#nav-mobile a:hover {
 
     nav#nav-mobile li {
         float: none;
+        display: block;
+        width: 100%;
     }
 
     #header aside {

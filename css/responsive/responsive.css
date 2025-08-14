@@ -96,13 +96,17 @@
 
     /* Language tabs en móvil */
     .language-tabs {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         gap: var(--spacing-s);
+        justify-content: center;
     }
 
     .language-tab {
+        flex: 1;
         margin-right: 0;
         text-align: center;
+        max-width: 150px;
     }
 
     /* Event grid en móvil */
@@ -114,13 +118,13 @@
     .close-modal {
         top: 1rem;
         right: 1rem;
-        font-size: 2rem;
+        font-size: var(--text-2xl);
     }
 
     .prev-slide,
     .next-slide {
         padding: 0.5rem;
-        font-size: 1.5rem;
+        font-size: var(--text-2xl);
     }
 
     .prev-slide {

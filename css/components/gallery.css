@@ -61,7 +61,7 @@
 }
 
 .production-info h3 {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     font-weight: bold;
     color: var(--light-blue);
     margin-bottom: var(--spacing-m);

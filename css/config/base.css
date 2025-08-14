@@ -23,9 +23,10 @@ body {
     padding: 0;
     background: var(--background);
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 15px;
-    font-weight: normal;
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
     color: var(--black);
+    line-height: var(--line-height-normal);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -51,54 +52,60 @@ section {
 
 h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 40px; 
-    font-weight: 300;
+    font-size: var(--text-4xl);
+    font-weight: var(--font-light);
     color: var(--light-blue);
+    line-height: var(--line-height-tight);
     padding: 20px 0;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 34px; 
-    font-weight: 300;
+    font-size: var(--text-3xl);
+    font-weight: var(--font-light);
     color: var(--light-blue);
+    line-height: var(--line-height-tight);
     padding: 14px 0;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 24px; 
-    font-weight: 700;
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
     color: var(--light-blue);
+    line-height: var(--line-height-normal);
     padding: 10px 0;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 18px; 
-    font-weight: 400;
+    font-size: var(--text-lg);
+    font-weight: var(--font-normal);
     color: var(--black);
+    line-height: var(--line-height-normal);
     padding: 7px 0;
 }
 
 h5 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px; 
-    font-weight: 400;
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
     color: var(--black);
+    line-height: var(--line-height-normal);
     padding: 7px 0;
 }
 
 h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 14px; 
-    font-weight: 400;
+    font-size: var(--text-sm);
+    font-weight: var(--font-normal);
     color: var(--black);
+    line-height: var(--line-height-normal);
     padding: 7px 0;
 }
 
 p {
-    line-height: 1.6;
+    line-height: var(--line-height-normal);
     color: var(--text-black);
 }
 
@@ -136,22 +143,22 @@ p {
 
 .section-title {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 34px; 
-    font-weight: 700;
+    font-size: var(--text-3xl);
+    font-weight: var(--font-bold);
     color: var(--light-blue);
 }
 
 .section-subtitle {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: var(--text-base);
+    font-weight: var(--font-light);
     color: var(--light-blue);
     padding-top: 0;
 }
 
 .section-heading h3 {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: var(--text-sm);
+    font-weight: var(--font-bold);
     color: var(--medium-blue);
     letter-spacing: 2px;
     padding-bottom: 0;

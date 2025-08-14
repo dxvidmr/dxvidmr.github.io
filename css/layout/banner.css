@@ -24,17 +24,17 @@
 
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 62px;
-    line-height: 60px;
-    font-weight: 800;
+    font-size: var(--text-5xl);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-extrabold);
     color: var(--white);
     padding-top: 5%;
 }
 
 #banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--text-lg);
+    font-weight: var(--font-light);
     color: var(--white);
 }
 
@@ -52,12 +52,12 @@
 
 @media (max-width: 768px) {
     #banner h1 {
-        font-size: 48px;
-        line-height: 50px;
+        font-size: var(--text-4xl);
+        line-height: var(--line-height-tight);
     }
 
     #banner h2 {
-        font-size: 14px;
+        font-size: var(--text-sm);
     }
 
     #banner-content.row {
@@ -68,11 +68,11 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #banner h1 {
-        font-size: 52px;
-        line-height: 54px;
+        font-size: var(--text-4xl);
+        line-height: var(--line-height-tight);
     }
 
     #banner h2 {
-        font-size: 16px;
+        font-size: var(--text-base);
     }
 }

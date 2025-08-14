@@ -12,7 +12,7 @@
     z-index: 9999;
     width: 100%;
     position: absolute !important;
-    font-size: 13px;
+    font-size: var(--text-sm);
 }
 
 #header .row {
@@ -62,7 +62,7 @@
 
 #navigation-logo {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 18px; 
+    font-size: var(--text-lg); 
     color: var(--light-blue);
     display: inline-block;
     padding: 0;
@@ -79,9 +79,5 @@
 
     #header.nav-solid [class*="col-"] {
         padding: 0 10px;
-    }
-
-    #logo h2 {
-        display: none;
     }
 }

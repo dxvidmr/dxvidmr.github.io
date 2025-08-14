@@ -29,7 +29,7 @@ a[href^="https://"]:not(.no-icon)::after {
     margin-left: 5px;
     display: inline-block;
     color: var(--light-blue);
-    font-size: 15px;
+    font-size: var(--text-sm);
 }
 
 /* Línea animada debajo de enlaces externos */
@@ -54,15 +54,16 @@ a:not(.no-icon):hover::before {
    ········································· */
 
 .button {
-    font-weight: bold;
+    font-weight: var(--font-bold);
     color: var(--light-blue);
     border-color: var(--light-blue);
-    font-size: 16px;
+    font-size: var(--text-base);
     margin: var(--spacing-m) 0;
     padding: 11px 16px;
     display: inline-block;
     border-width: 3px;
     border-style: solid;
+    border-radius: var(--border-radius);
     background-color: transparent;
     transition: all .3s linear;
     text-decoration: none;
@@ -81,18 +82,20 @@ a:not(.no-icon):hover::before {
 
 /* Link Button Style */
 .link-button {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: var(--text-base);
+    font-weight: var(--font-bold);
     color: var(--light-blue);
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
     transition: all .3s linear;
     border: 3px solid transparent;
+    border-radius: var(--border-radius);
 }
 
 .link-button:hover {
     border-color: var(--light-blue);
+    border-radius: var(--border-radius);
     background-color: var(--light-blue);
     color: var(--white);
     opacity: .75;
@@ -101,7 +104,7 @@ a:not(.no-icon):hover::before {
 
 /* Menu Button Style */
 .menu-button {
-    font-weight: bold;
+    font-weight: var(--font-bold);
     color: var(--gold);
     padding-inline: var(--spacing-xl)!important;
 }
@@ -112,7 +115,7 @@ a:not(.no-icon):hover::before {
 
 #banner .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px;
+    font-size: var(--text-base);
     color: var(--black);
     border-color: var(--black);
 }
@@ -159,28 +162,29 @@ a:not(.no-icon):hover::before {
 .project-overlay .access-link {
     font-size: var(--text-sm);
     color: var(--gold);
-    font-weight: bold;
+    font-weight: var(--font-bold);
     text-decoration: none;
 }
 
 /* Botones en publicaciones */
 .publication-metadata .button {
-    margin-top: var(--spacing-s);
+    margin-top: var(--spacing-m);
     float: right;
     margin-left: var(--spacing-s);
+    margin-bottom: 0;
 }
 
 /* Enlaces en menú lateral del CV */
 .side-menu a {
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     color: var(--light-blue);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: var(--font-semibold);
     transition: font-size 0.5s ease;
 }
 
 .side-menu a:hover {
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
 }
 
 /* ·········································

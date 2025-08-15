@@ -521,9 +521,9 @@
                             </div>
                         </div>
 
-                        <!-- Ponencias -->
+                        <!-- Congresos -->
                         <div class="event-category">
-                            <h3>Ponencias en congresos</h3>
+                            <h3>Congresos</h3>
                             <div class="event-grid">
 
                                 <div class="event-card">
@@ -662,27 +662,7 @@
 <script src="js/navigation.js"></script>
 <script src="js/timeline.js"></script>
 <script src="js/productions.js" defer></script>
-<script>
-    // Language tabs functionality
-    function switchLanguage(lang) {
-        var bioEsp = document.getElementById("bioEsp");
-        var bioEng = document.getElementById("bioEng");
-        var tabEsp = document.getElementById("tabEsp");
-        var tabEng = document.getElementById("tabEng");
-        
-        if (lang === 'esp') {
-            bioEsp.style.display = "block";
-            bioEng.style.display = "none";
-            tabEsp.classList.add("active");
-            tabEng.classList.remove("active");
-        } else if (lang === 'eng') {
-            bioEsp.style.display = "none";
-            bioEng.style.display = "block";
-            tabEsp.classList.remove("active");
-            tabEng.classList.add("active");
-        }
-    }
-</script>
+<script src="js/language-tabs.js"></script>
 
 
 </body>

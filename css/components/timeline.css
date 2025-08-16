@@ -37,6 +37,11 @@
     padding-right: calc(50% + var(--spacing-xl));
 }
 
+/* Último elemento del timeline con menos margen */
+.timeline-item:last-child {
+    margin-bottom: var(--spacing-none);
+}
+
 /* Items alternados (derecha) */
 .timeline-item.right {
     justify-content: flex-start;

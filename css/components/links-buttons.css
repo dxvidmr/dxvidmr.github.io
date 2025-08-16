@@ -217,17 +217,3 @@ a:not(.no-icon):hover::before {
     font-size: var(--text-sm);
 }
 
-/* ·········································
-   Enlaces de footer
-   ········································· */
-
-#landing-footer a {
-    color: var(--primary-color);
-}
-
-#landing-footer .social-icons a svg {
-    width: 2em;
-    height: 2em;
-    vertical-align: middle;
-    margin-top: -10px;
-}

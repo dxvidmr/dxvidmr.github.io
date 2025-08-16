@@ -201,3 +201,12 @@ ul.puntos {
 .bio {
     background-color: var(--bg-secondary);
 }
+
+/* Foto de perfil */
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}

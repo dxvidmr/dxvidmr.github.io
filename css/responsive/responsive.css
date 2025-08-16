@@ -33,14 +33,24 @@
         width: 100%;
     }
 
-    /* Iconos sociales responsive - reducir espaciado en móviles */
-    .rrss a {
+    /* Iconos sociales del banner responsive */
+    .banner-social-icons a {
         margin: 0 var(--spacing-s);
         width: 28px;
     }
 
-    .rrss a i {
+    .banner-social-icons a i {
         font-size: var(--text-2xl);
+    }
+
+    /* Iconos sociales del footer responsive */
+    #landing-footer li {
+        margin: 0 var(--spacing-xs);
+    }
+
+    .footer-social-icons a {
+        width: 36px;
+        height: 36px;
     }
 
     .footer-social {
@@ -51,15 +61,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap;
-    }
-
-    #landing-footer li {
-        margin: 0 var(--spacing-xs);
-    }
-
-    .social-icons a {
-        padding: 6px;
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
     }
 
     /* Hero Project */
@@ -69,6 +72,12 @@
     
     .hero-project__image {
         min-height: 250px;
+    }
+
+    /* Foto de perfil responsive */
+    .profile-photo {
+        width: 280px;
+        height: 280px;
     }
     
     /* Projects Grid */
@@ -175,22 +184,34 @@
         padding: 8px;
     }
 
-    /* Iconos sociales en dispositivos pequeños */
-    .rrss a {
+    /* Iconos sociales del banner en dispositivos pequeños */
+    .banner-social-icons a {
         margin: 0 var(--spacing-xxs);
         width: 24px;
     }
 
-    .rrss a i {
+    .banner-social-icons a i {
         font-size: var(--text-2xl);
     }
 
+    /* Iconos sociales del footer en dispositivos pequeños */
     #landing-footer li {
         margin: 0 var(--spacing-xxs);
     }
 
-    .social-icons a {
-        padding: 4px;
+    .footer-social-icons a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .copyright {
+        font-size: var(--text-xs);
+    }
+
+    /* Foto de perfil en dispositivos pequeños */
+    .profile-photo {
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -208,23 +229,33 @@
         padding: var(--spacing-m);
     }
 
-    /* Iconos sociales en dispositivos muy pequeños */
-    .rrss a {
+    /* Iconos sociales del banner en dispositivos muy pequeños */
+    .banner-social-icons a {
         margin: 0 1px;
         width: 22px;
     }
 
-    .rrss a i {
+    .banner-social-icons a i {
         font-size: var(--text-xl);
     }
 
+    /* Iconos sociales del footer en dispositivos muy pequeños */
     #landing-footer li {
         margin: 0 1px;
     }
 
-    .social-icons a {
-        padding: 3px;
+    .footer-social-icons a {
+        width: 28px;
+        height: 28px;
     }
+
+    /* Foto de perfil en dispositivos muy pequeños */
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    
 }
 
 /* =================================================================

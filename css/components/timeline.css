@@ -20,7 +20,7 @@
     top: -20px;
     bottom: -20px;
     width: 2px;
-    background-color: var(--light-blue);
+    background-color: var(--primary-color);
     transform: translateX(-50%);
 }
 
@@ -54,7 +54,7 @@
     transform: translateX(-50%) scale(0.8);
     width: 16px;
     height: 16px;
-    background-color: var(--light-blue);
+    background-color: var(--primary-color);
     border-radius: var(--border-radius-sm);
     z-index: 1;
     transition: all 0.4s ease;
@@ -62,8 +62,8 @@
 
 /* Estado activado cuando el item está visible */
 .timeline-item.visible .timeline-point {
-    background-color: var(--gold);
-    border-color: var(--gold);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
     opacity: 1;
     transform: translateX(-50%) scale(1);
 }
@@ -88,7 +88,7 @@
 
 .timeline-date {
     font-size: var(--text-sm);
-    color: var(--light-blue);
+    color: var(--primary-color);
     margin-bottom: var(--spacing-none);
     font-weight: var(--font-semibold);
     text-transform: uppercase;
@@ -98,7 +98,7 @@
 .timeline-title {
     font-size: var(--text-xl);
     font-weight: var(--font-bold);
-    color: var(--black);
+    color: var(--color-black);
     margin-bottom: var(--spacing-none);
     line-height: var(--line-height-tight);
     font-family: var(--font-family-headings);
@@ -106,14 +106,14 @@
 
 .timeline-subtitle {
     font-size: var(--text-base);
-    color: var(--black);
+    color: var(--color-black);
     line-height: var(--line-height-normal);
     font-weight: var(--font-normal);
 }
 
 .timeline-description {
     font-size: var(--text-sm);
-    color: var(--text-black);
+    color: var(--text-primary);
     margin-top: var(--spacing-xxs);
     line-height: var(--line-height-normal);
     font-style: normal;

@@ -28,17 +28,17 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--text-gray);
+    color: var(--text-secondary);
     transition: all 0.3s ease;
     position: relative;
 }
 
 .language-tab:hover {
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 .language-tab.active {
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 .language-tab.active::after {
@@ -48,7 +48,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: var(--light-blue);
+    background: var(--primary-color);
     border-radius: 2px;
     animation: slideIn 0.3s ease;
 }

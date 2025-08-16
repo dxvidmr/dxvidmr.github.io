@@ -10,11 +10,11 @@ a {
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 /* ·········································
@@ -28,7 +28,7 @@ a[href^="https://"]:not(.no-icon)::after {
     content: '\f08e';
     margin-left: 5px;
     display: inline-block;
-    color: var(--light-blue);
+    color: var(--primary-color);
     font-size: var(--text-sm);
 }
 
@@ -41,7 +41,7 @@ a[href^="https://"]:not(.no-icon)::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, transparent, var(--light-blue));
+    background: linear-gradient(to right, transparent, var(--primary-color));
     transition: width 0.3s ease;
 }
 
@@ -55,8 +55,8 @@ a:not(.no-icon):hover::before {
 
 .button {
     font-weight: var(--font-bold);
-    color: var(--light-blue);
-    border-color: var(--light-blue);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     font-size: var(--text-base);
     margin: var(--spacing-m) 0;
     padding: 11px 16px;
@@ -70,9 +70,9 @@ a:not(.no-icon):hover::before {
 }
 
 .button:hover {
-    border-color: var(--light-blue);
-    background-color: var(--light-blue);
-    color: var(--white);
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ a:not(.no-icon):hover::before {
 .link-button {
     font-size: var(--text-base);
     font-weight: var(--font-bold);
-    color: var(--light-blue);
+    color: var(--primary-color);
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
@@ -94,10 +94,10 @@ a:not(.no-icon):hover::before {
 }
 
 .link-button:hover {
-    border-color: var(--light-blue);
+    border-color: var(--primary-color);
     border-radius: var(--border-radius);
-    background-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--color-white);
     opacity: .75;
     cursor: pointer;
 }
@@ -109,8 +109,8 @@ a:not(.no-icon):hover::before {
 }
 
 .menu-button span {
-    border: 2px solid var(--gold);
-    color: var(--gold);
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
     background-color: transparent;
     border-radius: var(--border-radius);
     padding: var(--spacing-s) var(--spacing-m);
@@ -118,20 +118,20 @@ a:not(.no-icon):hover::before {
 }
 
 .menu-button:hover span {
-    background-color: var(--gold);
-    color: var(--light-blue);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* Menu Button in nav-solid state */
 #header.nav-solid .menu-button span {
-    border-color: var(--light-blue);
-    color: var(--light-blue);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     background-color: transparent;
 }
 
 #header.nav-solid .menu-button:hover span {
-    background-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--color-white);
 }
 
 /* ·········································
@@ -141,13 +141,13 @@ a:not(.no-icon):hover::before {
 #banner .button {
     font-family: var(--font-family-body);
     font-size: var(--text-base);
-    color: var(--black);
-    border-color: var(--black);
+    color: var(--color-black);
+    border-color: var(--color-black);
 }
 
 #banner .button:hover {
-    color: var(--light-blue);
-    border-color: var(--light-blue);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* ·········································
@@ -162,8 +162,8 @@ a:not(.no-icon):hover::before {
 
 .back-button .button {
     text-decoration: none;
-    color: var(--light-blue);
-    border: 2px solid var(--light-blue);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     padding: var(--spacing-s) var(--spacing-m);
     display: inline-block;
     font-weight: bold;
@@ -186,7 +186,7 @@ a:not(.no-icon):hover::before {
 
 .project-overlay .access-link {
     font-size: var(--text-sm);
-    color: var(--gold);
+    color: var(--accent-color);
     font-weight: var(--font-bold);
     text-decoration: none;
 }
@@ -202,7 +202,7 @@ a:not(.no-icon):hover::before {
 /* Enlaces en menú lateral del CV */
 .side-menu a {
     font-size: var(--text-xs);
-    color: var(--light-blue);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: var(--font-semibold);
     transition: font-size 0.5s ease;
@@ -217,7 +217,7 @@ a:not(.no-icon):hover::before {
    ········································· */
 
 #landing-footer a {
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 #landing-footer .social-icons a svg {

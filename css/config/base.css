@@ -21,11 +21,11 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote
 body {
     margin: 0;
     padding: 0;
-    background: var(--background);
+    background: var(--bg-primary);
     font-family: var(--font-family-body);
     font-size: var(--text-base);
     font-weight: var(--font-normal);
-    color: var(--black);
+    color: var(--color-black);
     line-height: var(--line-height-normal);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -54,7 +54,7 @@ h1 {
     font-family: var(--font-family-headings);
     font-size: var(--text-4xl);
     font-weight: var(--font-light);
-    color: var(--light-blue);
+    color: var(--primary-color);
     line-height: var(--line-height-tight);
     padding: 20px 0;
 }
@@ -63,7 +63,7 @@ h2 {
     font-family: var(--font-family-headings);
     font-size: var(--text-3xl);
     font-weight: var(--font-light);
-    color: var(--light-blue);
+    color: var(--primary-color);
     line-height: var(--line-height-tight);
     padding: 14px 0;
 }
@@ -72,7 +72,7 @@ h3 {
     font-family: var(--font-family-headings);
     font-size: var(--text-2xl);
     font-weight: var(--font-bold);
-    color: var(--light-blue);
+    color: var(--primary-color);
     line-height: var(--line-height-normal);
     padding: 10px 0;
 }
@@ -81,7 +81,7 @@ h4 {
     font-family: var(--font-family-body);
     font-size: var(--text-lg);
     font-weight: var(--font-normal);
-    color: var(--black);
+    color: var(--color-black);
     line-height: var(--line-height-normal);
     padding: 7px 0;
 }
@@ -90,7 +90,7 @@ h5 {
     font-family: var(--font-family-body);
     font-size: var(--text-base);
     font-weight: var(--font-normal);
-    color: var(--black);
+    color: var(--color-black);
     line-height: var(--line-height-normal);
     padding: 7px 0;
 }
@@ -99,14 +99,14 @@ h6 {
     font-family: var(--font-family-body);
     font-size: var(--text-sm);
     font-weight: var(--font-normal);
-    color: var(--black);
+    color: var(--color-black);
     line-height: var(--line-height-normal);
     padding: 7px 0;
 }
 
 p {
     line-height: var(--line-height-normal);
-    color: var(--text-black);
+    color: var(--text-primary);
 }
 
 /* ·········································
@@ -145,14 +145,14 @@ p {
     font-family: var(--font-family-headings);
     font-size: var(--text-3xl);
     font-weight: var(--font-bold);
-    color: var(--light-blue);
+    color: var(--primary-color);
 }
 
 .section-subtitle {
     font-family: var(--font-family-body);
     font-size: var(--text-base);
     font-weight: var(--font-light);
-    color: var(--light-blue);
+    color: var(--primary-color);
     padding-top: 0;
 }
 
@@ -160,13 +160,13 @@ p {
     font-family: var(--font-family-headings);
     font-size: var(--text-sm);
     font-weight: var(--font-bold);
-    color: var(--medium-blue);
+    color: var(--primary-color);
     letter-spacing: 2px;
     padding-bottom: 0;
 }
 
 .section-heading h2:after {
-    background: var(--gold);
+    background: var(--accent-color);
     content: "";
     display: block;
     width: 30px;
@@ -195,9 +195,9 @@ ul.puntos {
 .teatro,
 .publicaciones,
 .ponencias {
-    background-color: var(--background);
+    background-color: var(--bg-primary);
 }
 
 .bio {
-    background-color: var(--background-grey);
+    background-color: var(--bg-secondary);
 }

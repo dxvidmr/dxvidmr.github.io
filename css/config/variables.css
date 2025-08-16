@@ -11,26 +11,25 @@
 
 :root {
   /* ·········································
-     Colores principales
+     Colores del sistema de diseño
      ········································· */
-  --dark-blue:      #051D26;
-  --medium-blue:    #012840;
-  --light-blue:     #375D66;
-  --gold:           #DDBF14;
-  --dark-gray:      #7a7a7a;
-  --black:          #111;
-  --white:          #F5F5F5;
-  --background:     #F5F5F5;
-  --background-grey:#EBEBEB;
-  --background-dark:  #2d3548;
-
-
-  /* ·········································
-     Colores secundarios
-     ········································· */
-  --text-light:       #F5F5F5;
-  --text-black:       #333;
-  --text-gray:        #7a7a7a;
+  
+  /* Colores principales de marca */
+  --primary-color:    #375D66;   /* Light blue - Color principal */
+  --accent-color:     #DDBF14;   /* Gold - Color de acento */
+  --dark-primary:     #051D26;   /* Dark blue - Variante oscura del principal */
+  
+  /* Colores neutros */
+  --color-white:      #F5F5F5;   /* Blanco suave */
+  --color-black:      #111111;   /* Negro profundo */
+  
+  /* Colores de fondo */
+  --bg-primary:       #F5F5F5;   /* Fondo principal (blanco suave) */
+  --bg-secondary:     #EBEBEB;   /* Fondo secundario (gris claro) */
+  
+  /* Colores de texto */
+  --text-primary:     #333333;   /* Texto principal oscuro */
+  --text-secondary:   #7a7a7a;   /* Texto secundario (gris) */
 
   /* ·········································
      Espaciados

@@ -28,7 +28,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-text-secondary);
+    color: var(--text-gray);
     transition: all 0.3s ease;
     position: relative;
 }

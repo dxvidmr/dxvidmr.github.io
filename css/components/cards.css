@@ -234,13 +234,13 @@
 
 .publication-title {
     font-size: var(--text-lg);
-    color: var(--color-text-primary);
+    color: var(--text-black);
     margin-bottom: var(--spacing-s);
     font-weight: var(--font-semibold);
 }
 
 .publication-metadata {
-    color: var(--color-text-secondary);
+    color: var(--text-black);
     font-size: var(--text-sm);
     line-height: var(--line-height-normal);
 }

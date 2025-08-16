@@ -194,7 +194,7 @@ h4.subsection-title{
 
 .skill-group h4 {
   margin: 0 0 var(--spacing-s);
-  color: var(--color-text-secondary);
+  color: var(--text-black);
   font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -218,7 +218,7 @@ h4.subsection-title{
 
 .language-cert {
     font-size: var(--text-xs);
-    color: var(--color-text-secondary);
+    color: var(--text-black);
 }
 
 @media (max-width: 768px) {

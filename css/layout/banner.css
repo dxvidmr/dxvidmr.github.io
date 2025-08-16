@@ -29,6 +29,7 @@
     font-weight: var(--font-extrabold);
     color: var(--white);
     padding-top: 5%;
+    text-transform: none;
 }
 
 #banner h2 {

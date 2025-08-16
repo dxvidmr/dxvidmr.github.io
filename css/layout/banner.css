@@ -23,7 +23,7 @@
    ········································· */
 
 #banner h1 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-headings);
     font-size: var(--text-5xl);
     line-height: var(--line-height-tight);
     font-weight: var(--font-extrabold);
@@ -32,7 +32,7 @@
 }
 
 #banner h2 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-body);
     font-size: var(--text-lg);
     font-weight: var(--font-light);
     color: var(--white);

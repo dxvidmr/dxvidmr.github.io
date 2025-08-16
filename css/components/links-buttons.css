@@ -139,7 +139,7 @@ a:not(.no-icon):hover::before {
    ········································· */
 
 #banner .button {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-body);
     font-size: var(--text-base);
     color: var(--black);
     border-color: var(--black);

@@ -64,7 +64,7 @@
 }
 
 #navigation-logo {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-headings);
     font-size: var(--text-lg); 
     color: var(--light-blue);
     display: inline-block;

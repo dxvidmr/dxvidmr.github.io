@@ -2,6 +2,11 @@
    VARIABLES CSS GLOBALES
    ═══════════════════════════════════════════════════════════ */
 
+/* ·········································
+   Fuentes externas
+   ········································· */
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
   /* ·········································
      Colores principales
@@ -49,6 +54,11 @@
   /* ·········································
      Tipografía
      ········································· */
+  /* Familias de fuentes */
+  --font-family-headings: 'Host Grotesk', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif, Arial, Helvetica;
+
+  /* Tamaños de texto */
   --text-xs:   0.75rem;     /* 12px */
   --text-sm:   0.875rem;    /* 14px */
   --text-base: 1rem;        /* 16px - Base */

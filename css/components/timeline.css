@@ -101,7 +101,7 @@
     color: var(--black);
     margin-bottom: var(--spacing-none);
     line-height: var(--line-height-tight);
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-headings);
 }
 
 .timeline-subtitle {

@@ -37,7 +37,7 @@
 
 #landing-footer, 
 #landing-footer p {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--font-family-body);
     font-size: 12px;
     font-weight: normal;
     color: var(--dark-gray);

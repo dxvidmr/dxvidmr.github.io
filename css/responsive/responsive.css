@@ -86,8 +86,17 @@
     
     /* Production Hero */
     .production-hero {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         min-height: auto;
+    }
+    
+    .production-hero .production-slider {
+        order: 1;
+    }
+    
+    .production-hero .production-info {
+        order: 2;
     }
     
     .production-slider {

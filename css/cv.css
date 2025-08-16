@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-family-body);
   background-color: var(--white);
   color: var(--text-black);
   line-height: 1.5;

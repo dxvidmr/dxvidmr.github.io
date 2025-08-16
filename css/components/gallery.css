@@ -149,6 +149,7 @@
     width: 80px;
     background: transparent;
     border: none;
+    border-radius: var(--border-radius);
     cursor: pointer;
     z-index: 10000;
     opacity: 0;

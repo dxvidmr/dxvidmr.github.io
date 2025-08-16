@@ -21,6 +21,11 @@ a:hover {
    Enlaces externos
    ········································· */
 
+/* Clase para prevenir iconos automáticos en enlaces */
+.no-icon {
+    position: relative; /* Asegurar contexto para pseudo-elementos */
+}
+
 /* Agregar icono externo a enlaces http/https */
 a[href^="http://"]:not(.no-icon)::after,
 a[href^="https://"]:not(.no-icon)::after {

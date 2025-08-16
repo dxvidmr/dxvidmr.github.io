@@ -144,11 +144,11 @@
 }
 
 .nav-solid #nav-trigger span.open:hover {
-    color: var(--dark-gray);
+    color: var(--text-secondary);
 }
 
 .nav-solid #nav-trigger span {
-    color: var(--dark-gray);
+    color: var(--text-secondary);
     opacity: 1;
 }
 

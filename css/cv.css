@@ -75,7 +75,7 @@ body {
   font-size: 1.75rem;
   font-weight: 500;
   border-bottom: 1px solid var(--light-blue);
-  padding-bottom: var(--spacing-xs);
+  padding-bottom: var(--spacing-none);
   margin-bottom: var(--spacing-l);
 }
 .subsection-title {
@@ -94,7 +94,7 @@ h4.subsection-title{
 }
 .header-title {
   font-size: 3rem;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-none);
   color: var(--light-blue);
 }
 .header-subtitle {
@@ -110,7 +110,7 @@ h4.subsection-title{
   padding-left: var(--spacing-l);
 }
 .cv-list li {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-none);
 }
 
 /* Indicador de desplazamiento */
@@ -128,7 +128,7 @@ h4.subsection-title{
     font-size: 1.2rem;
     color: var(--text-black);
     margin-top: 0!important;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .item-date {
@@ -137,13 +137,13 @@ h4.subsection-title{
     text-transform: uppercase;
     color: var(--light-blue);
     margin-top: 0!important;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .item-metadata {
     font-size: 0.9rem;
     color: var(--text-gray);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .item-description {
@@ -151,7 +151,7 @@ h4.subsection-title{
     color: var(--text-black);
     line-height: 1.5;
     margin-top: var(--spacing-s);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .publication-author {
@@ -159,14 +159,14 @@ h4.subsection-title{
     font-weight: 500;
     color: var(--text-gray);
     text-transform: uppercase;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .publication-title {
     font-size: 1rem;
     font-style: normal;
     color: var(--text-black);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .item-container {
@@ -207,13 +207,13 @@ h4.subsection-title{
 }
 
 .skill-list li {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-none);
   font-size: var(--text-sm);
 }
 
 .language-level {
     font-size: var(--text-sm);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .language-cert {

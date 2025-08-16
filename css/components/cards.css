@@ -252,7 +252,7 @@
 .publication-details {
     font-weight: var(--font-medium);
     color: var(--text-black);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
 }
 
 .publication-metadata::after {

@@ -89,7 +89,7 @@
 .timeline-date {
     font-size: var(--text-sm);
     color: var(--light-blue);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
     font-weight: var(--font-semibold);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -99,7 +99,7 @@
     font-size: var(--text-xl);
     font-weight: var(--font-bold);
     color: var(--black);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-none);
     line-height: var(--line-height-tight);
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
@@ -114,7 +114,7 @@
 .timeline-description {
     font-size: var(--text-sm);
     color: var(--text-black);
-    margin-top: var(--spacing-xs);
+    margin-top: var(--spacing-xxs);
     line-height: var(--line-height-normal);
     font-style: normal;
 }

@@ -340,11 +340,13 @@ nav#nav-mobile .menu-button {
     text-align: center;
     color: var(--gold);
     margin: 0 var(--spacing-s);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .rrss a:hover {
     opacity: 0.8;
     color: var(--gold);
+    transform: translateY(-2px);
 }
 
 .rrss span {
@@ -357,6 +359,11 @@ nav#nav-mobile .menu-button {
     height: 2em;
     vertical-align: middle;  
     margin-top: -15px;
+}
+
+/* Colores para iconos Font Awesome en banner */
+.rrss a i {
+    color: var(--gold);
 }
 
 /* ·········································

@@ -33,6 +33,35 @@
         width: 100%;
     }
 
+    /* Iconos sociales responsive - reducir espaciado en móviles */
+    .rrss a {
+        margin: 0 var(--spacing-s);
+        width: 28px;
+    }
+
+    .rrss a i {
+        font-size: var(--text-2xl);
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    #landing-footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #landing-footer li {
+        margin: 0 var(--spacing-xs);
+    }
+
+    .social-icons a {
+        padding: 6px;
+    }
+
     /* Hero Project */
     .hero-project {
         grid-template-columns: 1fr;
@@ -136,6 +165,24 @@
     [class*='col-'] {
         padding: 8px;
     }
+
+    /* Iconos sociales en dispositivos pequeños */
+    .rrss a {
+        margin: 0 var(--spacing-xxs);
+        width: 24px;
+    }
+
+    .rrss a i {
+        font-size: var(--text-2xl);
+    }
+
+    #landing-footer li {
+        margin: 0 var(--spacing-xxs);
+    }
+
+    .social-icons a {
+        padding: 4px;
+    }
 }
 
 /* =================================================================
@@ -150,6 +197,24 @@
 
     .production-info {
         padding: var(--spacing-m);
+    }
+
+    /* Iconos sociales en dispositivos muy pequeños */
+    .rrss a {
+        margin: 0 1px;
+        width: 22px;
+    }
+
+    .rrss a i {
+        font-size: var(--text-xl);
+    }
+
+    #landing-footer li {
+        margin: 0 1px;
+    }
+
+    .social-icons a {
+        padding: 3px;
     }
 }
 

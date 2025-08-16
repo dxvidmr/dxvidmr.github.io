@@ -8,10 +8,27 @@
 
 #landing-footer {
     clear: both;
+    padding: 60px 0 40px 0;
 }
 
 #landing-footer .row {
     padding: 0;
+}
+
+/* ·········································
+   Contenedor principal del footer
+   ········································· */
+
+.footer-content {
+    text-align: center;
+}
+
+/* ·········································
+   Secciones del footer
+   ········································· */
+
+.footer-social {
+    margin-bottom: 30px;
 }
 
 /* ·········································
@@ -30,8 +47,24 @@
     margin: 0;
 }
 
+.copyright {
+    font-size: 11px;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+.copyright a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: var(--dark-blue);
+}
+
 /* ·········································
-   Elementos del footer
+   Iconos sociales
    ········································· */
 
 #landing-footer i {
@@ -40,9 +73,22 @@
 
 #landing-footer ul {
     list-style: none;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #landing-footer li {
     display: inline-block;
+    margin: 0 8px;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
 }

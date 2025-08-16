@@ -73,6 +73,10 @@
     transition: color 0.3s ease;
 }
 
+#navigation-logo b {
+    font-weight: var(--font-bold);
+}
+
 #navigation-logo:hover {
     color: var(--gold);
 }

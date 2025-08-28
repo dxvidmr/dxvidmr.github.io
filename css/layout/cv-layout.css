@@ -11,7 +11,7 @@
   position: relative;
   max-width: 1245px;
   margin: 0 auto;
-  padding: 75px 20px;
+  padding: var(--spacing-xl);
 }
 
 /* Layout específico del CV - completamente independiente */
@@ -23,7 +23,6 @@
   min-height: 100vh;
   max-width: 1245px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* Resetear cualquier estilo del grid general */
@@ -62,7 +61,6 @@
   position: relative;
   width: 100%;
   height: fit-content;
-  padding-right: var(--spacing-s);
 }
 
 /* CV responsive settings moved to responsive.css */
@@ -101,7 +99,7 @@
    ········································· */
 
 .cv-container .cv-content {
-  padding: var(--spacing-xl);
+  padding: var(--spacing-l);
 }
 
 /* ·········································

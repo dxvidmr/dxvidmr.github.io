@@ -182,7 +182,7 @@ $(document).ready(function () {
                         <li><a href="#research">RESEARCH PROJECTS</a></li>
                         <li><a href="#software">SOFTWARE & TOOLS</a></li>
                         <li><a href="#publications">PUBLICATIONS</a></li>
-                        <li><a href="#talks">PRESENTATIONS</a></li>
+                        <li><a href="#talks">TALKS</a></li>
                         <li><a href="#teaching">TEACHING</a></li>
                         <li><a href="#activities">ACTIVITIES</a></li>
                         <li><a href="#skills">SKILLS</a></li>

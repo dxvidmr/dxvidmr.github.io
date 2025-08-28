@@ -60,29 +60,46 @@ body {
 }
 
 /* ·········································
-   Botón Back - fijo arriba del viewport (solo desktop)
+   Sidebar - por defecto centrada (desktop-first)
    ········································· */
 
-@media (min-width: 1025px) {
-  .cv-container .back-button {
-    position: fixed;
-    top: var(--spacing-m);
-    left: max(20px, calc((100vw - 1245px) / 2));
-    width: 180px;
-    padding: 0;
-    z-index: 20;
-  }
+.cv-container .cv-sidebar {
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  height: fit-content;
+  max-height: calc(100vh - var(--spacing-xl));
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 220px;
+}
 
-  .cv-container .side-menu {
-    position: fixed;
-    top: 50vh;
-    left: max(20px, calc((100vw - 1245px) / 2));
-    transform: translateY(-50%);
-    width: 180px;
-    height: fit-content;
-    max-height: 60vh;
-    overflow-y: auto;
-    padding-right: var(--spacing-s);
+.cv-container .back-button {
+  position: relative;
+  margin-bottom: var(--spacing-m);
+  width: 100%;
+  padding: 0;
+}
+
+.cv-container .side-menu {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding-right: var(--spacing-s);
+}
+
+/* Resetear solo en móvil */
+@media (max-width: 1024px) {
+  .cv-container .cv-sidebar {
+    position: relative;
+    top: auto;
+    transform: none;
+    max-height: none;
+    overflow-y: visible;
+    display: block;
+    width: auto;
   }
 }
 
@@ -92,6 +109,7 @@ body {
     position: relative;
     padding: 0;
     margin-bottom: var(--spacing-l);
+    display: none; /* Oculto en móvil porque se muestra en menú hamburguesa */
   }
 
   .cv-container .side-menu {
@@ -188,12 +206,11 @@ body {
    Elementos de contenido
    ········································· */
 
-/* Botones específicos del CV */
-.cv-container .back-button {
-  padding: var(--spacing-m);
-  padding-inline-start: 0!important;
-}
+/* ·········································
+   BACK BUTTON - Definición única y clara
+   ········································· */
 
+/* Estilos base del botón back - aplicables a cualquier contexto */
 .cv-container .back-button .button {
   text-decoration: none;
   color: var(--primary-color);
@@ -201,12 +218,15 @@ body {
   padding: var(--spacing-s) var(--spacing-m);
   display: inline-block;
   font-weight: bold;
-  transition: opacity 0.2s ease;
+  transition: all 0.3s ease;
   border-radius: var(--border-radius);
+  font-size: var(--text-sm);
 }
 
 .cv-container .back-button .button:hover {
-  opacity: 0.75;
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  opacity: 0.9;
 }
 
 /* Enlaces externos en el CV */
@@ -366,158 +386,10 @@ body {
    Responsive Design
    ········································· */
 
-/* Menú hamburguesa (solo móvil) */
-.cv-container .hamburger-menu {
-  display: none; /* Oculto por defecto, solo se muestra en móvil */
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  background: var(--color-white);
-  border: 2px solid var(--primary-color);
-  border-radius: var(--border-radius);
-  padding: 10px;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.cv-container .hamburger-menu::before {
-  font-family: 'FontAwesome';
-  content: '\f0c9'; /* Icono de hamburguesa de Font Awesome */
-  font-size: 18px;
-  color: var(--primary-color);
-  transition: all 0.3s ease;
-}
-
-/* Estado activo - cambia a X */
-.cv-container .hamburger-menu.active::before {
-  content: '\f00d'; /* Icono de X (close) de Font Awesome */
-}
-
-/* Overlay del menú móvil */
-.cv-container .mobile-menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-/* Estado visible del overlay */
-.cv-container .mobile-menu-overlay.show {
-  opacity: 1;
-  visibility: visible;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.cv-container .mobile-menu-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-white);
-  padding: var(--spacing-xl);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0.9);
-  opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
-}
-
-/* Estado visible del contenido */
-.cv-container .mobile-menu-overlay.show .mobile-menu-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.cv-container .mobile-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;
-}
-
-/* Estado visible de la navegación */
-.cv-container .mobile-menu-overlay.show .mobile-nav ul {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.cv-container .mobile-nav li {
-  margin-bottom: var(--spacing-m);
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Animación escalonada de los elementos de la lista */
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(1) { transition-delay: 0.2s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(2) { transition-delay: 0.25s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(3) { transition-delay: 0.3s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(4) { transition-delay: 0.35s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(5) { transition-delay: 0.4s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(6) { transition-delay: 0.45s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(7) { transition-delay: 0.5s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(8) { transition-delay: 0.55s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(9) { transition-delay: 0.6s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(10) { transition-delay: 0.65s; }
-.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(11) { transition-delay: 0.7s; }
-
-.cv-container .mobile-menu-overlay.show .mobile-nav li {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.cv-container .mobile-nav a {
-  font-size: var(--text-lg);
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: var(--font-semibold);
-  display: block;
-  padding: var(--spacing-s);
-}
-
-.cv-container .mobile-nav a:hover {
-  color: var(--accent-color);
-}
-
-.cv-container .mobile-back-button {
-  margin-bottom: var(--spacing-xl);
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s;
-}
-
-.cv-container .mobile-menu-overlay.show .mobile-back-button {
-  opacity: 1;
-  transform: scale(1);
-}
-
 /* Tablet and mobile */
 @media (max-width: 1024px) {
-  /* Mostrar hamburguesa en móvil */
-  .cv-container .hamburger-menu {
-    display: flex;
-  }
-  
-  /* Ocultar solo el contenido del menú lateral, no toda la sidebar */
-  .cv-container .back-button,
-  .cv-container .side-menu {
+  /* Ocultar solo la lista del menú lateral */
+  .cv-container .side-menu ul {
     display: none;
   }
   

@@ -6,6 +6,7 @@
 @import url('./config/variables.css');
 @import url('./config/base.css');
 @import url('./layout/grid.css');
+@import url('./layout/navigation.css');
 @import url('./components/links-buttons.css');
 @import url('./icons/font-awesome.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
@@ -20,5 +21,13 @@
     font-family: var(--font-family-body);
     line-height: var(--line-height-normal);
     color: var(--text-primary);
+    
+    /* Asegurar que las variables estén disponibles */
+    box-sizing: border-box;
+}
+
+/* Reset global para el CV */
+.cv-container * {
+    box-sizing: border-box;
 }
 

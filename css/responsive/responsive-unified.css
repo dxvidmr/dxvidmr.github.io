@@ -27,17 +27,9 @@
         display: block;
     }
     
-    /* Ocultar navegación principal en móvil SOLO en página principal */
-    body:not(.cv-page) #nav-main {
+    /* Ocultar navegación principal en móvil */
+    #nav-main {
         display: none !important;
-    }
-    
-    /* En el CV, mantener #nav-main accesible para JS pero ocultar visualmente */
-    .cv-page .cv-sidebar {
-        position: absolute;
-        left: -9999px;
-        visibility: hidden;
-        pointer-events: none;
     }
     
     /* Ocultar sistema de menú móvil antiguo cuando overlay está activo */
@@ -46,8 +38,8 @@
         display: none !important;
     }
     
-    /* Navegación tradicional mobile (backup) - solo página principal */
-    body:not(.cv-page) nav#nav-main {
+    /* Navegación tradicional mobile (backup) */
+    nav#nav-main {
         display: none;
     }
 
@@ -69,20 +61,14 @@
        CV LAYOUT SYSTEM
        ········································· */
     
-    /* En el CV, ocultar el menú lateral físico pero mantener accesible para JS */
-    .cv-page .cv-sidebar {
-        display: none;
-    }
-    
-    /* Ajustar el layout del CV a una sola columna */
-    .cv-page .cv-layout {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-m);
-    }
-    
-    /* Dar espacio superior para el menú hamburguesa */
-    .cv-page .cv-content {
-        padding-top: 80px;
+    .cv-container .cv-sidebar {
+        position: relative;
+        top: auto;
+        transform: none;
+        max-height: none;
+        overflow-y: visible;
+        display: block;
+        width: auto;
     }
 }
 
@@ -266,42 +252,22 @@
        TIMELINE COMPONENT
        ········································· */
     
-    .timeline-line {
-        left: var(--spacing-lg);
-        transform: none;
+    .timeline {
+        padding: 0 var(--spacing-m);
     }
-
-    .timeline-item,
-    .timeline-item.right {
-        padding-left: calc(var(--spacing-lg) + var(--spacing-xl));
-        padding-right: var(--spacing-lg);
-        justify-content: flex-start;
+    
+    .timeline-item {
+        margin-left: 0;
+        padding-left: var(--spacing-m);
     }
-
-    .timeline-point {
-        left: var(--spacing-lg);
-        transform: translateX(-50%);
+    
+    .timeline-item::before {
+        left: 0;
     }
-
-    .timeline-item:hover .timeline-point {
-        transform: translateX(-50%) scale(1.2);
-    }
-
+    
     .timeline-content {
-        margin-left: var(--spacing-xl);
-    }
-
-    .timeline-content,
-    .timeline-item.right .timeline-content {
-        text-align: left;
-    }
-
-    .timeline-title {
-        font-size: var(--text-lg);
-    }
-
-    .timeline-subtitle {
-        font-size: var(--text-sm);
+        margin-left: 0;
+        max-width: 100%;
     }
     
     /* ·········································

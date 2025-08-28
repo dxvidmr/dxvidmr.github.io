@@ -125,48 +125,8 @@
 }
 
 /* ·········································
-   Responsive design
+   Responsive design moved to responsive.css
    ········································· */
-
-@media (max-width: 768px) {
-    .timeline-line {
-        left: var(--spacing-lg);
-        transform: none;
-    }
-
-    .timeline-item,
-    .timeline-item.right {
-        padding-left: calc(var(--spacing-lg) + var(--spacing-xl));
-        padding-right: var(--spacing-lg);
-        justify-content: flex-start;
-    }
-
-    .timeline-point {
-        left: var(--spacing-lg);
-        transform: translateX(-50%);
-    }
-
-    .timeline-item:hover .timeline-point {
-        transform: translateX(-50%) scale(1.2);
-    }
-
-    .timeline-content {
-        margin-left: var(--spacing-xl);
-    }
-
-    .timeline-content,
-    .timeline-item.right .timeline-content {
-        text-align: left;
-    }
-
-    .timeline-title {
-        font-size: var(--text-lg);
-    }
-
-    .timeline-subtitle {
-        font-size: var(--text-sm);
-    }
-}
 
 /* ·········································
    Animaciones

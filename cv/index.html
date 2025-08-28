@@ -4,26 +4,19 @@
   <meta charset="UTF-8">
   <title>CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/cv-base.css">
-  <link rel="stylesheet" href="/css/cv.css">
+  <link rel="stylesheet" href="/css/pages/cv.css">
 </head>
 
-<body>
+<body class="cv-page">
 <div class="cv-container">
   <div class="cv-layout">
     <!-- Columna del menú lateral -->
-    <div class="cv-sidebar">
-      <!-- Botón hamburguesa (solo móvil) -->
-      <button class="hamburger-menu" aria-label="Abrir menú">
-      </button>
-      
-      <!-- Botón para volver -->
-      <div class="back-button">
-          <a href="/index.html" class="button">← Back</a>
-      </div>
-      
-      <!-- Menú lateral de navegación -->
-      <nav class="side-menu">
+    <div class="cv-sidebar">  
+      <!-- Menú lateral de navegación-->
+      <nav class="side-menu" id="nav-main">
+        <div class="back-button">
+          <a href="/index.html" class="button">← BACK</a>
+        </div>
         <ul>
           <li><a href="#about">ABOUT ME</a></li>
           <li><a href="#education">EDUCATION</a></li>
@@ -38,30 +31,10 @@
           <li><a href="#languages">LANGUAGES</a></li>
         </ul>
       </nav>
-    </div>
-
-    <!-- Overlay para el menú móvil -->
-    <div class="mobile-menu-overlay">
-      <div class="mobile-menu-content">
-        <div class="mobile-back-button">
-          <a href="/index.html" class="button">← Back</a>
-        </div>
-        <nav class="mobile-nav">
-          <ul>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#grants">GRANTS & AWARDS</a></li>
-            <li><a href="#research">RESEARCH PROJECTS</a></li>
-            <li><a href="#software">SOFTWARE & TOOLS</a></li>
-            <li><a href="#publications">PUBLICATIONS</a></li>
-            <li><a href="#talks">PRESENTATIONS</a></li>
-            <li><a href="#teaching">TEACHING</a></li>
-            <li><a href="#activities">ACTIVITIES</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#languages">LANGUAGES</a></li>
-          </ul>
-        </nav>
-      </div>
+      
+      <!-- Mobile Navigation Toggle -->
+      <div id="nav-trigger"><span></span></div>
+      <nav id="nav-mobile"></nav>
     </div>
 
     <!-- Columna del contenido principal -->
@@ -783,6 +756,11 @@
 
   </main>
   </div> <!-- /cv-layout -->
+  
+  <!-- Scripts necesarios para navegación -->
+  <script src="/js/jquery.1.8.3.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/navigation.js"></script>
   <script src="/js/scroll-cv.js"></script>
 </div> <!-- /cv-container -->
 </body>

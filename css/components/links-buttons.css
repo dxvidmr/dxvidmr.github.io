@@ -59,7 +59,7 @@ a:not(.no-icon):hover::before {
    ········································· */
 
 .button {
-    font-weight: var(--font-bold);
+    font-weight: var(--font-medium);
     color: var(--primary-color);
     border-color: var(--primary-color);
     font-size: var(--text-base);
@@ -127,6 +127,11 @@ a:not(.no-icon):hover::before {
     color: var(--primary-color);
 }
 
+.mobile-menu-content .menu-button:hover span {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
 /* Menu Button in nav-solid state */
 #header.nav-solid .menu-button span {
     border-color: var(--primary-color);
@@ -159,26 +164,6 @@ a:not(.no-icon):hover::before {
    Botones de CV
    ········································· */
 
-/* Botón de regreso */
-.back-button {
-    padding: var(--spacing-m);
-    padding-inline-start: 0!important;
-}
-
-.back-button .button {
-    text-decoration: none;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    padding: var(--spacing-s) var(--spacing-m);
-    display: inline-block;
-    font-weight: bold;
-    transition: opacity 0.2s ease;
-}
-
-.back-button .button:hover {
-    opacity: 0.75;
-}
-
 /* ·········································
    Enlaces en componentes
    ········································· */
@@ -206,7 +191,7 @@ a:not(.no-icon):hover::before {
 
 /* Enlaces en menú lateral del CV */
 .side-menu a {
-    font-size: var(--text-xs);
+    font-size: var(--text-s);
     color: var(--primary-color);
     text-decoration: none;
     font-weight: var(--font-semibold);
@@ -214,6 +199,6 @@ a:not(.no-icon):hover::before {
 }
 
 .side-menu a:hover {
-    font-size: var(--text-sm);
+    font-size: var(--text-m);
 }
 

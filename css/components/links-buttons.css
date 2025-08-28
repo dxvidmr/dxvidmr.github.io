@@ -66,7 +66,7 @@ a:not(.no-icon):hover::before {
     margin: var(--spacing-m) 0;
     padding: 11px 16px;
     display: inline-block;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-radius: var(--border-radius);
     background-color: transparent;
@@ -94,7 +94,7 @@ a:not(.no-icon):hover::before {
     padding: 11px 16px;
     display: inline-block;
     transition: all .3s linear;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: var(--border-radius);
 }
 
@@ -130,6 +130,10 @@ a:not(.no-icon):hover::before {
 .mobile-menu-content .menu-button:hover span {
     background-color: var(--accent-color);
     color: var(--bg-primary);
+}
+
+.mobile-menu-content .menu-button {
+    margin-top: var(--spacing-m);
 }
 
 /* Menu Button in nav-solid state */

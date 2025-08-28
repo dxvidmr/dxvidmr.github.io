@@ -72,24 +72,28 @@
 }
 
 .cv-container .side-menu a {
-  font-size: var(--text-xs);
+  font-size: var(--text-base);
   color: var(--primary-color);
   text-decoration: none;
-  font-weight: var(--font-semibold);
-  transition: font-size 0.5s ease;
+  font-weight: var(--font-medium);
+  transition: font-size 0.5s cubic-bezier(0.25,0.8,0.25,1), padding 0.5s cubic-bezier(0.25,0.8,0.25,1), line-height 0.5s cubic-bezier(0.25,0.8,0.25,1);
+  line-height: var(--line-height-relaxed);
 }
 
 .cv-container .side-menu a:hover {
   text-decoration: none !important;
   color: var(--accent-color);
-  font-size: var(--text-sm);
-  transition: font-size 0.5s ease;
+  font-size: var(--text-lg);
+  padding-left: 8px;
+  line-height: var(--line-height-relaxed);
 }
 
 .cv-container .side-menu a.active {
   color: var(--accent-color);
   font-weight: bold;
-  font-size: var(--text-sm);
+  font-size: var(--text-lg);
+  padding-left: 8px;
+  line-height: var(--line-height-relaxed);
 }
 
 /* ·········································

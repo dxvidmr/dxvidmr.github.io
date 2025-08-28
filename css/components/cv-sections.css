@@ -51,14 +51,17 @@
 }
 
 /* ·········································
-   BACK ICON - Icono de regreso simplificado
+   BACK ICON 
    ········································· */
 
 .cv-back-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 32px;
+  width: 32px;
   margin-bottom: var(--spacing-m);
-  width: 100%;
 }
-
 .cv-back-icon a {
   display: inline-block;
   padding: var(--spacing-s);
@@ -66,21 +69,22 @@
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
-.cv-back-icon a:hover {
-  background-color: var(--color-light-gray);
-  transform: translateX(-2px);
-}
-
 .cv-back-icon .back-icon {
-  width: 24px;
-  height: 24px;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.cv-back-icon a:hover .back-icon {
+  color: var(--primary-color);
+  transition: color 0.3s, transform 0.3s;
+  width: var(--text-2xl);
+  height: var(--text-2xl);
+  display: block;
+  margin: auto;
   opacity: 1;
+}
+.cv-back-icon a:hover .back-icon,
+.cv-back-icon a:focus .back-icon {
+  color: var(--accent-color);
+  transform: scale(1.15);
+}
+.cv-back-icon a:hover {
+  transform: translateX(-2px);
 }
 
 /* ·········································

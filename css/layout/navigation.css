@@ -364,6 +364,8 @@ nav#nav-mobile .menu-button {
     text-decoration: none;
     color: var(--text-secondary);
     transition: margin-bottom 150ms linear;
+    position: fixed;
+    z-index: 9000;
 }
 
 #scrollUp:hover {
@@ -545,9 +547,17 @@ nav#nav-mobile .menu-button {
     margin-bottom: var(--spacing-s);
     padding: var(--spacing-s) 0;
     border-bottom: 1px solid var(--color-light-gray);
+    justify-content: center;
+    text-align: center;
 }
 
-/* ·········································
-   Overlay responsive settings moved to responsive.css
-   ········································· */
-
+.mobile-menu-content .cv-back-link .back-icon {
+    color: var(--primary-color);
+    transition: opacity 0.3s;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+    .mobile-menu-content .cv-back-link:hover .back-icon,
+    .mobile-menu-content .cv-back-link:focus .back-icon {
+        opacity: 0.8;
+    }

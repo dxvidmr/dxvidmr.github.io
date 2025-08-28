@@ -42,7 +42,7 @@
 }
 
 /* ·········································
-   Sidebar - por defecto centrada (desktop-first)
+   Sidebar 
    ········································· */
 
 .cv-container .cv-sidebar {
@@ -56,13 +56,6 @@
   flex-direction: column;
   justify-content: center;
   width: 220px;
-}
-
-.cv-container .back-button {
-  position: relative;
-  margin-bottom: var(--spacing-m);
-  width: 100%;
-  padding: 0;
 }
 
 .cv-container .side-menu {

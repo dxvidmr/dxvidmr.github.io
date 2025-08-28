@@ -51,26 +51,36 @@
 }
 
 /* ·········································
-   BACK BUTTON - Definición única y clara
+   BACK ICON - Icono de regreso simplificado
    ········································· */
 
-/* Estilos base del botón back - aplicables a cualquier contexto */
-.cv-container .back-button .button {
-  text-decoration: none;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  padding: var(--spacing-s) var(--spacing-m);
-  display: inline-block;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  border-radius: var(--border-radius);
-  font-size: var(--text-sm);
+.cv-back-icon {
+  margin-bottom: var(--spacing-m);
+  width: 100%;
 }
 
-.cv-container .back-button .button:hover {
-  color: var(--color-white);
-  background-color: var(--primary-color);
-  opacity: 0.9;
+.cv-back-icon a {
+  display: inline-block;
+  padding: var(--spacing-s);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cv-back-icon a:hover {
+  background-color: var(--color-light-gray);
+  transform: translateX(-2px);
+}
+
+.cv-back-icon .back-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.cv-back-icon a:hover .back-icon {
+  opacity: 1;
 }
 
 /* ·········································

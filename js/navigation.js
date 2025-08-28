@@ -157,9 +157,9 @@ $(document).ready(function () {
         if (navMain) {
             let menuHTML = '<ul>';
             
-            // Si estamos en el CV, añadir botón Back al principio
+            // Si estamos en el CV, añadir icono Back al principio
             if (window.location.pathname.includes('/cv') || document.querySelector('.cv-container')) {
-                menuHTML += '<li class="back-button"><a href="/index.html" class="button">← BACK</a></li>';
+                menuHTML += '<li><a href="/index.html" class="cv-back-link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABs0lEQVR4nO2ZzytEURSAP/kVzzQr0SwQVpOyUsrGhuIPYKH8KNlLWVBiIQtLu1nMSsrCxkIWSoxslBI7ZUQpmqyU0jC69RbT6b0J3TfmvN5XZ/Xq3Pv1zrnvdB9ERFQkTcAOkAPSQA1KJTJAoSjGCYFEAZggBBKnQD1KcIBjD4kzIIYSnEiiQnAiiQrBCYNEzOeI/Uu8Ak/AJbAPbABjQEvQEnHg3JJEqfhy5RaCkoqXSaQ43oEtoLWSS+u3ZThTrlEk4z77CQ1AAkgCA+4mU8A18FlCKGV7krYh44fpi3ng3kdmV5OMoRZYAj481tjEMkHLGPqArMfJNoxCmW7gReS/BepQKNMP5EX+aQKglEyjpTXSIvcFAeEns2gpf5tH83dRRpk1i/lPRO45AsTIHLgLXVkeMZaFiCm3wDEjTZXlnEMePaiSXiFyh1ISQuQZpTSHRaQjLKWVFCI3KGUwLKfWpBDZRikrQmQdpewJkSmUkhUiPSikXUi8AdUoZFaIHKKUIyFibiNVzlh5cQHRiUJWPf5NquRRiJh+UclDkUTO/U+jklH3rZjvyMh/byYigpDwDaXWVJpzhf7CAAAAAElFTkSuQmCC" alt="Volver" style="width:20px;height:20px;margin-right:8px;opacity:0.8;"> Inicio</a></li>';
             }
             
             // Copiar todos los elementos li del nav original
@@ -175,7 +175,7 @@ $(document).ready(function () {
             if (window.location.pathname.includes('/cv') || document.querySelector('.cv-container')) {
                 menuContent.innerHTML = `
                     <ul>
-                        <li class="back-button"><a href="/index.html" class="button">← BACK</a></li>
+                        <li><a href="/index.html" class="cv-back-link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABs0lEQVR4nO2ZzytEURSAP/kVzzQr0SwQVpOyUsrGhuIPYKH8KNlLWVBiIQtLu1nMSsrCxkIWSoxslBI7ZUQpmqyU0jC69RbT6b0J3TfmvN5XZ/Xq3Pv1zrnvdB9ERFQkTcAOkAPSQA1KJTJAoSjGCYFEAZggBBKnQD1KcIBjD4kzIIYSnEiiQnAiiQrBCYNEzOeI/Uu8Ak/AJbAPbABjQEvQEnHg3JJEqfhy5RaCkoqXSaQ43oEtoLWSS+u3ZThTrlEk4z77CQ1AAkgCA+4mU8A18FlCKGV7krYh44fpi3ng3kdmV5OMoRZYAj481tjEMkHLGPqArMfJNoxCmW7gReS/BepQKNMP5EX+aQKglEyjpTXSIvcFAeEns2gpf5tH83dRRpk1i/lPRO45AsTIHLgLXVkeMZaFiCm3wDEjTZXlnEMePaiSXiFyh1ISQuQZpTSHRaQjLKWVFCI3KGUwLKfWpBDZRikrQmQdpewJkSmUkhUiPSikXUi8AdUoZFaIHKKUIyFibiNVzlh5cQHRiUJWPf5NquRRiJh+UclDkUTO/U+jklH3rZjvyMh/byYigpDwDaXWVJpzhf7CAAAAAElFTkSuQmCC" alt="Volver" style="width:20px;height:20px;margin-right:8px;opacity:0.8;"> Inicio</a></li>
                         <li><a href="#about">ABOUT ME</a></li>
                         <li><a href="#education">EDUCATION</a></li>
                         <li><a href="#grants">GRANTS & AWARDS</a></li>

@@ -1,19 +1,200 @@
-@import url('/css/config/variables.css');
+/* ═══════════════════════════════════════════════════════════
+   CV STYLES - Estilos específicos del CV con namespace
+   ⚠️  DEPENDENCIAS: Este archivo requiere cv-base.css con variables
+   ═══════════════════════════════════════════════════════════ */
+
+/* ·········································
+   Base del CV
+   ········································· */
 
 body {
   margin: 0;
   font-family: var(--font-family-body);
   background-color: var(--color-white);
   color: var(--text-primary);
-  line-height: 1.5;
+  line-height: var(--line-height-normal);
 }
 
-/* Botón de regreso */
-.back-button {
+/* Contenedor principal del CV */
+.cv-container {
+  position: relative;
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 75px 20px;
+}
+
+/* Layout específico del CV - completamente independiente */
+.cv-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--spacing-m);
+  align-items: start;
+  min-height: 100vh;
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Resetear cualquier estilo del grid general */
+.cv-container .row {
+  display: block;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-container [class*='col-'] {
+  float: none;
+  width: auto;
+  padding: 0;
+  display: block;
+}
+
+/* ·········································
+   Sidebar (columna lateral completa)
+   ········································· */
+
+.cv-container .cv-sidebar {
+  position: relative;
+  width: 220px;
+}
+
+/* ·········································
+   Botón Back - fijo arriba del viewport (solo desktop)
+   ········································· */
+
+@media (min-width: 1025px) {
+  .cv-container .back-button {
+    position: fixed;
+    top: var(--spacing-m);
+    left: max(20px, calc((100vw - 1245px) / 2));
+    width: 180px;
+    padding: 0;
+    z-index: 20;
+  }
+
+  .cv-container .side-menu {
+    position: fixed;
+    top: 50vh;
+    left: max(20px, calc((100vw - 1245px) / 2));
+    transform: translateY(-50%);
+    width: 180px;
+    height: fit-content;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: var(--spacing-s);
+  }
+}
+
+/* Para pantallas menores, usar posicionamiento normal */
+@media (max-width: 1024px) {
+  .cv-container .back-button {
+    position: relative;
+    padding: 0;
+    margin-bottom: var(--spacing-l);
+  }
+
+  .cv-container .side-menu {
+    position: sticky;
+    top: var(--spacing-m);
+    height: fit-content;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: var(--spacing-s);
+  }
+}
+
+.cv-container .side-menu li {
+  margin-bottom: var(--spacing-s);
+}
+
+.cv-container .side-menu a {
+  font-size: var(--text-xs);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+  transition: font-size 0.5s ease;
+}
+
+.cv-container .side-menu a:hover {
+  text-decoration: none !important;
+  color: var(--accent-color);
+  font-size: var(--text-sm);
+  transition: font-size 0.5s ease;
+}
+
+.cv-container .side-menu a.active {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: var(--text-sm);
+}
+
+/* ·········································
+   Contenido principal
+   ········································· */
+
+.cv-container .cv-content {
+  padding: var(--spacing-xl);
+}
+
+/* ·········································
+   Secciones del CV
+   ········································· */
+
+.cv-container .cv-section {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.cv-container .section-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-medium);
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: var(--spacing-none);
+  margin-bottom: var(--spacing-l);
+  font-family: var(--font-family-headings);
+}
+
+.cv-container .subsection-title {
+  font-size: var(--text-xl);
+  margin-top: var(--spacing-xl);
+  color: var(--primary-color);
+  font-family: var(--font-family-headings);
+}
+
+.cv-container h4.subsection-title {
+  font-size: var(--text-lg);
+  margin-top: var(--spacing-xl);
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+.cv-container .cv-header {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.cv-container .header-title {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--spacing-none);
+  color: var(--primary-color);
+  font-family: var(--font-family-headings);
+}
+.cv-container .header-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0!important;
+}
+
+/* ·········································
+   Elementos de contenido
+   ········································· */
+
+/* Botones específicos del CV */
+.cv-container .back-button {
   padding: var(--spacing-m);
   padding-inline-start: 0!important;
 }
-.back-button .button {
+
+.cv-container .back-button .button {
   text-decoration: none;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
@@ -21,106 +202,66 @@ body {
   display: inline-block;
   font-weight: bold;
   transition: opacity 0.2s ease;
+  border-radius: var(--border-radius);
 }
-.back-button .button:hover {
+
+.cv-container .back-button .button:hover {
   opacity: 0.75;
 }
 
-/* Menú lateral sticky */
-.side-menu {
-  position: fixed;
-  top: var(--spacing-xl);
-  left: var(--spacing-l);
-  width: 200px;
-}
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.side-menu li {
-  margin-bottom: var(--spacing-s);
-}
-.side-menu a {
-  font-size: 0.8rem;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
-  transition: font-size 0.5s ease;
-}
-.side-menu a:hover {
-  text-decoration: none !important;
-  color: var(--accent-color);
-  font-size: 1em;
-  transition: font-size 0.5s ease;
-}
-.side-menu a.active {
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 1em;
+/* Enlaces externos en el CV */
+.cv-container a[href^="http://"]:not(.no-icon)::after,
+.cv-container a[href^="https://"]:not(.no-icon)::after {
+    font-family: 'FontAwesome';
+    content: '\f08e';
+    margin-left: 5px;
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: var(--text-sm);
 }
 
-/* Contenido principal */
-.cv-content {
-  margin-left: 240px;
-  padding: var(--spacing-xl);
-  max-width: var(--width-container);
+.cv-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Secciones */
-.cv-section {
-  margin-bottom: var(--spacing-xxl);
-}
-.section-title {
-  font-size: 1.75rem;
-  font-weight: 500;
-  border-bottom: 1px solid var(--primary-color);
-  padding-bottom: var(--spacing-none);
-  margin-bottom: var(--spacing-l);
-}
-.subsection-title {
-  font-size: 1.25rem;
-  margin-top: var(--spacing-xl);
-  color: var(--primary-color);
-}
-h4.subsection-title{
-  font-size: 1rem;
-  margin-top: var(--spacing-xl);
-  margin-bottom: 0;
-  color: var(--primary-color);
-}
-.cv-header {
-  margin-bottom: var(--spacing-xxl);
-}
-.header-title {
-  font-size: 3rem;
-  margin-bottom: var(--spacing-none);
-  color: var(--primary-color);
-}
-.header-subtitle {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin: 0!important;
+.cv-container a:hover {
+    color: var(--accent-color);
 }
 
-/* Listas */
-.cv-list {
+.cv-container .cv-list {
   list-style-type: disc;
   margin-top: var(--spacing-s);
   padding-left: var(--spacing-l);
 }
-.cv-list li {
+
+.cv-container .cv-list li {
   margin-bottom: var(--spacing-none);
 }
 
-/* Indicador de desplazamiento */
-.scroll-indicator {
+/* ·········································
+   Indicador de desplazamiento
+   ········································· */
+
+.cv-container .scroll-indicator {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 3px;
     background-color: var(--accent-color);
     transition: height 0.3s ease;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+/* Asegurar que el ul tenga posición relativa para el indicador */
+.cv-container .side-menu ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    padding-left: 12px;
+    margin: 0;
 }
 
 /* Estilos para items */
@@ -221,14 +362,229 @@ h4.subsection-title{
     color: var(--text-primary);
 }
 
+/* ·········································
+   Responsive Design
+   ········································· */
+
+/* Menú hamburguesa (solo móvil) */
+.cv-container .hamburger-menu {
+  display: none; /* Oculto por defecto, solo se muestra en móvil */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--color-white);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cv-container .hamburger-menu::before {
+  font-family: 'FontAwesome';
+  content: '\f0c9'; /* Icono de hamburguesa de Font Awesome */
+  font-size: 18px;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+/* Estado activo - cambia a X */
+.cv-container .hamburger-menu.active::before {
+  content: '\f00d'; /* Icono de X (close) de Font Awesome */
+}
+
+/* Overlay del menú móvil */
+.cv-container .mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Estado visible del overlay */
+.cv-container .mobile-menu-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cv-container .mobile-menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
+}
+
+/* Estado visible del contenido */
+.cv-container .mobile-menu-overlay.show .mobile-menu-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.cv-container .mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;
+}
+
+/* Estado visible de la navegación */
+.cv-container .mobile-menu-overlay.show .mobile-nav ul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cv-container .mobile-nav li {
+  margin-bottom: var(--spacing-m);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animación escalonada de los elementos de la lista */
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(1) { transition-delay: 0.2s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(2) { transition-delay: 0.25s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(3) { transition-delay: 0.3s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(4) { transition-delay: 0.35s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(5) { transition-delay: 0.4s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(6) { transition-delay: 0.45s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(7) { transition-delay: 0.5s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(8) { transition-delay: 0.55s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(9) { transition-delay: 0.6s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(10) { transition-delay: 0.65s; }
+.cv-container .mobile-menu-overlay.show .mobile-nav li:nth-child(11) { transition-delay: 0.7s; }
+
+.cv-container .mobile-menu-overlay.show .mobile-nav li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cv-container .mobile-nav a {
+  font-size: var(--text-lg);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+  display: block;
+  padding: var(--spacing-s);
+}
+
+.cv-container .mobile-nav a:hover {
+  color: var(--accent-color);
+}
+
+.cv-container .mobile-back-button {
+  margin-bottom: var(--spacing-xl);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s;
+}
+
+.cv-container .mobile-menu-overlay.show .mobile-back-button {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Tablet and mobile */
+@media (max-width: 1024px) {
+  /* Mostrar hamburguesa en móvil */
+  .cv-container .hamburger-menu {
+    display: flex;
+  }
+  
+  /* Ocultar solo el contenido del menú lateral, no toda la sidebar */
+  .cv-container .back-button,
+  .cv-container .side-menu {
+    display: none;
+  }
+  
+  /* Mantener la sidebar pero sin contenido visible */
+  .cv-container .cv-sidebar {
+    display: block;
+    width: auto;
+    position: relative;
+  }
+  
+  /* En tablet/móvil, cambiar el grid a una columna */
+  .cv-layout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-m);
+  }
+  
+  .cv-container .cv-content {
+    padding: var(--spacing-l);
+    padding-top: 80px; /* Espacio para la hamburguesa */
+  }
+}
+
 @media (max-width: 768px) {
-  .skills-grid {
+  .cv-container .cv-content {
+    padding: var(--spacing-m);
+  }
+  
+  .cv-container .header-title {
+    font-size: var(--text-4xl);
+  }
+  
+  .cv-container .section-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .cv-container .subsection-title {
+    font-size: var(--text-lg);
+  }
+  
+  .cv-container .skills-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  
+  .cv-container .side-menu ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: 480px) {
-  .skills-grid {
+  .cv-container .cv-content {
+    padding: var(--spacing-s);
+  }
+  
+  .cv-container .header-title {
+    font-size: var(--text-3xl);
+  }
+  
+  .cv-container .section-title {
+    font-size: var(--text-xl);
+  }
+  
+  .cv-container .skills-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .cv-container .cv-section {
+    margin-bottom: var(--spacing-xl);
   }
 }

@@ -2,17 +2,69 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.cv-section');
     const menuItems = document.querySelectorAll('.side-menu ul a');
     
-    // Crear el indicador de scroll
-    const scrollIndicator = document.createElement('div');
-    scrollIndicator.className = 'scroll-indicator';
-    document.querySelector('.side-menu').appendChild(scrollIndicator);
+    // Crear el indicador de scroll (TEMPORALMENTE DESACTIVADO)
+    // const scrollIndicator = document.createElement('div');
+    // scrollIndicator.className = 'scroll-indicator';
+    // document.querySelector('.side-menu ul').appendChild(scrollIndicator);
+
+    // Funcionalidad del menú hamburguesa
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const closeMenu = document.querySelector('.close-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+    // Abrir/cerrar menú móvil con hamburguesa
+    if (hamburgerMenu) {
+        hamburgerMenu.addEventListener('click', () => {
+            const isOpen = mobileMenuOverlay.classList.contains('show');
+            
+            if (isOpen) {
+                // Cerrar menú
+                mobileMenuOverlay.classList.remove('show');
+                hamburgerMenu.classList.remove('active');
+                // Esperar a que termine la animación antes de permitir scroll
+                setTimeout(() => {
+                    document.body.style.overflow = 'auto';
+                }, 600);
+            } else {
+                // Abrir menú
+                mobileMenuOverlay.classList.add('show');
+                hamburgerMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    }
+
+    // Cerrar menú al hacer clic en un enlace
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('show');
+            hamburgerMenu.classList.remove('active');
+            setTimeout(() => {
+                document.body.style.overflow = 'auto';
+            }, 600);
+        });
+    });
+
+    // Cerrar menú al hacer clic fuera del contenido
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.addEventListener('click', (e) => {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('show');
+                hamburgerMenu.classList.remove('active');
+                setTimeout(() => {
+                    document.body.style.overflow = 'auto';
+                }, 600);
+            }
+        });
+    }
 
     function updateScroll() {
         const currentScroll = window.scrollY;
         const windowHeight = window.innerHeight;
         const docHeight = document.documentElement.scrollHeight - windowHeight;
         const scrolled = (currentScroll / docHeight) * 100;
-        scrollIndicator.style.height = `${scrolled}%`;
+        // scrollIndicator.style.height = `${scrolled}%`; // TEMPORALMENTE DESACTIVADO
 
         // Resetear todos los items del menú
         menuItems.forEach(item => {

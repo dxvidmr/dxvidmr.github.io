@@ -4,36 +4,68 @@
   <meta charset="UTF-8">
   <title>CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/cv-base.css">
   <link rel="stylesheet" href="/css/cv.css">
-  <link rel="stylesheet" href="/css/components/links-buttons.css">
-  <link rel="stylesheet" href="/css/icons/font-awesome.min.css">
 </head>
 
 <body>
-
-  <!-- Menú lateral sticky -->
-  <nav class="side-menu">
-    <!-- Botón para volver -->
-    <div class="back-button">
-        <a href="/index.html" class="button">← Back</a>
+<div class="cv-container">
+  <div class="cv-layout">
+    <!-- Columna del menú lateral -->
+    <div class="cv-sidebar">
+      <!-- Botón hamburguesa (solo móvil) -->
+      <button class="hamburger-menu" aria-label="Abrir menú">
+      </button>
+      
+      <!-- Botón para volver -->
+      <div class="back-button">
+          <a href="/index.html" class="button">← Back</a>
+      </div>
+      
+      <!-- Menú lateral de navegación -->
+      <nav class="side-menu">
+        <ul>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#grants">GRANTS & AWARDS</a></li>
+          <li><a href="#research">RESEARCH PROJECTS</a></li>
+          <li><a href="#software">SOFTWARE & TOOLS</a></li>
+          <li><a href="#publications">PUBLICATIONS</a></li>
+          <li><a href="#talks">PRESENTATIONS</a></li>
+          <li><a href="#teaching">TEACHING</a></li>
+          <li><a href="#activities">ACTIVITIES</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#languages">LANGUAGES</a></li>
+        </ul>
+      </nav>
     </div>
-    <ul>
-      <li><a href="#about">ABOUT ME</a></li>
-      <li><a href="#education">EDUCATION</a></li>
-      <li><a href="#grants">GRANTS & AWARDS</a></li>
-      <li><a href="#research">RESEARCH PROJECTS</a></li>
-      <li><a href="#software">SOFTWARE & TOOLS</a></li>
-      <li><a href="#publications">PUBLICATIONS</a></li>
-      <li><a href="#talks">PRESENTATIONS</a></li>
-      <li><a href="#teaching">TEACHING</a></li>
-      <li><a href="#activities">ACTIVITIES</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#languages">LANGUAGES</a></li>
-    </ul>
-  </nav>
 
-  <!-- Contenido principal -->
-  <main class="cv-content">
+    <!-- Overlay para el menú móvil -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-content">
+        <div class="mobile-back-button">
+          <a href="/index.html" class="button">← Back</a>
+        </div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#grants">GRANTS & AWARDS</a></li>
+            <li><a href="#research">RESEARCH PROJECTS</a></li>
+            <li><a href="#software">SOFTWARE & TOOLS</a></li>
+            <li><a href="#publications">PUBLICATIONS</a></li>
+            <li><a href="#talks">PRESENTATIONS</a></li>
+            <li><a href="#teaching">TEACHING</a></li>
+            <li><a href="#activities">ACTIVITIES</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#languages">LANGUAGES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Columna del contenido principal -->
+    <main class="cv-content">
 
     <section id="header" class="cv-header">
         <h1 class="header-title">DAVID MERINO RECALDE</h1>
@@ -44,7 +76,7 @@
     <section id="about" class="cv-section">
       <h2 class="section-title">ABOUT ME</h2>
       <p>I am a PhD researcher specializing in Spanish Golden Age theatre, with a focus on the transmission, reception, and cultural impact of dramatic works. My doctoral project combines digital scholarly editing, archival research, and data modeling to explore how texts such as <i>Fuenteovejuna</i> have been preserved, interpreted, and staged across history.</p>
-        <p>With an interdisciplinary background in theatre practice, philology, and digital humanities, I apply computational methods to study drama as both a literary and performative phenomenon. My expertise includes digital editing (XML-TEI), web development, network analysis, and the design of ontological models and data infrastructures for cultural heritage</p>.
+        <p>With an interdisciplinary background in theatre practice, philology, and digital humanities, I apply computational methods to study drama as both a literary and performative phenomenon. My expertise includes digital editing (XML-TEI), web development, network analysis, and the design of ontological models and data infrastructures for cultural heritage.</p>
         
     </section>
 
@@ -750,6 +782,8 @@
     </section>
 
   </main>
+  </div> <!-- /cv-layout -->
   <script src="/js/scroll-cv.js"></script>
+</div> <!-- /cv-container -->
 </body>
 </html>

@@ -1,0 +1,24 @@
+/* ═══════════════════════════════════════════════════════════
+   CV BASE - CSS base compartido para CV sin conflictos
+   ═══════════════════════════════════════════════════════════ */
+
+/* Importar solo lo esencial */
+@import url('./config/variables.css');
+@import url('./config/base.css');
+@import url('./layout/grid.css');
+@import url('./components/links-buttons.css');
+@import url('./icons/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+/* ·········································
+   Reset específico para CV
+   ········································· */
+
+/* Evitar conflictos con estilos del sitio principal */
+.cv-container {
+    /* Todos los estilos del CV irán dentro de este contenedor */
+    font-family: var(--font-family-body);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+}
+

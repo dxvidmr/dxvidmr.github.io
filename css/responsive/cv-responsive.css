@@ -52,7 +52,7 @@
 
 @media (max-width: 480px) {
   .cv-container .cv-content {
-    padding: var(--spacing-s);
+    padding: var(--spacing-m);
   }
   
   .cv-container .header-title {

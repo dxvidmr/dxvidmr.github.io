@@ -392,9 +392,8 @@ function openModal(modalId, prodKey) {
     document.getElementById(modalId).classList.add('active');
     showModalSlide(modalId, productionsConfig[prodKey].index);
     resetMouseIdleTimer(modalId);
-    
+    document.body.classList.add('modal-open'); // Añadido para ocultar hamburguesa
     document.getElementById(modalId).addEventListener('mousemove', () => resetMouseIdleTimer(modalId));
-    
     if(productionsConfig[prodKey].timer) {
         clearTimeout(productionsConfig[prodKey].timer);
         productionsConfig[prodKey].timer = null;
@@ -404,10 +403,9 @@ function openModal(modalId, prodKey) {
 function closeModal(modalId, prodKey, e) {
     if (!e || e.target === document.getElementById(modalId) || e.target.classList.contains('close-modal')) {
         document.getElementById(modalId).classList.remove('active');
-        
+        document.body.classList.remove('modal-open'); // Quitado para mostrar hamburguesa
         clearTimeout(mouseIdleTimers[modalId]);
         hideModalControls(modalId);
-        
         const config = productionsConfig[prodKey];
         if(config.images.length > 1) {
             config.timer = setTimeout(() => autoProdSlide(prodKey), 4000);
@@ -589,7 +587,7 @@ document.addEventListener('keydown', function(e) {
         } else if (e.key === 'ArrowLeft') {
             fuenteovejunaModalPrev(e);
         } else if (e.key === 'ArrowRight') {
-            fuenteovejunaModalNext(e);
+            fuenteovejnaModalNext(e);
         }
     }
     

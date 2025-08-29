@@ -64,6 +64,10 @@
     #header aside {
         display: none;
     }
+
+    .publication-grid {
+        margin: 0;
+    }
     
     /* ·········································
        CV LAYOUT SYSTEM
@@ -117,6 +121,10 @@
     [class*='col-'] {
         float: none !important;
         width: 100%;
+    }
+
+    .col-8 {
+        display: none;
     }
     
     /* ·········································
@@ -196,6 +204,8 @@
     
     .hero-project {
         grid-template-columns: 1fr;
+        margin-bottom: var(--spacing-m);
+        margin-top: var(--spacing-none);
     }
     
     .hero-project__image {
@@ -222,6 +232,7 @@
         display: flex;
         flex-direction: column;
         min-height: auto;
+        margin: var(--spacing-m) 0 var(--spacing-l);
     }
     
     .production-hero .production-slider {
@@ -339,6 +350,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
     .event-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -355,12 +367,20 @@
        ········································· */
     
     .row {
-        padding: 30px 15px;
+        padding: var(--spacing-xs);
+        padding-top: var(--spacing-l);
+        padding-bottom: var(--spacing-l);
     }
     
     [class*='col-'] {
         padding: 8px;
     }
+
+    .bio-content {
+        padding: var(--spacing-none);
+        padding-top: var(--spacing-m);
+    }
+
     
     /* ·········································
        SOCIAL ICONS - BANNER

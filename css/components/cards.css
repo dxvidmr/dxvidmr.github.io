@@ -210,9 +210,9 @@
 }
 
 .event-institution {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: var(--text-sm);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-normal);
 }
 
 /* ·········································
@@ -236,11 +236,11 @@
     font-size: var(--text-lg);
     color: var(--text-primary);
     margin-bottom: var(--spacing-s);
-    font-weight: var(--font-semibold);
+    font-weight: var(--font-normal);
 }
 
 .publication-metadata {
-    color: var(--text-primary);
+    color: var(--text-secondary);
     font-size: var(--text-sm);
     line-height: var(--line-height-normal);
 }
@@ -250,7 +250,7 @@
 }
 
 .publication-details {
-    font-weight: var(--font-medium);
+    font-weight: var(--font-normal);
     color: var(--text-primary);
     margin-bottom: var(--spacing-none);
 }
@@ -276,6 +276,7 @@
 
 .category-label {
     font-size: var(--text-sm);
+    font-weight: var(--font-bold);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-sm);
     margin: 0 0 var(--spacing-s);

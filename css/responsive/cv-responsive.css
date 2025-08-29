@@ -9,12 +9,23 @@
 /* Tablet and mobile */
 @media (max-width: 1024px) {
   /* Las reglas principales de layout están en responsive.css */
-  /* Aquí solo reglas específicas adicionales del CV si fueran necesarias */
+  .cv-container,
+  .cv-layout {
+    max-width: 100vw !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
   .cv-container .cv-content {
     padding: var(--spacing-m);
+  }
+
+  .cv-container .item-container {
+    margin-bottom: var(--spacing-m);
   }
   
   .cv-container .header-title {
